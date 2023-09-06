@@ -1,0 +1,16 @@
+https://github.com/a10y/carveml
+
+https://github.com/UTSA-cyber/sceadan
+
+
+Autopsy in docker
+
+https://gist.github.com/jgru/eef181439fe4828b9281fae43fc9f193 , 02.08.23
+
+docker run -d -p 80:80 autopsy:v1  # run container
+
+
+
+docker cp "D:\Bachelorarbeit\Dataset\created_dataset\test_data_small.sqsh" 0de381654933:/usr/share # copy file in container
+
+docker exec -it 0de381654933 /bin/bash  #container terminal öffnen
