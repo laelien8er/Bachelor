@@ -1,0 +1,38 @@
+# Update Dataset
+
+- GPS Data:
+
+[1] https://www.kaggle.com/datasets/jefmenegazzo/pvs-passive-vehicular-sensors-datasets
+[2] https://github.com/onyekpeu/IO-VNBD/tree/master (Paper dazu: https://www.sciencedirect.com/science/article/pii/S2352340921001694)
+[3] https://ieee-dataport.org/open-access/road-vehicle-localization-dataset
+
+
+- CDR files:
+https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CISS/CDR%20Files/
+
+
+- DBC files:
+https://github.com/commaai/opendbc
+
+
+13.06.
+alle gps dateien von [3] in MagLand_GPS
+
+
+14.06.
+
+IOVNBD Dataset [2]: Syncronized(s), unsynchronized (u) vor Dateinamen 
+alle files aus uncategorized raus und in einen order IOVNDB
+Download von DBC und CDRX Dateien
+Download kaggle Data and remove not needed files
+
+15.06.
+create gpx and xls files:
+siehe skript
+
+small test dataset: just take first 5 files each
+
+30.08.
+
+in val_data unbearbeitete Dateien
+
