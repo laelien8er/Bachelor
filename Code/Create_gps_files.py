@@ -2,11 +2,12 @@
 # https://gpx-converter.readthedocs.io/en/latest/usage.html file -> gpx
 # https://docs.pyexcel.org/en/latest/ csv -> xls
 
-from gpx_converter import Converter
-import os
-import csv
-import pandas
 import chardet
+import csv
+import os
+import pandas
+import random
+from gpx_converter import Converter
 
 
 def get_files(startdir):
@@ -25,7 +26,7 @@ def get_files(startdir):
 
 
 def convert_file_to_gpx(file_list, encoding="utf-8", sep=",",
-                        outputdir=None):  # parallelisieren wenn möglich sonst no no
+                        outputdir=None):
     for file in file_list:
         # create dataframe
         df = pandas.read_csv(file, encoding=encoding, sep=sep)
@@ -75,18 +76,18 @@ def convert_file_to_xlsx(filelist, encoding="utf-8", sep=",", outputdir=None):
 
 def convert_file_to_csv(filelist, outputdir=None):
     for file in filelist:
-        df = pandas.read_csv(file, encoding='utf8')
-        print(df)
+        df = pandas.read_csv(file, encoding='utf8', sep='\s+')
+        if len(df.columns) == 1:
+            df = pandas.read_csv(file, encoding='utf8')
         if outputdir:
             outf = outputdir + "\\" + file.split("\\")[-1].split(".")[0] + ".csv"
             df.to_csv(outf)
-
-        break
 
 
 def split_files(file_list, encoding="utf-8", sep=",", outputdir=None):
     for file in file_list:
         df = pandas.read_csv(file, encoding=encoding, sep=sep)
+        print(file)
         part_1 = df.sample(frac=0.5)
         part_2 = df.drop(part_1.index)
 
@@ -98,5 +99,10 @@ def split_files(file_list, encoding="utf-8", sep=",", outputdir=None):
             part_2.to_csv(outp2)
 
 
-files = get_files("D:\Bachelorarbeit\Dataset\original_files\GPS_Data\MagLand_GPS")
-convert_file_to_csv(files, outputdir="D:\Bachelorarbeit\Dataset\_ds\csv")
+####
+
+random.seed(100)
+
+dir = "D:\Bachelorarbeit\Dataset\_ds\csv_1"
+files = get_files("D:\Bachelorarbeit\Dataset\_ds\csv")
+
