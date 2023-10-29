@@ -9,7 +9,6 @@ COPY --from=bannsec/autopwn-stage-j8 /tmp/jdk* /opt/.
 
 RUN apt-get update && apt-get install -y \
         apt-utils \
-		build-essential \
         curl \
         dnsutils \
         libafflib0v5 \
@@ -39,10 +38,10 @@ RUN apt-get update && apt-get install -y \
         xorg-sgml-doctools \
         xtrans-dev \
         libcanberra-gtk-module \
-		squashfs-tools \ 
-		git \
-		make \
-		openjdk-17-jdk openjdk-17-jre \
+	squashfs-tools \ 
+	git \
+	make \
+	openjdk-17-jdk openjdk-17-jre \
         build-essential autoconf libtool automake git zip wget ant \
         libde265-dev libheif-dev \
         libpq-dev \
@@ -67,7 +66,8 @@ RUN mkdir -p /opt \
     && unzip -P AcceptEULA jdk*.zip \
     && rm jdk*.zip \
     && cd /opt/autopsy*/ \
-	&& ["chmod", "+x", "./unix_setup.sh"]
+	#&& ["chmod", "+x", "./unix_setup.sh"]
+	#&& sh -c ./unix_setup.sh
 
 
 # install foremost
