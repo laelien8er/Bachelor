@@ -14,7 +14,7 @@ RUN apt install -y bellsoft-java8
 ENV JAVA_HOME=/usr/lib/jvm/bellsoft-java8-amd64
 
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
         apt-utils \
         curl \
         dnsutils \
@@ -58,4 +58,21 @@ RUN apt update && apt install -y \
     gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio \
     && rm -rf /var/lib/apt/lists/*
 
-# install ftkImager
+# install scalpel
+RUN cd /opt \
+	&& git clone https://github.com/sleuthkit/scalpel.git \
+	&& apt-get update -y && apt-get install -y gettext autopoint\
+	&& git clone https://github.com/laurikari/tre.git \
+	&& cd /opt/tre \
+	&& ./utils/autogen.sh \
+	&& ./configure && make && make check && make install \
+	&& ./configure && make dist \
+	&& cd /opt/scalpel && ./bootstrap && ./configure && make 
+	
+# install bulk_extractor
+RUN cd /opt \
+	&& git clone --recurse-submodules https://github.com/simsong/bulk_extractor.git \
+	&& cd /opt/bulk_extractor/etc \
+	&& bash CONFIGURE_UBUNTU20LTS.bash \
+	&& cd .. \
+	&& ./bootstrap.sh && ./configure && make && make install

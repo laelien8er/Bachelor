@@ -89,9 +89,10 @@ RUN cd /opt \
 # install scalpel
 RUN cd /opt \
 	&& git clone https://github.com/sleuthkit/scalpel.git \
-	&& apt-get update -y && apt-get install -y gettext \
+	&& apt-get update -y && apt-get install -y gettext autopoint\
 	&& git clone https://github.com/laurikari/tre.git \
 	&& cd /opt/tre \
 	&& ./utils/autogen.sh \
 	&& ./configure && make && make check && make install \
+	&& ./configure && make dist \
 	&& cd /opt/scalpel && ./bootstrap && ./configure && make 
