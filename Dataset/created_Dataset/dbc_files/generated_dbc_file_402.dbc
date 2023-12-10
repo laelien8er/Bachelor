@@ -1,0 +1,80 @@
+NS_ :
+ NS_DESC_
+ CM_
+ BA_DEF_
+ BA_
+ VAL_
+ CAT_DEF_
+ CAT_
+ FILTER
+ BA_DEF_DEF_
+ EV_DATA_
+ ENVVAR_DATA_
+ SGTYPE_
+ SGTYPE_VAL_
+ BA_DEF_SGTYPE_
+ BA_SGTYPE_
+ SIG_TYPE_REF_
+ VAL_TABLE_
+ SIG_GROUP_
+ SIG_VALTYPE_
+ SIGTYPE_VALTYPE_
+ BO_TX_BU_
+ BA_DEF_REL_
+ BA_REL_
+ BA_DEF_DEF_REL_
+ BU_SG_REL_
+ BU_EV_REL_
+ BU_BO_REL_
+ SG_MUL_VAL_
+
+BS_:
+
+BO_ 129 steering: 8 ElectricPowerSteering
+ SG_ SteeringAngle : 23|16@0- (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 513 speed: 8 PowertrainControlModule
+ SG_ EngineRPM : 7|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+ SG_ VehicleSpeed : 39|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ AcceleratorPos : 55|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+
+BO_ 592 throttle_body: 8 PowertrainControlModule
+ SG_ IntakeAirTemperature : 31|8@0+ (1,-40) [0|0] "Cel" Vector__XXX
+ SG_ AcceleratorPedalSensorRaw : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcceleratorPedalSensorFiltered : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 658 brake_controls: 8 PowertrainControlModule
+ SG_ BrakePedalSwitch : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ParkingBrakeSwitch : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1056 coolant: 8 PowertrainControlModule
+ SG_ CoolantTemperature : 7|8@0+ (1,-40) [0|0] "Cel" Vector__XXX
+
+BO_ 1072 instrument_cluster: 8 InstrumentCluster
+ SG_ FuelLevel : 7|8@0+ (0.392156,0) [0|0] "%" Vector__XXX
+ SG_ FuelTankSensorLeft : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FuelTankSensorRight : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1200 wheel_speed: 8 AntilockBrakeSystem
+ SG_ WheelSpeedFL : 7|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedFR : 23|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedRL : 39|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedRR : 55|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+
+CM_ BU_ K182_PACM "Parking Assist Control Module";
+CM_ BU_ K43_PSCM "Power Steering Control Module";
+CM_ BU_ K17_EBCM "Electronic Brake Control Module";
+CM_ BU_ NEO "Comma NEO";
+CM_ BU_ K124_ASCM "Active Safety Control Module";
+BA_DEF_  "UseGMParameterIDs" INT 0 0;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "UseGMParameterIDs" 1;
+BA_DEF_DEF_  "ProtocolType" "GMLAN";
+BA_DEF_DEF_  "BusType" "";
+BA_ "UseGMParameterIDs" 0;
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "GMLAN";
+
+VAL_ 992 CurrentGear 5 "1" 6 "2" 7 "3" 8 "4" ;
+VAL_ 992 SelectorPosition 1 "P" 2 "R" 3 "N" 4 "D" 7 "3" 6 "2" 5 "1" ;

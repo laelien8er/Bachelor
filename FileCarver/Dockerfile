@@ -74,10 +74,6 @@ RUN mkdir -p /opt \
 	&& cd /opt/autopsy-4.21.0/ \
 	&& chmod 744 unix_setup.sh \
 	&& ./unix_setup.sh
-	
-# install sleuthkit
-RUN git clone https://github.com/sleuthkit/sleuthkit.git \
- && cd /sleuthkit && ./bootstrap && ./configure && make && make install
 
 # install foremost
 RUN cd /opt \
@@ -87,12 +83,15 @@ RUN cd /opt \
 	&& rm foremost-1.5.7.tar.gz
 
 # install scalpel
+RUN apt update && apt install -y scalpel 
+
+
+# install bulk_extractor
 RUN cd /opt \
-	&& git clone https://github.com/sleuthkit/scalpel.git \
-	&& apt-get update -y && apt-get install -y gettext autopoint\
-	&& git clone https://github.com/laurikari/tre.git \
-	&& cd /opt/tre \
-	&& ./utils/autogen.sh \
-	&& ./configure && make && make check && make install \
-	&& ./configure && make dist \
-	&& cd /opt/scalpel && ./bootstrap && ./configure && make 
+	&& git clone --recurse-submodules https://github.com/simsong/bulk_extractor.git 
+RUN apt-get update && apt-get install sudo
+RUN cd /opt/bulk_extractor/etc \
+	&& bash CONFIGURE_UBUNTU20LTS.bash \
+	&& cd .. \
+	&& ./bootstrap.sh && ./configure && make && make install
+

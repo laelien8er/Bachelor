@@ -1,0 +1,111 @@
+VERSION ""
+
+
+BO_ 262 DI_torque1: 8 DI
+ SG_ DI_torqueDriver : 0|13@1- (0.25,0) [-750|750] "Nm"  NEO
+ SG_ DI_torque1Counter : 13|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_torqueMotor : 16|13@1- (0.25,0) [-750|750] "Nm"  NEO
+ SG_ DI_soptState : 29|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_motorRPM : 32|16@1- (1,0) [-17000|17000] "RPM"  NEO
+ SG_ DI_pedalPos : 48|8@1+ (0.4,0) [0|100] "%"  NEO
+ SG_ DI_torque1Checksum : 56|8@1+ (1,0) [0|0] ""  NEO
+
+BO_ 278 DI_torque2: 6 DI
+ SG_ DI_torqueEstimate : 0|12@1- (0.5,0) [-750|750] "Nm" NEO
+ SG_ DI_gear : 12|3@1+ (1,0) [0|0] "" NEO
+ SG_ DI_brakePedal : 15|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_vehicleSpeed : 16|12@1+ (0.05,-25) [-25|179.75] "MPH" NEO
+ SG_ DI_gearRequest : 28|3@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torqueInterfaceFailure : 31|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torque2Counter : 32|4@1+ (1,0) [0|0] "" NEO
+ SG_ DI_brakePedalState : 36|2@1+ (1,0) [0|0] "" NEO
+ SG_ DI_epbParkRequest : 38|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_epbInterfaceReady : 39|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torque2Checksum : 40|8@1+ (1,0) [0|0] "" NEO
+
+BO_ 504 BrakeMessage: 8 XXX
+ SG_ driverBrakeStatus : 2|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 568 STW_ACTN_RQ: 8 STW
+ SG_ SpdCtrlLvr_Stat : 0|6@1+ (1,0) [0|0] "" NEO
+ SG_ VSL_Enbl_Rq : 6|1@1+ (1,0) [0|0] "" NEO
+ SG_ SpdCtrlLvrStat_Inv : 7|1@1+ (1,0) [0|0] "" NEO
+ SG_ DTR_Dist_Rq : 8|8@1+ (1,0) [0|200] "" NEO
+ SG_ TurnIndLvr_Stat : 16|2@1+ (1,0) [0|0] "" NEO
+ SG_ HiBmLvr_Stat : 18|2@1+ (1,0) [0|0] "" NEO
+ SG_ WprWashSw_Psd : 20|2@1+ (1,0) [0|0] "" NEO
+ SG_ WprWash_R_Sw_Posn_V2 : 22|2@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Lvr_Stat : 24|3@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Cond_Flt : 27|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Cond_Psd : 28|2@1+ (1,0) [0|0] "" NEO
+ SG_ HrnSw_Psd : 30|2@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw00_Psd : 32|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw01_Psd : 33|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw02_Psd : 34|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw03_Psd : 35|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw04_Psd : 36|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw05_Psd : 37|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw06_Psd : 38|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw07_Psd : 39|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw08_Psd : 40|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw09_Psd : 41|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw10_Psd : 42|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw11_Psd : 43|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw12_Psd : 44|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw13_Psd : 45|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw14_Psd : 46|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw15_Psd : 47|1@1+ (1,0) [0|0] "" NEO
+ SG_ WprSw6Posn : 48|3@1+ (1,0) [0|0] "" NEO
+ SG_ MC_STW_ACTN_RQ : 52|4@1+ (1,0) [0|15] "" NEO
+ SG_ CRC_STW_ACTN_RQ : 56|8@1+ (1,0) [0|0] "" NEO
+
+BO_ 598 DI_state: 8 DI
+ SG_ DI_systemState : 0|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_vehicleHoldState : 3|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_proximity : 6|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_driveReady : 7|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_regenLight : 8|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_state : 9|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_cruiseState : 12|4@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_analogSpeed : 16|12@1+ (0.1,0) [0|150] "speed"  NEO
+ SG_ DI_immobilizerState : 28|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_speedUnits : 31|1@1+ (1,0) [0|1] ""  NEO
+ SG_ DI_cruiseSet : 32|9@1+ (0.5,0) [0|255.5] "speed"  NEO
+ SG_ DI_aebState : 41|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_stateCounter : 44|4@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_digitalSpeed : 48|8@1+ (1,0) [0|250] ""  NEO
+ SG_ DI_stateChecksum : 56|8@1+ (1,0) [0|0] ""  NEO
+
+BO_ 703 DAS_control: 8 GTW
+ SG_ DAS_setSpeed : 0|12@1+ (0.1,0) [0|409.4] "kph" DI,PM,APS
+ SG_ DAS_accState : 12|4@1+ (1,0) [0|0] "" DI,PM,APS
+ SG_ DAS_aebEvent : 16|2@1+ (1,0) [0|3] "" DI,PM,APS
+ SG_ DAS_jerkMin : 18|9@1+ (0.03,-15.232) [-15.232|0.098] "m/s^3" DI,PM,APS
+ SG_ DAS_jerkMax : 27|8@1+ (0.059,0) [0|15.045] "m/s^3" DI,PM,APS
+ SG_ DAS_accelMin : 35|9@1+ (0.04,-15) [-15|5.44] "m/s^2" DI,PM,APS
+ SG_ DAS_accelMax : 44|9@1+ (0.04,-15) [-15|5.44] "m/s^2" DI,PM,APS
+ SG_ DAS_controlCounter : 53|3@1+ (1,0) [0|0] "" DI,PM,APS
+ SG_ DAS_controlChecksum : 56|8@1+ (1,0) [0|0] "" DI,PM,APS
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+
+VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+VAL_ 891 WIPERS 4 "High" 2 "Low" 0 "Off";
+
+
+VAL_ 506 FCW 3 "fcw" 2 "fcw" 1 "fcw" 0 "no_fcw";
+VAL_ 506 CHIME 4 "double_chime" 3 "single_chime" 2 "continuous_chime" 1 "repeating_chime" 0 "no_chime";
+VAL_ 506 AEB_STATUS 3 "aeb_prepare" 2 "aeb_ready" 1 "aeb_braking" 0 "no_aeb";
+VAL_ 829 BEEP 3 "single_beep" 2 "triple_beep" 1 "repeated_beep" 0 "no_beep";
+
+
+VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal" ;
+VAL_ 419 GEAR_SHIFTER 10 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+VAL_ 450 EPB_STATE 3 "engaged" 2 "disengaging" 1 "engaging" 0 "disengaged" ;
+VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none" ;
+VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none" ;
+VAL_ 780 HUD_LEAD 3 "no_car" 2 "solid_car" 1 "dashed_car" 0 "no_car" ;
+VAL_ 927 ACC_ALERTS 29 "esp_active_acc_canceled" 10 "b_pedal_applied" 9 "speed_too_low" 8 "speed_too_high" 7 "p_brake_applied" 6 "gear_no_d" 5 "seatbelt" 4 "too_steep_downhill" 3 "too_steep_uphill" 2 "too_close" 1 "no_vehicle_ahead" ;

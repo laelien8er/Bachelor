@@ -6,6 +6,21 @@
 [2] https://github.com/onyekpeu/IO-VNBD/tree/master (Paper dazu: https://www.sciencedirect.com/science/article/pii/S2352340921001694)
 [3] https://ieee-dataport.org/open-access/road-vehicle-localization-dataset
 
+####### new
+
+##GPS Data CSV files- > create xls, gpx files
+
+- 3 files a 9 Sets -> 21 files
+https://www.kaggle.com/datasets/jefmenegazzo/pvs-passive-vehicular-sensors-datasets
+
+- ca. 80-100 files
+https://github.com/onyekpeu/IO-VNBD/tree/master/Synchronised%20V%20abd%20S%20datasets/Uncategorised%20IOVNB%20Dataset
+https://www.sciencedirect.com/science/article/pii/S2352340921001694?ref=pdf_download&fr=RR-2&rr=7d1f96c879816d7a (Paper dazu)
+
+- txt files
+https://ieee-dataport.org/open-access/road-vehicle-localization-dataset
+
+#########
 
 - CDR files:
 https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CISS/CDR%20Files/

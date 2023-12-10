@@ -1,0 +1,209 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 36 KINEMATICS: 8 XXX
+ SG_ ACCEL_Y : 33|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ STEERING_TORQUE : 17|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ YAW_RATE : 1|10@0+ (1,-512) [0|65535] "" XXX
+
+BO_ 166 BRAKE: 8 XXX
+ SG_ BRAKE_AMOUNT : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PEDAL : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 170 WHEEL_SPEEDS: 8 XXX
+ SG_ WHEEL_SPEED_FR : 7|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_FL : 23|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RR : 39|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RL : 55|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+
+BO_ 180 SPEED: 8 XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 47|16@0+ (0.0062,0) [0|115] "mph" XXX
+ SG_ ENCODER : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 295 GEAR_PACKET: 8 XXX
+ SG_ CAR_MOVEMENT : 39|8@0- (1,0) [0|255] "" XXX
+ SG_ COUNTER : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ GEAR : 47|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 466 PCM_CRUISE: 8 XXX
+ SG_ GAS_RELEASED : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACCEL_NET : 23|16@0- (0.001,0) [-20|20] "m/s2" XXX
+ SG_ CRUISE_STATE : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 550 BRAKE_MODULE: 8 XXX
+ SG_ BRAKE_PRESSURE : 0|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_POSITION : 16|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_PRESSED : 37|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 552 ACCELEROMETER: 8 XXX
+ SG_ ACCEL_Z : 22|15@0- (1,0) [0|32767] "" XXX
+ SG_ ACCEL_X : 6|15@0- (0.001,0) [-20|20] "m/s2" XXX
+
+BO_ 560 BRAKE_MODULE2: 8 XXX
+ SG_ BRAKE_LIGHTS : 26|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 581 GAS_PEDAL: 8 XXX
+ SG_ GAS_PEDAL : 23|8@0+ (0.005,0) [0|1] "" XXX
+
+BO_ 608 STEER_TORQUE_SENSOR: 8 XXX
+ SG_ STEER_TORQUE_EPS : 47|16@0- (0.66,0) [-20000|20000] "" XXX
+ SG_ STEER_TORQUE_DRIVER : 15|16@0- (1,0) [-32768|32767] "" XXX
+ SG_ STEER_OVERRIDE : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 610 EPS_STATUS: 5 EPS
+ SG_ STATE : 3|4@0+ (1,0) [0|15] "" XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 614 STEERING_IPAS: 8 IPAS
+ SG_ STATE : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ ANGLE : 3|12@0- (1,0) [0|16777215] "" XXX
+ SG_ SET_ME_X10 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_X00_1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ DIRECTION_CMD : 38|2@0+ (1,0) [0|3] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 643 PRE_COLLISION: 8 XXX
+
+BO_ 740 STEERING_LKA: 8 XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEER_REQUEST : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 6|6@0+ (1,0) [0|63] "" XXX
+ SG_ SET_ME_1 : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ STEER_TORQUE_CMD : 15|16@0- (1,0) [0|65535] "" XXX
+
+BO_ 742 LEAD_INFO: 8 DSU
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" HCU
+ SG_ LEAD_REL_SPEED : 23|12@0- (0.025,0) [-100|100] "m/s" HCU
+ SG_ LEAD_LONG_DIST : 7|13@0+ (0.05,0) [0|300] "m" HCU
+
+BO_ 835 ACC_CONTROL: 8 DSU
+ SG_ ACCEL_CMD : 7|16@0- (0.001,0) [-20|20] "m/s2" HCU
+
+BO_ 1556 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 29|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 37 STEER_ANGLE_SENSOR: 8 XXX
+ SG_ STEER_ANGLE : 3|12@0- (1.5,0) [-500|500] "deg" XXX
+ SG_ STEER_FRACTION : 39|4@0- (0.1,0) [-0.7|0.7] "deg" XXX
+ SG_ STEER_RATE : 35|12@0- (1,0) [-2000|2000] "deg/s" XXX
+
+BO_ 467 PCM_CRUISE_2: 8 XXX
+ SG_ MAIN_ON : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ LOW_SPEED_LOCKOUT : 14|2@0+ (1,0) [0|3] "kph" XXX
+ SG_ SET_SPEED : 23|8@0+ (1,0) [0|255] "kph" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 921 PCM_CRUISE_SM: 8 XXX
+ SG_ MAIN_ON : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ CRUISE_CONTROL_STATE : 11|4@0+ (1,0) [0|15] "" XXX
+ SG_ UI_SET_SPEED : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 951 ESP_CONTROL: 8 ESP
+ SG_ TC_DISABLED : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1042 LKAS_HUD: 8 XXX
+ SG_ BARRIERS : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ RIGHT_LINE : 3|2@0+ (1,0) [0|3] "" XXX
+ SG_ LEFT_LINE : 5|2@0+ (1,0) [0|3] "" XXX
+ SG_ SET_ME_1 : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ LDA_ALERT : 9|2@0+ (1,0) [0|3] "" XXX
+ SG_ TWO_BEEPS : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ ADJUSTING_CAMERA : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ LDA_MALFUNCTION : 15|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1553 UI_SEETING: 8 XXX
+ SG_ UNITS : 26|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 1568 SEATS_DOORS: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FL : 45|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 42|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 44|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 452 POWERTRAIN: 8 XXX
+ SG_ ENGINE_RPM : 7|16@0+ (1,0) [0|65535] "rpm" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+
+
+
+BU_: XXX X
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _comma.dbc starts here";
+CM_ "Imported file _honda_common.dbc starts here";
+CM_ SG_ 304 "Seems to be platform-agnostic";
+CM_ SG_ 316 "Should exist on Nidec";
+CM_ SG_ 420 BRAKE_HOLD_RELATED "On when Brake Hold engaged";
+CM_ SG_ 490 LONG_ACCEL "wheel speed derivative, noisy and zero snapping";
+CM_ SG_ 773 PASS_AIRBAG_ON "Might just be indicator light";
+CM_ SG_ 773 PASS_AIRBAG_OFF "Might just be indicator light";
+CM_ SG_ 780 CRUISE_SPEED "255 = no speed";
+CM_ SG_ 780 PCM_SPEED "Used by Nidec";
+CM_ SG_ 780 PCM_GAS "Used by Nidec";
+CM_ SG_ 804 CRUISE_SPEED_PCM "255 = no speed";
+
+CM_ "Imported file _bosch_2018.dbc starts here";
+CM_ SG_ 450 EPB_STATE "3: On, 2: Disengaging, 1: Engaging, 0: Off";
+CM_ SG_ 576 LINE_DISTANCE_VISIBLE "Length of line visible, undecoded";
+CM_ SG_ 577 LINE_FAR_EDGE_POSITION "Appears to be a measure of line thickness, indicates location of the portion of the line furthest from the car, undecoded";
+CM_ SG_ 577 LINE_PARAMETER "Unclear if this is low quality line curvature rate or if this is something else, but it is correlated with line curvature, undecoded";
+CM_ SG_ 577 LINE_DASHED "1 = line is dashed";
+CM_ SG_ 577 LINE_SOLID "1 = line is solid";
+
+CM_ "Imported file _steering_sensors_a.dbc starts here";
+CM_ "honda_civic_ex_2022_can.dbc starts here";
+
+CM_ 446 "If exists, describes cruise faults and what the PCM uses for brake press detection.";
+CM_ SG_ 456 IDLESTOP_ALLOW "allows car to turn off engine at a standstill";
+CM_ SG_ 456 STANDSTILL "set to 1 when camera requests -4.0 m/s^2";
+
+VAL_ 1228 PROPILOT_NA_MSGS 0 "NO_MSG" 1 "NA_FRONT_CAMERA_IMPARED" 2 "STEERING_ASSIST_ON_STANDBY" 3 "NA_PARKING_ASSIST_ENABLED" 4 "STEER_ASSIST_CURRENTLY_NA" 5 "NA_BAD_WEATHER" 6 "NA_PARK_BRAKE_ON" 7 "NA_SEATBELT_NOT_FASTENED" ;
+VAL_ 1228 BOTTOM_MSG 0 "OK_STEER_ASSIST_SETTINGS" 1 "NO_MSG" 2 "PRESS_SET_TO_SET_SPEED" 3 "PRESS_RES_SET_TO_CHANGE_SPEED" 4 "PRESS_RES_TO_RESTART" 5 "NO_MSG" 6 "CRUISE_NOT_AVAIL" 7 "NO_MSG" ;
+VAL_ 689 FOLLOW_DISTANCE 0 "NO_FOLLOW_DISTANCE" 1 "FOLLOW_DISTANCE_1" 2 "FOLLOW_DISTANCE_2" 3 "FOLLOW_DISANCE_3" ;
+VAL_ 689 AUDIBLE_TONE 0 "NO_TONE" 1 "CONT" 2 "FAST_BEEP_CONT" 3 "TRIPLE_FAST_BEEP_CONT" 4 "SLOW_BEEP_CONT" 5 "QUAD_SLOW_BEEP_CONT" 6 "SINGLE_BEEP_ONCE" 7 "DOUBLE_BEEP_ONCE" ;
+VAL_ 689 SMALL_STEERING_WHEEL_ICON 0 "NO_ICON" 1 "GRAY_ICON" 2 "GRAY_ICON_FLASHING" 3 "GREEN_ICON" 4 "GREEN_ICON_FLASHING" 5 "RED_ICON" 6 "RED_ICON_FLASHING" 7 "YELLOW_ICON" ;
+VAL_ 689 LARGE_STEERING_WHEEL_ICON 0 "NO_STEERINGWHEEL" 1 "GRAY_STEERINGWHEEL" 2 "GREEN_STEERINGWHEEL" 3 "GREEN_STEERINGWHEEL_FLASHING" ;
+

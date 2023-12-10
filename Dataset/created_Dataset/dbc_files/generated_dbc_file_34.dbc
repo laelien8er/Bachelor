@@ -1,0 +1,289 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 258 STEERING: 8 XXX
+ SG_ STEERING_ANGLE : 5|14@0+ (0.5,-2048) [-2048|2047] "deg" XXX
+ SG_ STEERING_RATE : 21|14@0+ (0.5,-2048) [-2048|2047] "deg/s" XXX
+ SG_ STEERING_ANGLE_HP : 48|4@1+ (0.1,-0.4) [-0.4|0.4] "deg" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 264 ECM_1: 8 XXX
+ SG_ ENGINE_RPM : 7|16@0+ (1,0) [0|65535] "" XXX
+ SG_ ENGINE_TORQUE : 20|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ EXPECTED_ENGINE_TORQUE : 36|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 280 ECM_TRQ: 8 XXX
+ SG_ ENGINE_TORQ_MAX : 4|13@0+ (.25,-500) [-500|1547.5] "NM" XXX
+ SG_ ENGINE_TORQ_MIN : 20|13@0+ (.25,-500) [-500|1547.5] "NM" XXX
+
+BO_ 284 ESP_8: 8 XXX
+ SG_ BRK_PRESSURE : 3|12@0+ (1,0) [0|1] "" XXX
+ SG_ BRAKE_PEDAL : 19|12@0+ (1,0) [0|1] "" XXX
+ SG_ Vehicle_Speed : 39|16@0+ (0.0078125,0) [0|511.984375] "km/h" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 320 ESP_1: 8 XXX
+ SG_ Brake_Pedal_State : 2|2@1+ (1,0) [0|0] "" XXX
+ SG_ Vehicle_Speed : 33|10@0+ (0.5,0) [0|511] "km/h" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PRESSED_ACC : 6|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 344 ESP_6: 8 XXX
+ SG_ WHEEL_SPEED_FL : 5|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_FR : 21|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_RL : 37|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_RR : 53|14@0+ (0.5,0) [0|8191] "rpm" XXX
+
+BO_ 368 Transmission_Status: 8 XXX
+ SG_ Gear_State : 2|3@1+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 464 ORC_1: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 500 DAS_3: 8 XXX
+ SG_ ENGINE_TORQUE_REQUEST : 4|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ ENGINE_TORQUE_REQUEST_MAX : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_STANDSTILL : 5|1@0+ (1,0) [0|1] ""  XXX
+ SG_ ACC_GO : 6|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_DECEL : 19|12@0+ (0.004885,-16) [-16|4] "m/s2" XXX
+ SG_ ACC_AVAILABLE : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_ACTIVE : 21|1@0+ (1,0) [0|1] "" XXX
+ SG_ DISABLE_FUEL_SHUTOFF : 23|1@1+ (1,0) [0|0] "" XXX
+ SG_ GR_MAX_REQ : 32|4@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_DECEL_REQ : 36|3@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_FAULTED : 46|2@1+ (1,0) [0|0] "" XXX
+ SG_ COLLISION_BRK_PREP : 48|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_BRK_PREP : 49|1@1+ (1,0) [0|0] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 501 DAS_4: 8 XXX
+ SG_ ACC_SET_SPEED_KPH : 15|8@0+ (1,0) [0|3] "km/h" XXX
+ SG_ ACC_SET_SPEED_MPH : 23|8@0+ (1,0) [0|3] "mph" XXX
+ SG_ ACC_DISTANCE_CONFIG_1 : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ ACC_DISTANCE_CONFIG_2 : 41|2@0+ (1,0) [0|3] "" XXX
+ SG_ SPEED_DIGITAL : 63|8@0+ (1,0) [0|255] "mph" XXX
+ SG_ ACC_STATE : 38|3@0+ (1,0) [0|7] "" XXX
+ SG_ FCW_BRAKE_ENABLED : 29|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 544 EPS_2: 8 XXX
+ SG_ LKAS_STATE : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ COLUMN_TORQUE : 2|11@0+ (1,-1024) [-1024|1023] "" XXX
+ SG_ TORQUE_OVERLAY_STATUS : 6|4@0+ (1,0) [0|15] "" XXX
+ SG_ EPS_TORQUE_MOTOR_RAW : 19|12@0+ (1,-2048) [-2048|2047] "" XXX
+ SG_ EPS_TORQUE_MOTOR : 34|11@0+ (1,-1024) [-1024|1023] "" XXX
+ SG_ LKAS_TEMPORARY_FAULT : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ AUTO_PARK_HAS_CONTROL_2 : 51|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 559 ECM_5: 8 XXX
+ SG_ Accelerator_Position : 0|8@1+ (0.4,0) [0|100] "%" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 570 CRUISE_BUTTONS: 3 XXX
+ SG_ ACC_Cancel : 0|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Distance_Dec : 1|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Accel : 2|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Decel : 3|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Resume : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ Cruise_OnOff : 6|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_OnOff : 7|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Distance_Inc : 8|1@1+ (1,0) [0|0] "" XXX
+ SG_ COUNTER : 15|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 625 DAS_5: 8 XXX
+ SG_ FCW_STATE : 2|1@1+ (1,0) [0|0] ""  XXX
+ SG_ FCW_DISTANCE : 3|2@1+ (1,0) [0|0] ""  XXX
+ SG_ ACCFCW_MESSAGE : 12|4@1+ (1,0) [0|0] ""  XXX
+ SG_ SET_SPEED_KPH : 24|8@1+ (1,0) [0|250] "km/h"  XXX
+ SG_ WHEEL_TORQUE_REQUEST : 38|15@0+ (1,-7767) [-7767|24999] "Nm"  XXX
+ SG_ WHEEL_TORQUE_REQUEST_ACTIVE : 39|1@1+ (1,0) [0|0] ""  XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 629 DAS_6: 8 XXX
+ SG_ LKAS_ICON_COLOR : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ LKAS_LANE_LINES : 19|4@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_ALERTS : 27|4@0+ (1,0) [0|1] "" XXX
+ SG_ CAR_MODEL : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ AUTO_HIGH_BEAM_ON : 47|1@1+ (1,0) [0|0] "" XXX
+ SG_ LKAS_DISABLED : 56|1@1+ (1,0) [0|0] "" XXX
+
+BO_ 720 BSM_1: 6 XXX
+ SG_ RIGHT_STATUS : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_STATUS : 2|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 792 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ HIGH_BEAM_PRESSED : 2|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 820 BCM_1: 8 XXX
+ SG_ DOOR_OPEN_FL : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_TRUNK : 22|1@0+ (1,0) [0|1] "" XXX
+ SG_ TURN_LIGHT_LEFT : 31|1@0+ (1,0) [0|1] "" XXX
+ SG_ TURN_LIGHT_RIGHT : 30|1@0+ (1,0) [0|1] "" XXX
+ SG_ HIGH_BEAM_DISPLAY : 58|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 545 EPS_3: 8 XXX
+ SG_ DASM_FAULT : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ Activation_Status : 48|3@1+ (1,0) [0|1] "" XXX
+ SG_ Driver_Override : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ Hands_on_Wheel : 51|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BU_: ADAS RADAR NEO XXX
+
+
+CM_ SG_ 80 Checksumme_Airbag_1 "Checksum Airbag_1";
+CM_ SG_ 80 Zaehler_Airbag_1 "Counter Airbag_1";
+
+CM_ SG_ 210 LM_Offset "centiNewton-meters for ease of calculation without FP math in Panda";
+CM_ SG_ 210 Vib_Amp "Steering wheel haptic, amplitude";
+CM_ SG_ 210 Vib_Freq "Steering wheel haptic, frequency";
+
+CM_ SG_ 416 Zaehler_Bremse_1 "Counter Bremse_1";
+
+CM_ SG_ 640 inneres_Motor_Moment "Engine Indicated Torque";
+CM_ SG_ 640 Fahrerwunschmoment "Driver Requested Torque";
+CM_ SG_ 640 mechanisches_Motor_Verlustmomen "Mechanical Torque Loss";
+CM_ SG_ 640 Fahrpedalwert_oder_Drosselklapp "Accelerator Pedal or Throttle Position";
+CM_ SG_ 640 Motordrehzahl "Engine Speed";
+CM_ SG_ 640 Momentenangaben_ungenau "Approximate Torque Values";
+CM_ SG_ 640 inneres_Motor_Moment_ohne_exter "Inner torque without external";
+
+CM_ SG_ 644 MOB_CHECKSUM "Checksum MOB";
+CM_ SG_ 644 MOB_COUNTER "Counter MOB";
+
+CM_ SG_ 648 Minimales_Motormoment_bei_Zuend "Minimum Torque Adjustment";
+CM_ SG_ 648 Begrenzungsmoment "Maximum Inner Torque";
+CM_ SG_ 648 Bremstestschalter "Brake Test Switch";
+CM_ SG_ 648 Soll_Geschwindigkeit_bei_GRA_Be "Desired Vehicle Speed";
+CM_ SG_ 648 Bremslichtschalter "Brake Light Switch";
+CM_ SG_ 648 Leerlaufsolldrehzahl__Motor_2_ "Target Idle Speed";
+CM_ SG_ 648 Fahrzeuggeschwindigkeit "Vehicle Speed";
+CM_ SG_ 648 Kuehlmitteltemperatur__Motor_2_ "Coolant Temperature";
+
+CM_ SG_ 896 Drosselklappenpoti "Throttle Position";
+CM_ SG_ 896 Motor_Wunschdrehzahl "Desired engine speed";
+CM_ SG_ 896 Motordrehzahlbeeinflussung "Shift Target Influence";
+CM_ SG_ 896 Fahrpedal_Rohsignal "Accelerator Pedal Position";
+CM_ SG_ 896 Ansauglufttemperatur "Intake Air Temperature";
+CM_ SG_ 896 Kein_E_Gas "ETB flag";
+CM_ SG_ 896 Kein_Start_Stop "Start/stop flag";
+CM_ SG_ 896 Rad_Wunschmoment "Desired wheel torque";
+
+CM_ SG_ 912 GK1_Fa_Tuerkont "Status of the driver's door rotary latch";
+CM_ SG_ 912 BSK_HL_geoeffnet "Status of the rear left door rotary latch";
+CM_ SG_ 912 BSK_HR_geoeffnet "Status of the rear right door rotary latch";
+CM_ SG_ 912 BSK_BT_geoeffnet "Status of the passenger door rotary latch";
+CM_ SG_ 912 BSK_HD_Hauptraste "Status of trunk lid main detent";
+
+CM_ SG_ 1088 Zaehler_Getriebe_1 "Counter Getriebe_1";
+CM_ SG_ 1088 Waehlhebelposition__Getriebe_1_ "Gear Selector Position";
+CM_ SG_ 1088 inneres_Soll_Motormoment "Desired Inner Torque";
+CM_ SG_ 1088 Schaltabsicht "Shift Intent";
+CM_ SG_ 1088 Wandlerverlustmoment "Converter Torque Loss";
+
+CM_ SG_ 1056 Fehlerstatus_Aussentemp__4_1 "ambient temp error";
+CM_ SG_ 1056 Fehlerstatus_Oeltemperatur_4_1 "oil temp error";
+CM_ SG_ 1056 Fehlerst__Kuehlmitteltemp__4_1 "water temp error";
+CM_ SG_ 1056 Aussentemperatur_gefiltert "outside temp, filtered";
+CM_ SG_ 1056 Oeltemperatur_4_1 "kombi oil temperature";
+CM_ SG_ 1056 Kuehlmitteltemp__4_1__Kombi_2_ "kombi coolant temperature";
+
+CM_ SG_ 1096 Zaehler_Waehlhebel_1 "Counter Waehlhebel_1";
+
+CM_ SG_ 1152 CHECKSUM "Checksum Motor_5";
+CM_ SG_ 1152 Anlasser_Ausspuren "Starter Disable";
+CM_ SG_ 1152 Anlasser_Freigabe "Starter Release";
+CM_ SG_ 1152 Klimadrucksignal__Motor_5_ "Air conditioning pressure signal";
+CM_ SG_ 1152 Kraftstoffverbrauchssignal "Fuel consumption signal";
+CM_ SG_ 1152 K_hlerluefteransteuerung "Cooling fan control signal";
+CM_ SG_ 1152 Klimakompressor_Leistungsreduzi "Air conditioning compressor power reduction flag";
+CM_ SG_ 1152 Klimakompressor_aus__Motor_5_ "Air conditioning compressor";
+CM_ SG_ 1152 Anlasser_Freigabe "Starter release";
+CM_ SG_ 1152 OBD_2_Lampe "OBD light";
+CM_ SG_ 1152 E_Gas_Lampe "ETB light";
+CM_ SG_ 1152 Ladekontroll_Lampe "Charge light";
+CM_ SG_ 1152 Vorgluehlampe__Motor_5_ "Glow light";
+
+CM_ SG_ 1160 Zaehler_Motor_6 "Counter Motor_6";
+CM_ SG_ 1160 Hoeheninfo__Motor_6_ "Altitude Correction";
+CM_ SG_ 1160 Istmoment_f_r_Getriebe "Actual torque for gear";
+CM_ SG_ 1160 Sollmoment_f_r_Getriebe "Target torque for gearbox";
+CM_ SG_ 1160 Checksumme_Motor_6 "Checksum Motor_6";
+CM_ SG_ 1160 GRA_Sollbeschleunigung "GRA target acceleration";
+CM_ SG_ 1160 Ruckmeldung_Momenten "Feedback torque-integral gear intervention";
+
+CM_ SG_ 1344 Zahler_Getriebe_2 "Counter Getriebe_2";
+CM_ SG_ 1344 Hochschaltlampe "Upshift Flag";
+
+CM_ SG_ 1386 ACA_V_Wunsch "255=unset";
+
+CM_ SG_ 1408 Zaehler_Motor_Flexia "Counter Motor_Flexia";
+CM_ SG_ 1408 Verbrennungsart "Type of combustion";
+CM_ SG_ 1408 Max_Drehmoment "Maximum torque";
+CM_ SG_ 1408 Drehzahl_MaxNorm "RPM of maximum torque";
+CM_ SG_ 1408 Hubraum "Displacement";
+CM_ SG_ 1408 Anzahl_Zylinder "Number of cylinders";
+CM_ SG_ 1408 Anzahl_Ventile "Number of valves";
+CM_ SG_ 1408 Ansaugsystem "Induction System";
+CM_ SG_ 1408 Motorleistung "Maximum engine power";
+
+CM_ SG_ 1416 Ladedruck "Boost Pressure";
+CM_ SG_ 1416 Motordrehzahlgradient "Engine speed gradient";
+CM_ SG_ 1416 Hoeheninfo__Motor_7_ "Altitude correction factor";
+CM_ SG_ 1416 Oltemperatur "Oil temperature";
+
+CM_ SG_ 1470 LDW_Direction "0=right,1=left";
+CM_ SG_ 1470 XX_DLCORTLC1 "Might be DLC or TLC";
+CM_ SG_ 1470 XX_DLCORTLC2 "Might be DLC or TLC, might have wrong size";
+
+CM_ SG_ 1550 MFA_v_Signal_02 "0=km/h, 1=mph";
+

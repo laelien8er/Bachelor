@@ -1,0 +1,278 @@
+VERSION ""
+
+
+BO_ 528 TRACK_A_0: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 529 TRACK_A_1: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 530 TRACK_A_2: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 531 TRACK_A_3: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 532 TRACK_A_4: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 533 TRACK_A_5: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 534 TRACK_A_6: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 535 TRACK_A_7: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 536 TRACK_A_8: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 537 TRACK_A_9: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 538 TRACK_A_10: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 539 TRACK_A_11: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 540 TRACK_A_12: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 541 TRACK_A_13: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 542 TRACK_A_14: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 543 TRACK_A_15: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 31|11@0- (0.04,0) [-50|50] "m" XXX
+ SG_ LONG_DIST : 15|13@0+ (0.04,0) [0|300] "m" XXX
+ SG_ NEW_TRACK : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 47|12@0- (0.025,0) [-100|100] "m/s" XXX
+ SG_ VALID : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 544 TRACK_B_0: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 545 TRACK_B_1: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 546 TRACK_B_2: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 547 TRACK_B_3: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 548 TRACK_B_4: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 549 TRACK_B_5: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 550 TRACK_B_6: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 551 TRACK_B_7: 8 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 552 TRACK_B_8: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 553 TRACK_B_9: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 554 TRACK_B_10: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 555 TRACK_B_11: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 556 TRACK_B_12: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 557 TRACK_B_13: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 558 TRACK_B_14: 6 XXX
+ SG_ COUNTER : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_ACCEL : 15|7@0- (1,0) [-64|63] "" XXX
+ SG_ SCORE : 23|8@0+ (1,0) [0|100] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _subaru_global.dbc starts here";
+CM_ SG_ 64 Throttle_Combo "Throttle Cruise + Pedal";
+CM_ SG_ 313 Brake_Lights "Driver or Cruise Brake on";
+CM_ SG_ 544 Cruise_Brake_Lights "1 = switch on brake lights";
+CM_ SG_ 544 Brake_Pressure "Winds down after cruise disabled. Also can be non-zero when likely preparing for AEB";
+CM_ SG_ 544 Signal3 "Usually goes to 2 if AEB_Status is 4";
+CM_ SG_ 544 AEB_Status "Occasionally is 4 instead of 8 while Brake_Pressure is non-zero, unsure why";
+CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
+CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
+CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
+CM_ SG_ 801 Far_Distance "1=0-5m, 2=5-10m, 3=10-15m, 4=15-20m, 5=20-25m, 6=25-30m, 7=30-35m, 8=35-40m, 9=40-45m, 10=45-50m, 11=50-55m, 12=55-60m, 13=60-65m, 14=65-70m, 15=75m+";
+CM_ SG_ 801 LKAS_State_Msg "1 = LKAS_Off_Sharp_Curve, 2 = Keep_Hands_On_Steering_wheel_disabled, 3 = LKAS_Off, 4 = LKAS_Off_Too_Slow, 5 = LKAS_Off_Too_Fast";
+CM_ SG_ 801 Cruise_State_Msg "1 = Cruise_Off_Steep_Slope, 2 = Cruise_lvl1_eco, 3 = Cruise_lvl2_comfort, 4 = Cruise_off_empty_reason, 5 = Cruise_off, 6 = Cruise_Unable_to_set, 7 = Cruise_Unable_to_set_brakes_applied, 8 = Eyesight_not_ready, 9 = Cruise_lvl3_standard, 10 = Cruise_lvl4_dynamic, 11 = Cruise_Unable_to_set_steep_slope";
+CM_ SG_ 801 Cruise_Soft_Disable "Eyesight soft disable (eg direct sunlight)";
+CM_ SG_ 801 Cruise_Status_Msg "1 = Disabled_Bad_Visibility, 2 = Disabled_Check_Manual";
+CM_ SG_ 802 LKAS_ACTIVE "Turns on the full LKAS dash display";
+CM_ SG_ 802 LKAS_Alert_Msg "1 = Keep_Hands_On_Wheel, 6 = Pre_Collision_Braking, 7 = Keep_Hands_On_Wheel_Off";
+CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Warning, 4 = Throttle_Management_Activated_Alert, 5 = Pre_Collision_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert, 18 = Keep_Hands_On_Steering_Alert, 24 = Audio_Beep, 25 = Audio_Lead_Car_Change, 26 = Audio_ACC_Disengaged, 27 = Audio_LKAS_disabled, 28 = Audio_Ding_Ding, 30 = Audio_Repeated_Beep";
+CM_ SG_ 802 LKAS_Left_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 802 LKAS_Dash_State "0 = Off, 1 = Ready, 2 = Active";
+CM_ SG_ 802 LKAS_Right_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 912 UNITS "0 = Metric, 1 = Imperial";
+CM_ SG_ 912 ICY_ROAD "1 = DASHLIGHT ON, 2 = WARNING, 3 = OFF";
+CM_ "subaru_global_2020_hybrid.dbc starts here";
+
+VAL_ 274 CUR_GR 1 "D" 2 "D" 3 "D" 4 "D" 5 "D" 6 "D" 7 "D" 8 "D" 14 "R" 0 "P";
+VAL_ 871 CF_Lvr_IsgState 0 "enabled" 1 "activated" 2 "unknown" 3 "disabled";
+VAL_ 871 CF_Lvr_Gear 12 "T" 5 "D" 8 "S" 6 "N" 7 "R" 0 "P";
+VAL_ 882 Elect_Gear_Shifter 5 "D" 8 "S" 6 "N" 7 "R" 0 "P";
+VAL_ 905 ACCMode 0 "off" 1 "enabled" 2 "driver_override" 3 "off_maybe_fault" 4 "cancelled";
+VAL_ 909 CF_VSM_Warn 2 "FCW" 3 "AEB";
+VAL_ 916 ACCEnable 0 "SCC ready" 1 "SCC temp fault" 2 "SCC permanent fault" 3 "SCC permanent fault, communication issue";
+VAL_ 1056 SCCInfoDisplay 0 "No Message" 2 "Cruise Control" 3 "Lost Lead" 4 "Standstill";
+VAL_ 1057 ACCMode 0 "off" 1 "enabled" 2 "driver_override" 3 "off_maybe_fault";
+VAL_ 1157 HDA_Icon_State 0 "no_hda" 1 "white_hda" 2 "green_hda";
+VAL_ 1157 LFA_SysWarning 0 "no_message" 1 "switching_to_hda" 2 "switching_to_scc" 3 "lfa_error" 4 "check_hda" 5 "keep_hands_on_wheel_orange" 6 "keep_hands_on_wheel_red";
+VAL_ 1157 LFA_Icon_State 0 "no_wheel" 1 "white_wheel" 2 "green_wheel" 3 "green_wheel_blink";
+VAL_ 1157 HDA_SysWarning 0 "no_message" 1 "driving_convenience_systems_cancelled" 2 "highway_drive_assist_system_cancelled";

@@ -1,0 +1,216 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 36 KINEMATICS: 8 XXX
+ SG_ ACCEL_Y : 33|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ STEERING_TORQUE : 17|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ YAW_RATE : 1|10@0+ (1,-512) [0|65535] "" XXX
+
+BO_ 166 BRAKE: 8 XXX
+ SG_ BRAKE_AMOUNT : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PEDAL : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 170 WHEEL_SPEEDS: 8 XXX
+ SG_ WHEEL_SPEED_FR : 7|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_FL : 23|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RR : 39|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RL : 55|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+
+BO_ 180 SPEED: 8 XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 47|16@0+ (0.0062,0) [0|115] "mph" XXX
+ SG_ ENCODER : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 295 GEAR_PACKET: 8 XXX
+ SG_ CAR_MOVEMENT : 39|8@0- (1,0) [0|255] "" XXX
+ SG_ COUNTER : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ GEAR : 47|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 466 PCM_CRUISE: 8 XXX
+ SG_ GAS_RELEASED : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACCEL_NET : 23|16@0- (0.001,0) [-20|20] "m/s2" XXX
+ SG_ CRUISE_STATE : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 550 BRAKE_MODULE: 8 XXX
+ SG_ BRAKE_PRESSURE : 0|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_POSITION : 16|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_PRESSED : 37|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 552 ACCELEROMETER: 8 XXX
+ SG_ ACCEL_Z : 22|15@0- (1,0) [0|32767] "" XXX
+ SG_ ACCEL_X : 6|15@0- (0.001,0) [-20|20] "m/s2" XXX
+
+BO_ 560 BRAKE_MODULE2: 8 XXX
+ SG_ BRAKE_LIGHTS : 26|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 581 GAS_PEDAL: 8 XXX
+ SG_ GAS_PEDAL : 23|8@0+ (0.005,0) [0|1] "" XXX
+
+BO_ 608 STEER_TORQUE_SENSOR: 8 XXX
+ SG_ STEER_TORQUE_EPS : 47|16@0- (0.66,0) [-20000|20000] "" XXX
+ SG_ STEER_TORQUE_DRIVER : 15|16@0- (1,0) [-32768|32767] "" XXX
+ SG_ STEER_OVERRIDE : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 610 EPS_STATUS: 5 EPS
+ SG_ STATE : 3|4@0+ (1,0) [0|15] "" XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 614 STEERING_IPAS: 8 IPAS
+ SG_ STATE : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ ANGLE : 3|12@0- (1,0) [0|16777215] "" XXX
+ SG_ SET_ME_X10 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_X00_1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ DIRECTION_CMD : 38|2@0+ (1,0) [0|3] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 643 PRE_COLLISION: 8 XXX
+
+BO_ 740 STEERING_LKA: 8 XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEER_REQUEST : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 6|6@0+ (1,0) [0|63] "" XXX
+ SG_ SET_ME_1 : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ STEER_TORQUE_CMD : 15|16@0- (1,0) [0|65535] "" XXX
+
+BO_ 742 LEAD_INFO: 8 DSU
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" HCU
+ SG_ LEAD_REL_SPEED : 23|12@0- (0.025,0) [-100|100] "m/s" HCU
+ SG_ LEAD_LONG_DIST : 7|13@0+ (0.05,0) [0|300] "m" HCU
+
+BO_ 835 ACC_CONTROL: 8 DSU
+ SG_ ACCEL_CMD : 7|16@0- (0.001,0) [-20|20] "m/s2" HCU
+
+BO_ 1556 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 29|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 37 STEER_ANGLE_SENSOR: 8 XXX
+ SG_ STEER_ANGLE : 3|12@0- (1.5,0) [-500|500] "deg" XXX
+ SG_ STEER_FRACTION : 39|4@0- (0.1,0) [-0.7|0.7] "deg" XXX
+ SG_ STEER_RATE : 35|12@0- (1,0) [-2000|2000] "deg/s" XXX
+
+BO_ 467 PCM_CRUISE_2: 8 XXX
+ SG_ MAIN_ON : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ LOW_SPEED_LOCKOUT : 14|2@0+ (1,0) [0|3] "kph" XXX
+ SG_ SET_SPEED : 23|8@0+ (1,0) [0|255] "kph" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 921 PCM_CRUISE_SM: 8 XXX
+ SG_ MAIN_ON : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ CRUISE_CONTROL_STATE : 11|4@0+ (1,0) [0|15] "" XXX
+ SG_ UI_SET_SPEED : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 951 ESP_CONTROL: 8 ESP
+ SG_ TC_DISABLED : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1042 LKAS_HUD: 8 XXX
+ SG_ BARRIERS : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ RIGHT_LINE : 3|2@0+ (1,0) [0|3] "" XXX
+ SG_ LEFT_LINE : 5|2@0+ (1,0) [0|3] "" XXX
+ SG_ SET_ME_1 : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ LDA_ALERT : 9|2@0+ (1,0) [0|3] "" XXX
+ SG_ TWO_BEEPS : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ ADJUSTING_CAMERA : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ LDA_MALFUNCTION : 15|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1553 UI_SEETING: 8 XXX
+ SG_ UNITS : 26|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 1568 SEATS_DOORS: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FL : 45|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 42|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 44|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 452 POWERTRAIN: 8 XXX
+ SG_ ENGINE_RPM : 7|16@0+ (1,0) [0|65535] "rpm" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _comma.dbc starts here";
+CM_ "Imported file _honda_common.dbc starts here";
+CM_ SG_ 304 "Seems to be platform-agnostic";
+CM_ SG_ 316 "Should exist on Nidec";
+CM_ SG_ 420 BRAKE_HOLD_RELATED "On when Brake Hold engaged";
+CM_ SG_ 490 LONG_ACCEL "wheel speed derivative, noisy and zero snapping";
+CM_ SG_ 773 PASS_AIRBAG_ON "Might just be indicator light";
+CM_ SG_ 773 PASS_AIRBAG_OFF "Might just be indicator light";
+CM_ SG_ 780 CRUISE_SPEED "255 = no speed";
+CM_ SG_ 780 PCM_SPEED "Used by Nidec";
+CM_ SG_ 780 PCM_GAS "Used by Nidec";
+CM_ SG_ 804 CRUISE_SPEED_PCM "255 = no speed";
+
+CM_ "Imported file _nidec_common.dbc starts here";
+CM_ SG_ 506 AEB_REQ_1 "set for duration of suspected AEB event";
+CM_ SG_ 506 COMPUTER_BRAKE_ALT "Used by dual-can Nidec";
+CM_ SG_ 506 BRAKE_PUMP_REQUEST_ALT "Used by dual-can Nidec";
+CM_ SG_ 829 BEEP "beeps are pleasant, chimes are for warnngs etc...";
+
+CM_ "Imported file _steering_sensors_b.dbc starts here";
+CM_ "honda_odyssey_exl_2018.dbc starts here";
+
+CM_ SG_ 419 GEAR "10 = reverse, 11 = transition";
+CM_ SG_ 780 CRUISE_SPEED "255 = no speed";
+CM_ SG_ 806 REVERSE_LIGHT "Might be reverse gear selected and not the lights";
+
+VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+VAL_ 891 WIPERS 4 "High" 2 "Low" 0 "Off";
+
+
+VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal";
+
+
+VAL_ 829 BEEP 3 "single_beep" 2 "triple_beep" 1 "repeated_beep" 0 "no_beep";
+
+
+VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P";
+VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P";
+VAL_ 419 GEAR_SHIFTER 2 "S" 32 "D" 16 "N" 8 "R" 4 "P";
+VAL_ 419 GEAR 26 "S" 20 "D" 19 "N" 18 "R" 17 "P";
+VAL_ 545 ECON_ON_2 0 "off" 3 "on";
+VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none";
+VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none";

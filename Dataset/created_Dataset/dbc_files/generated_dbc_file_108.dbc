@@ -1,0 +1,123 @@
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 272 TCU_Data1: 8 TCU
+ SG_ TorqueRequest1 : 15|8@0+ (1,0) [0|255] ""  ABS,ESP,ECU
+ SG_ TorqueRequest2 : 31|8@0+ (1,0) [0|255] ""  ABS,ESP,ECU
+ SG_ OutputShaftSpeed : 55|16@0+ (1,0) [0|65535] "rpm"  ABS,ESP,ECU
+
+BO_ 288 ESP_Data1: 8 ESP
+ SG_ ABD_Active : 4|1@0+ (1,0) [0|1] "yes/no"  ECU,TCU
+ SG_ TorqueRequestFast : 15|8@0+ (1,0) [0|255] ""  ECU,TCU
+ SG_ TorqueRequestSlow : 31|8@0+ (1,0) [0|255] ""  ECU,TCU
+
+BO_ 384 SAS_Data: 8 SAS
+ SG_ SteeringAngle : 0|16@1- (0.1,0) [-3276.8|3276.7] "yes/no"  ECU,TCU
+ SG_ SteeringSpeed : 16|8@1+ (1,0) [0|255] ""  ECU,TCU
+
+BO_ 416 ECU_Data1: 8 ECU
+ SG_ RPM : 15|16@0+ (1,0) [0|65535] "rpm"  ABS,ESP,TCU
+ SG_ TorqueResponse : 31|8@0+ (1,0) [0|255] ""  ABS,ESP,TCU
+ SG_ TorqueLost : 39|8@0+ (1,0) [0|255] ""  ABS,ESP,TCU
+ SG_ APP : 47|8@0+ (1,0) [0|102] ""  ABS,ESP,TCU
+ SG_ TorqueRequest : 63|8@0+ (1,0) [0|255] ""  ABS,ESP,TCU
+
+BO_ 448 ECU_Data2: 8 ECU
+ SG_ TPS : 23|8@0+ (1,0) [0|100] ""  ABS,ESP,TCU
+
+BO_ 640 ECU_Data3: 8 ECU
+ SG_ BrakeActive : 18|1@0+ (1,0) [0|1] "yes/no"  ABS,ESP,TCU
+ SG_ KickdownActive : 20|1@0+ (1,0) [0|1] "yes/no"  ABS,ESP,TCU
+ SG_ CruiseActive : 22|1@0+ (1,0) [0|1] "yes/no"  ABS,ESP,TCU
+
+BO_ 736 TCU_Data2: 8 TCU
+ SG_ TOT : 31|8@0- (1,-40) [-40|215] ""  ECU
+ SG_ InputShaftSpeed : 47|16@0+ (1,0) [0|65535] "rpm"  ECU
+
+BO_ 768 ABS_WheelSpeed: 8 ABS
+ SG_ FrontLeftWheelSpeed : 5|14@0+ (0.112,0) [0|255] "km/h"  ECU,TCU
+ SG_ FrontLeftWheelErrorFlag : 7|1@0+ (1,0) [0|1] ""  ECU,TCU
+ SG_ FrontRightWheelSpeed : 21|14@0+ (0.112,0) [0|255] "km/h"  ECU,TCU
+ SG_ FrontRightWheelErrorFlag : 23|1@0+ (1,0) [0|1] ""  ECU,TCU
+ SG_ RearLeftWheelSpeed : 37|14@0+ (0.112,0) [0|255] "km/h"  ECU,TCU
+ SG_ RearLeftWheelErrorFlag : 39|1@0+ (1,0) [0|1] ""  ECU,TCU
+ SG_ RearRightWheelSpeed : 53|14@0+ (0.112,0) [0|255] "km/h"  ECU,TCU
+ SG_ RearRightWheelErrorFlag : 55|1@0+ (1,0) [0|1] ""  ECU,TCU
+
+BO_ 792 ESP_Data2: 8 ESP
+ SG_ ABS_Active : 12|1@0+ (1,0) [0|1] "yes/no"  ECU,TCU
+ SG_ ESP_Off : 20|1@0+ (1,0) [0|1] "yes/no"  ECU,TCU
+ SG_ ESP_Active : 21|1@0+ (1,0) [0|1] "yes/no"  ECU,TCU
+
+BO_ 992 TCU_Data3: 8 TCU
+ SG_ CurrentGear : 11|4@0+ (1,0) [0|15] ""  ECU
+ SG_ SelectorPosition : 18|3@0+ (1,0) [0|7] ""  ECU
+ SG_ AutoNeutralActive : 26|1@0+ (1,0) [0|1] "yes/no"  ECU
+ SG_ WinterModeActive : 29|1@0+ (1,0) [0|1] "yes/no"  ECU
+ SG_ SportModeActive : 30|1@0+ (1,0) [0|1] "yes/no"  ECU
+ SG_ TCC_State : 37|2@0+ (1,0) [0|2] ""  ECU
+
+BO_ 1472 ECU_Data4: 8 ECU
+ SG_ ECT : 15|8@0- (1,-40) [-40|215] ""  TCU
+ SG_ IAT : 47|8@0- (1,-40) [-40|215] ""  TCU
+
+
+
+BU_: CLOCK HUD H_U DATC CCP KMA_TMU CUBIS TMU IPM RSE_R RRC CGW RSE_L AMP EDT SWRC IBOX CLU FHCU ASD MON AVM KBD
+
+
+CM_ SG_ 357 GEAR "13P, 26R, 13N, 24D";
+CM_ SG_ 605 PED_BRAKE "3: no brake, 4: brake";
+CM_ SG_ 605 BRAKE_WARNING "Flashing brake warning and audible alert for potential forward collision";
+CM_ SG_ 579 STEERING_ANGLE "steering angle aligns with 0.022 factor and -45.06 offset";
+CM_ SG_ 863 SPEED_SIGN "speed limit in MPH";
+CM_ SG_ 863 SPEED_SIGN_CAM "1: The speed limit is recognized by the camera. 0: speed limit is map based or is not available";
+CM_ SG_ 863 STOP_SIGN "value 9 when stop sign is active";
+CM_ SG_ 1157 SBS_WARNING_DISTANCE "1 far, 2 mid, 3 near";
+CM_ SG_ 1157 SBS_SCBC "1 off, 2 on";
+CM_ SG_ 1157 LKAS_ASSIT_TIMING "1 at, 0 before";
+CM_ SG_ 1157 LKAS_SENSETIVITY "0 low, 1 high";
+CM_ SG_ 1157 LANEE_DEPARTURE_ALERT "1 off, 2 on";
+CM_ SG_ 1157 WARNING "1 Rare, 0 often";
+CM_ SG_ 1088 LANE_LINES "0 LKAS disabled, 1 no lines, 2 two lines, 3 left line, 4 right line";
+CM_ SG_ 1088 TJA "2: crz not active,  3: TJA not allowed,  4: TJA allowed";
+CM_ SG_ 1088 TJA_TRANSITION "3: if TJA signal is 3, otherwise set to 0";
+CM_ SG_ 1045 ABS_MALFUNCTION "off: 0, solid: 1, slow blink: 2, fast blink: 3";
+CM_ SG_ 120 VEHICLE_ACC_X "Vehicle acceleration of X-axis wrt. NED frame.";
+CM_ SG_ 120 VEHICLE_ACC_Y "Vehicle acceleration of Y-axis wrt. NED frame.";
+CM_ SG_ 157 CAN_OFF "Disengage Cruise if enabled, if already disabled  TURN it OFF ";
+CM_ SG_ 552 MORE_GEAR "";
+CM_ SG_ 552 GEAR "0 Shifting, 1 P, 2 R, 3 N, 4 D";
+CM_ SG_ 552 GEAR_BOX "0 P, 14 R, 1 though 6 D for speeds, 15 Shift";
+CM_ SG_ 540 HANDS_ON_STEER_WARN "0 no warning, b warning";
+CM_ SG_ 540 DISTANCE_SETTING "Radar distance 0: disabled, 1: 4 bars, 2: 3 bars, 3: 2 bars, 4: 1 bar";
+CM_ SG_ 1143 REAR_CT_ALERT "Rear Cross Traffic Alert";

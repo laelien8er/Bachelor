@@ -1,0 +1,253 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BO_ 2 STEER_ANGLE_SENSOR: 5 XXX
+ SG_ STEER_ANGLE_RATE : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_X07 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ STEER_ANGLE : 0|16@1- (-0.1,0) [0|65535] "" XXX
+ SG_ COUNTER : 32|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 361 LKAS: 8 XXX
+ SG_ MAX_TORQUE : 39|8@0+ (0.01,0) [0|255] "Nm" XXX
+ SG_ SET_0x80 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ LKA_ACTIVE : 52|1@0+ (1,0) [0|15] "" XXX
+ SG_ SET_0x80_2 : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ DESIRED_ANGLE : 7|18@0+ (-0.01,1310) [-1311.43|1310] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 389 STEER_TORQUE_SENSOR: 8 XXX
+ SG_ LKAS_ACTIVE : 37|1@0+ (1,0) [0|3] "" XXX
+ SG_ STEER_TORQUE_LKAS : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEER_ANGLE : 23|18@0+ (-0.01,1310) [0|262143] "" XXX
+ SG_ STEER_TORQUE_DRIVER : 7|12@0+ (-0.01,20.47) [0|4095] "Nm" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|127] "" XXX
+
+BO_ 645 WHEEL_SPEEDS_REAR: 8 XXX
+ SG_ WHEEL_SPEED_RR : 7|16@0+ (0.005,0) [0|65535] "KPH" XXX
+ SG_ WHEEL_SPEED_RL : 23|16@0+ (0.005,0) [0|65535] "KPH" XXX
+
+BO_ 689 PROPILOT_HUD: 8 XXX
+ SG_ LARGE_WARNING_FLASHING : 9|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING1 : 10|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING2 : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_LANE_YELLOW_FLASH : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_YELLOW_FLASH : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEAD_CAR : 14|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEAD_CAR_ERROR : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_ERROR : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_ERROR_FLASHING : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_LANE_GREEN : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_GREEN : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING3 : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_ERROR_FLASHING : 29|1@0+ (1,0) [0|1] "" XXX
+ SG_ SAFETY_SHIELD_ACTIVE : 44|1@0+ (1,0) [0|1] "" XXX
+ SG_ LARGE_STEERING_WHEEL_ICON : 61|2@0+ (1,0) [0|3] "" XXX
+ SG_ RIGHT_LANE_GREEN_FLASH : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_GREEN_FLASH : 63|1@0+ (1,0) [0|1] "" XXX
+ SG_ FOLLOW_DISTANCE : 3|2@0+ (1,0) [0|3] "" XXX
+ SG_ AUDIBLE_TONE : 47|3@0+ (1,0) [0|8] "" XXX
+ SG_ SPEED_SET_ICON : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ SMALL_STEERING_WHEEL_ICON : 42|3@0+ (1,0) [0|7] "" XXX
+ SG_ SET_SPEED : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ unknown02 : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown05 : 5|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown08 : 8|7@0+ (1,0) [0|63] "" XXX
+ SG_ unknown26 : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown28 : 28|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown31 : 31|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown43 : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown55 : 55|8@0+ (1,0) [0|63] "" XXX
+ SG_ unknown59 : 59|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 783 CRUISE_STATE: 3 XXX
+ SG_ CRUISE_ENABLED : 3|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1228 PROPILOT_HUD_INFO_MSG: 8 XXX
+ SG_ NA_HIGH_ACCEL_TEMP : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_NA_HIGH_CABIN_TEMP : 8|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_MALFUNCTION : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_MALFUNCTION : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_MALFUNCTION : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_NA_CLEAN_REAR_CAMERA : 14|1@0+ (1,0) [0|1] "" XXX
+ SG_ NA_POOR_ROAD_CONDITIONS : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ CURRENTLY_UNAVAILABLE : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ SAFETY_SHIELD_OFF : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_COLLISION_NA_FRONT_RADAR_OBSTRUCTION : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ PEDAL_MISSAPPLICATION_SYSTEM_ACTIVATED : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_NA_RADAR_OBSTRUCTION : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_DO_NOT_ENTER : 33|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_SYSTEM_OFF : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_MALFUNCTION : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_COLLISION_MALFUNCTION : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_MALFUNCTION2 : 37|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_MALFUNCTION2 : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_MALFUNCTION2 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_MSGS : 42|3@0+ (1,0) [0|7] "" XXX
+ SG_ BOTTOM_MSG : 45|3@0+ (1,0) [0|7] "" XXX
+ SG_ HANDS_ON_WHEEL_WARNING : 47|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_STEP_ON_BRAKE_NOW : 51|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_FRONT_CAMERA_OBSTRUCTED : 52|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_HIGH_CABIN_TEMP : 53|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_PROPILOT_MALFUNCTION : 54|1@0+ (1,0) [0|3] "" XXX
+ SG_ ACC_UNAVAILABLE_HIGH_CABIN_TEMP : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_NA_FRONT_CAMERA_IMPARED : 63|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown07 : 7|7@0+ (1,0) [0|127] "" XXX
+ SG_ unknown10 : 10|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown15 : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown23 : 23|3@0+ (1,0) [0|7] "" XXX
+ SG_ unknown19 : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown31 : 31|6@0+ (1,0) [0|63] "" XXX
+ SG_ unknown32 : 32|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown46 : 46|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown50 : 50|3@0+ (1,0) [0|7] "" XXX
+ SG_ unknown55 : 55|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown61 : 61|6@0+ (1,0) [0|63] "" XXX
+
+BO_ 1227 LKAS_SETTINGS: 8 XXX
+ SG_ LKAS_ENABLED : 51|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 42 SEATBELT: 8 XXX
+ SG_ SEATBELT_DRIVER_LATCHED : 27|1@1+ (1,0) [0|3] "" XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown2 : 31|4@0+ (1,0) [0|15] "" XXX
+ SG_ unknown3 : 24|2@1+ (1,0) [0|3] "" XXX
+ SG_ unknown1 : 7|24@0+ (1,0) [0|16777215] "" XXX
+ SG_ unknown4 : 39|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 460 BRAKE_PEDAL: 8 XXX
+ SG_ BRAKE_PEDAL : 7|8@0+ (1,0) [0|256] "" XXX
+
+BO_ 569 CRUISE_THROTTLE: 8 XXX
+ SG_ GAS_PEDAL_INVERTED : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ GAS_PEDAL : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ CRUISE_AVAILABLE : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ unsure1 : 23|6@0+ (1,0) [0|63] "" XXX
+ SG_ unsure2 : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ unsure3 : 31|2@0+ (1,0) [0|3] "" XXX
+ SG_ NO_BUTTON_PRESSED : 29|1@0+ (1,0) [0|1] "" XXX
+ SG_ RES_BUTTON : 28|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_BUTTON : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ FOLLOW_DISTANCE_BUTTON : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ CANCEL_BUTTON : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_BUTTON : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ USER_BRAKE_PRESSED : 37|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 32|2@1+ (1,0) [0|3] "" XXX
+ SG_ unsure5 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ unsure6 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ unsure7 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 640 CANCEL_MSG: 8 XXX
+  SG_ CANCEL_SEATBELT : 1|1@0+ (1,0) [0|1] "" XXX
+  SG_ NEW_SIGNAL_1 : 7|6@0+ (1,0) [0|63] "" XXX
+  SG_ NEW_SIGNAL_2 : 0|1@0+ (1,0) [0|1] "" XXX
+  SG_ NEW_SIGNAL_3 : 15|56@0+ (1,0) [0|72057594037927940] "" XXX
+
+BO_ 644 WHEEL_SPEEDS_FRONT: 8 XXX
+ SG_ WHEEL_SPEED_FR : 7|16@0+ (0.005,0) [0|65535] "KPH" XXX
+ SG_ WHEEL_SPEED_FL : 23|16@0+ (0.005,0) [0|65535] "KPH" XXX
+
+BO_ 852 ESP: 8 XXX
+ SG_ ESP_DISABLED : 38|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 853 HUD_SETTINGS: 8 XXX
+ SG_ SPEED_MPH : 37|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 856 LIGHTS: 8 XXX
+ SG_ LEFT_BLINKER : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_BLINKER : 18|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1057 GEARBOX: 3 XXX
+ SG_ GEAR_SHIFTER : 5|3@0+ (1,0) [0|255] "" XXX
+
+BO_ 1549 DOORS_LIGHTS: 8 XXX
+ SG_ DOOR_OPEN_FL : 3|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 6|1@0+ (1,0) [0|1] "" XXX
+
+BU_: AFS BSR CGW CSR DS1 FCM FRD KSS MAV SCS Vector__XXX
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _subaru_preglobal_2015.dbc starts here";
+CM_ SG_ 320 Off_Throttle_2 "Less sensitive";
+CM_ SG_ 320 Throttle_Body "Throttle related";
+CM_ SG_ 328 Gear "15 = P, 14 = R, 0 = N, 1-6=gear";
+CM_ SG_ 328 Gear_2 "15 = P, 14 = R, 0 = N, 1-6=gear";
+CM_ SG_ 353 Cruise_Button "1 = main, 2 = set shallow, 3 = set deep, 4 = resume shallow, 5 resume deep";
+CM_ SG_ 354 RPM "20hz version of Transmission_Engine under Transmission";
+CM_ SG_ 359 Sig1Right_Depart "right depart, hill steep and seatbelt disengage";
+CM_ SG_ 359 LKAS_Inactive_2017 "1 when not steering, 0 when lkas steering";
+CM_ SG_ 359 Sig1Right_Depart_Front "object in front, right depart, hill steep and seatbelt disengage alert ";
+CM_ SG_ 359 Left_Depart_Front "warning after acceleration into car in front and left depart";
+CM_ SG_ 359 Sig1All_Depart "Left and right depart";
+CM_ SG_ 359 Sig2All_Depart "Left and right depart";
+CM_ SG_ 359 All_depart_2015 "always 1 on 2017";
+CM_ SG_ 604 R_APPROACHING "Faster car approaching in far right lane";
+CM_ SG_ 604 L_APPROACHING "Faster car approaching in far left lane";
+CM_ SG_ 604 R_RCTA "Rear cross traffic alert, only when in R gear";
+CM_ SG_ 604 L_RCTA "Rear cross traffic alert, only when in R gear";
+CM_ SG_ 642 COUNTER "Affected by signals";
+CM_ SG_ 642 SEATBELT_FL "Driver seatbelt";
+CM_ SG_ 880 Steering_Voltage_Flat "receives later than 371";
+CM_ SG_ 977 UNITS "0 = Metric, 1 = Imperial";
+
+CM_ "subaru_outback_2019.dbc starts here";
+
+CM_ SG_ 358 Disengage_Alert "seatbelt and steep hill disengage";
+CM_ SG_ 358 Cruise_Fault "No engagement until restart";
+VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+VAL_ 891 WIPERS 4 "High" 2 "Low" 0 "Off";
+
+
+VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal";
+
+
+VAL_ 829 BEEP 3 "single_beep" 2 "triple_beep" 1 "repeated_beep" 0 "no_beep";
+
+
+VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P";
+VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P";
+VAL_ 419 GEAR_SHIFTER 2 "S" 32 "D" 16 "N" 8 "R" 4 "P";
+VAL_ 419 GEAR 26 "S" 20 "D" 19 "N" 18 "R" 17 "P";
+VAL_ 545 ECON_ON_2 0 "off" 3 "on";
+VAL_ 662 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none";
+VAL_ 662 CRUISE_SETTING 3 "distance_adj" 2 "tbd" 1 "lkas_button" 0 "none";

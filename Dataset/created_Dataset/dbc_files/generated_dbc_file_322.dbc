@@ -1,0 +1,276 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 544 a_1: 8 XXX
+ SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
+ SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
+ SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
+ SG_ sig2 : 33|10@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 576 b_1: 8 XXX
+ SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ sig1 : 15|16@0+ (1,0) [0|65535] "" XXX
+ SG_ sig2 : 31|16@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 47|12@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 608 a_2: 8 XXX
+ SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
+ SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
+ SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
+ SG_ sig2 : 33|10@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 640 b_2: 8 XXX
+ SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ sig1 : 15|16@0+ (1,0) [0|65535] "" XXX
+ SG_ sig2 : 31|16@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 47|12@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 644 a_3: 8 XXX
+ SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
+ SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
+ SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
+ SG_ sig2 : 33|10@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 648 b_3: 8 XXX
+ SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ sig1 : 15|16@0+ (1,0) [0|65535] "" XXX
+ SG_ sig2 : 31|16@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 47|12@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 652 a_4: 8 XXX
+ SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
+ SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
+ SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
+ SG_ sig2 : 33|10@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 656 b_4: 8 XXX
+ SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ sig1 : 15|16@0+ (1,0) [0|65535] "" XXX
+ SG_ sig2 : 31|16@0+ (1,0) [0|255] "" XXX
+ SG_ zeros : 47|12@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 512 unknown_200: 8 XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ increasing : 31|16@0+ (1,0) [0|255] "" XXX
+ SG_ zeros_0 : 3|12@0+ (1,0) [0|63] "" XXX
+ SG_ zeros_1 : 47|12@0+ (1,0) [0|63] "" XXX
+ SG_ status0 : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ unknown_0 : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 514 unknown_202: 8 XXX
+ SG_ COUNTER : 43|4@0+ (1,0) [0|15] "" XXX
+ SG_ sig3 : 31|8@0+ (1,0) [0|65535] "" XXX
+ SG_ increasing : 39|12@0+ (1,0) [0|15] "" XXX
+
+BO_ 706 c_1: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+
+BO_ 708 c_2: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 710 c_3: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 712 c_4: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 714 c_5: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 716 c_6: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 718 c_7: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 720 c_8: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 722 c_9: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 724 c_10: 8 XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-1000) [0|2047] "m" XXX
+ SG_ LONG_DIST : 34|11@0+ (0.073,0) [0|255] "m" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 674 d_1: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 676 d_2: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 678 d_3: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 680 d_4: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 682 d_5: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 684 d_6: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 686 d_7: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 688 d_8: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 690 d_9: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 692 d_10: 8 XXX
+ SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
+
+BO_ 672 NEW_MSG_5: 8 XXX
+ SG_ NEW_SIGNAL_1 : 9|10@0+ (1,0) [0|1023] "" XXX
+ SG_ NEW_SIGNAL_2 : 45|10@0+ (1,0) [0|1023] "" XXX
+
+
+
+
+BU_: XXX DSU HCU EPS IPAS CGW BGM
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+VAL_ 295 GEAR 0 "P" 1 "R" 2 "N" 3 "D" 4 "B";
+VAL_ 466 CRUISE_STATE 11 "timer_3sec" 10 "adaptive click down" 9 "adaptive click up" 8 "adaptive engaged" 7 "standstill" 6 "non-adaptive click up" 5 "non-adaptive click down" 4 "non-adaptive hold down" 3 "non-adaptive hold up" 2 "non-adaptive being engaged" 1 "non-adaptive engaged" 0 "off";
+VAL_ 467 LOW_SPEED_LOCKOUT 2 "low speed locked" 1 "ok";
+VAL_ 467 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 614 STATE 3 "enabled" 1 "disabled";
+VAL_ 614 DIRECTION_CMD 3 "right" 2 "center" 1 "left";
+VAL_ 643 STATE 0 "normal" 1 "adaptive_cruise_control" 3 "emergency_braking";
+VAL_ 835 ACC_TYPE 2 "permanent low speed lockout" 1 "ok";
+VAL_ 835 ACC_MALFUNCTION 1 "faulted" 0 "ok";
+VAL_ 835 ACC_CUT_IN 1 "CUT-IN Detected" 0 "clear";
+VAL_ 835 ALLOW_LONG_PRESS 2 "set speed increase by 5 speed units regardless" 1 "set speed increase by 1 speed unit on short press, 5 speed units on long press";
+VAL_ 865 CLUTCH_RELEASED 0 "clutch pressed any amount" 1 "clutch released"
+VAL_ 921 CRUISE_CONTROL_STATE 2 "disabled" 11 "hold" 10 "hold_waiting_user_cmd" 6 "enabled" 5 "faulted";
+VAL_ 956 SPORT_ON 0 "off" 1 "on";
+VAL_ 956 GEAR 0 "D" 1 "S" 8 "N" 16 "R" 32 "P";
+VAL_ 956 SPORT_GEAR_ON 0 "off" 1 "on";
+VAL_ 956 SPORT_GEAR 1 "S1" 2 "S2" 3 "S3" 4 "S4" 5 "S5" 6 "S6";
+VAL_ 956 ECON_ON 0 "off" 1 "on";
+VAL_ 956 B_GEAR_ENGAGED 0 "off" 1 "on";
+VAL_ 956 DRIVE_ENGAGED 0 "off" 1 "on";
+VAL_ 1005 REVERSE_CAMERA_GUIDELINES 3 "No guidelines" 2 "Static guidelines" 1 "Active guidelines";
+VAL_ 1009 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 1041 PCS_INDICATOR 2 "PCS Faulted" 1 "PCS Turned Off By User" 0 "PCS Enabled";
+VAL_ 1041 PCS_SENSITIVITY 64 "high sensitivity"  128 "mid sensitivity" 192 "low sensitivity" 0 "off";
+VAL_ 1042 LDA_ALERT 3 "hold with continuous beep" 2 "LDA unavailable" 1 "hold" 0 "none";
+VAL_ 1042 BARRIERS 3 "left" 2 "right" 1 "both" 0 "none";
+VAL_ 1042 RIGHT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LKAS_STATUS 1 "on" 0 "off";
+VAL_ 1042 LEFT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LDA_ON_MESSAGE 2 "Lane Departure Alert Turned ON, Steering Assist Inactive" 1 "Lane Departure Alert Turned ON, Steering Assist Active" 0 "clear";
+VAL_ 1042 LDA_SA_TOGGLE  2 "steering assist off" 1 "steering assist on";
+VAL_ 1042 LDA_SENSITIVITY 2 "standard" 1 "high" 0 "undefined";
+VAL_ 1042 LDA_MESSAGES 4 "lda unavailable at this speed" 1 "lda unavailable below approx 50km/h" 0 "ok";
+VAL_ 1042 LDA_FRONT_CAMERA_BLOCKED 1 "lda unavailable" 0 "ok";
+VAL_ 1042 TAKE_CONTROL 1 "take control" 0 "ok";
+VAL_ 1042 LANE_SWAY_WARNING 3 "ok" 2 "orange please take a break" 1 "prompt would you like to take a break" 0 "ok";
+VAL_ 1042 LANE_SWAY_BUZZER 3 "ok" 2 "beep twice" 1 "beep twice" 0 "ok";
+VAL_ 1161 TSGN1 1 "speed sign" 0 "none";
+VAL_ 1161 TSGN2 1 "speed sign" 0 "none";
+VAL_ 1161 SPLSGN2 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1162 TSGN3 0 "none" 1 "speed sign" 2 "0 unlimited" 7 "unlimited" 16 "highway" 17 "no highway" 18 "motorway" 19 "no motorway" 20 "in city" 21 "outside city" 22 "pedestrian area" 23 "no pedestrian area" 65 "no overtaking left" 66 "no overtaking right" 67 "overtaking allowed again" 81 "no right turn" 97 "stop" 105 "yield" 113 "stop" 114 "yield us" 129 "no entry" 138 "no entry tss2" 145 "do not enter";
+VAL_ 1162 SPLSGN3 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1552 METER_SLIDER_LOW_BRIGHTNESS 1 "Low brightness mode, footwell lights off" 0 "Normal mode, footwell lights on";
+VAL_ 1552 METER_SLIDER_DIMMED 1 "Dimmed" 0 "Not Dimmed";
+VAL_ 1552 UNITS 1 "km (km/L)" 2 "km (L/100km)" 3 "miles (MPG US)" 4 "miles (MPG Imperial)";
+VAL_ 1553 UNITS 1 "km" 2 "miles";
+VAL_ 1556 TURN_SIGNALS 3 "none" 2 "right" 1 "left";
+VAL_ 1592 LOCK_STATUS 0 "locked" 1 "unlocked";
+
+VAL_ 610 IPAS_STATE 5 "override" 3 "enabled" 1 "disabled";

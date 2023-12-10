@@ -19,3 +19,11 @@ docker exec -it 0de381654933 /bin/bash  #container terminal öffnen
 15.11.23 
 sift workstation fehler beheben: https://www.youtube.com/watch?v=GscgY0eDZyk in virtualbox
 in vmware funktioniert ganz normal 
+
+
+Dockerfile inspoo:
+
+https://github.com/k-gomez/ctf-docker
+https://github.com/bannsec/autopsy_docker
+https://gist.github.com/jgru/eef181439fe4828b9281fae43fc9f193
+

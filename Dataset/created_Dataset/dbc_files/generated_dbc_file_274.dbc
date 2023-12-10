@@ -1,0 +1,226 @@
+VERSION ""
+
+
+BO_ 36 KINEMATICS: 8 XXX
+ SG_ ACCEL_Y : 33|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ STEERING_TORQUE : 17|10@0+ (1,-512) [0|65535] "" XXX
+ SG_ YAW_RATE : 1|10@0+ (1,-512) [0|65535] "" XXX
+
+BO_ 166 BRAKE: 8 XXX
+ SG_ BRAKE_AMOUNT : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PEDAL : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 170 WHEEL_SPEEDS: 8 XXX
+ SG_ WHEEL_SPEED_FR : 7|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_FL : 23|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RR : 39|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+ SG_ WHEEL_SPEED_RL : 55|16@0+ (0.0062,-67.67) [0|250] "mph" XXX
+
+BO_ 180 SPEED: 8 XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 47|16@0+ (0.0062,0) [0|115] "mph" XXX
+ SG_ ENCODER : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 295 GEAR_PACKET: 8 XXX
+ SG_ CAR_MOVEMENT : 39|8@0- (1,0) [0|255] "" XXX
+ SG_ COUNTER : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ GEAR : 47|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 466 PCM_CRUISE: 8 XXX
+ SG_ GAS_RELEASED : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACCEL_NET : 23|16@0- (0.001,0) [-20|20] "m/s2" XXX
+ SG_ CRUISE_STATE : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 550 BRAKE_MODULE: 8 XXX
+ SG_ BRAKE_PRESSURE : 0|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_POSITION : 16|9@0+ (1,0) [0|511] "" XXX
+ SG_ BRAKE_PRESSED : 37|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 552 ACCELEROMETER: 8 XXX
+ SG_ ACCEL_Z : 22|15@0- (1,0) [0|32767] "" XXX
+ SG_ ACCEL_X : 6|15@0- (0.001,0) [-20|20] "m/s2" XXX
+
+BO_ 560 BRAKE_MODULE2: 8 XXX
+ SG_ BRAKE_LIGHTS : 26|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 581 GAS_PEDAL: 8 XXX
+ SG_ GAS_PEDAL : 23|8@0+ (0.005,0) [0|1] "" XXX
+
+BO_ 608 STEER_TORQUE_SENSOR: 8 XXX
+ SG_ STEER_TORQUE_EPS : 47|16@0- (0.66,0) [-20000|20000] "" XXX
+ SG_ STEER_TORQUE_DRIVER : 15|16@0- (1,0) [-32768|32767] "" XXX
+ SG_ STEER_OVERRIDE : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 610 EPS_STATUS: 5 EPS
+ SG_ STATE : 3|4@0+ (1,0) [0|15] "" XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 614 STEERING_IPAS: 8 IPAS
+ SG_ STATE : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ ANGLE : 3|12@0- (1,0) [0|16777215] "" XXX
+ SG_ SET_ME_X10 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_X00_1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ DIRECTION_CMD : 38|2@0+ (1,0) [0|3] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 643 PRE_COLLISION: 8 XXX
+
+BO_ 740 STEERING_LKA: 8 XXX
+ SG_ LKA_STATE : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEER_REQUEST : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 6|6@0+ (1,0) [0|63] "" XXX
+ SG_ SET_ME_1 : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ STEER_TORQUE_CMD : 15|16@0- (1,0) [0|65535] "" XXX
+
+BO_ 742 LEAD_INFO: 8 DSU
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" HCU
+ SG_ LEAD_REL_SPEED : 23|12@0- (0.025,0) [-100|100] "m/s" HCU
+ SG_ LEAD_LONG_DIST : 7|13@0+ (0.05,0) [0|300] "m" HCU
+
+BO_ 835 ACC_CONTROL: 8 DSU
+ SG_ ACCEL_CMD : 7|16@0- (0.001,0) [-20|20] "m/s2" HCU
+
+BO_ 1556 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 29|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 37 STEER_ANGLE_SENSOR: 8 XXX
+ SG_ STEER_ANGLE : 3|12@0- (1.5,0) [-500|500] "deg" XXX
+ SG_ STEER_FRACTION : 39|4@0- (0.1,0) [-0.7|0.7] "deg" XXX
+ SG_ STEER_RATE : 35|12@0- (1,0) [-2000|2000] "deg/s" XXX
+
+BO_ 467 PCM_CRUISE_2: 8 XXX
+ SG_ MAIN_ON : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ LOW_SPEED_LOCKOUT : 14|2@0+ (1,0) [0|3] "kph" XXX
+ SG_ SET_SPEED : 23|8@0+ (1,0) [0|255] "kph" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 921 PCM_CRUISE_SM: 8 XXX
+ SG_ MAIN_ON : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ CRUISE_CONTROL_STATE : 11|4@0+ (1,0) [0|15] "" XXX
+ SG_ UI_SET_SPEED : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 951 ESP_CONTROL: 8 ESP
+ SG_ TC_DISABLED : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1042 LKAS_HUD: 8 XXX
+ SG_ BARRIERS : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ RIGHT_LINE : 3|2@0+ (1,0) [0|3] "" XXX
+ SG_ LEFT_LINE : 5|2@0+ (1,0) [0|3] "" XXX
+ SG_ SET_ME_1 : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ LDA_ALERT : 9|2@0+ (1,0) [0|3] "" XXX
+ SG_ TWO_BEEPS : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ ADJUSTING_CAMERA : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ LDA_MALFUNCTION : 15|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1553 UI_SEETING: 8 XXX
+ SG_ UNITS : 26|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 1568 SEATS_DOORS: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FL : 45|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 42|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 44|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 452 POWERTRAIN: 8 XXX
+ SG_ ENGINE_RPM : 7|16@0+ (1,0) [0|65535] "rpm" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+
+
+
+BU_: K16_BECM K73_TCIC K9_BCM K43_PSCM K17_EBCM K20_ECM K114B_HPCM NEO K124_ASCM EPB
+VAL_TABLE_ TurnSignals 2 "Right Turn" 1 "Left Turn" 0 "None" ;
+VAL_TABLE_ Intellibeam 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ HighBeamsActive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ HighBeamsTemporary 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ ACCLeadCar 1 "Present" 0 "Not Present" ;
+VAL_TABLE_ ACCCmdActive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ BrakePedalPressed 1 "Pressed" 0 "Depressed" ;
+VAL_TABLE_ DistanceButton 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ LKAButton 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ ACCButtons 6 "Cancel" 5 "Main" 3 "Set" 2 "Resume" 1 "None" ;
+VAL_TABLE_ DriveModeButton 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ PRNDL 3 "Reverse" 2 "Drive" 1 "Neutral" 0 "Park" ;
+VAL_TABLE_ ESPButton 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ DoorStatus 1 "Opened" 0 "Closed" ;
+VAL_TABLE_ SeatBeltStatus 1 "Latched" 0 "Unlatched" ;
+VAL_TABLE_ LKASteeringCmdActive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ ACCGapLevel 3 "Far" 2 "Med" 1 "Near" 0 "Inactive" ;
+VAL_TABLE_ GasRegenCmdActiveInv 1 "Inactive" 0 "Active" ;
+VAL_TABLE_ GasRegenCmdActive 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ LKATorqueDeliveredStatus 3 "Failed" 2 "Temp. Limited" 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ HandsOffSWDetectionStatus 1 "Hands On" 0 "Hands Off" ;
+VAL_TABLE_ HandsOffSWDetectionMode 2 "Failed" 1 "Enabled" 0 "Disabled" ;
+
+
+CM_ SG_ 134 LWI_Lenkradwinkel "Steering angle WITH variable ratio effect included";
+CM_ SG_ 159 EPS_HCA_Status "Status of Heading Control Assist feature";
+CM_ SG_ 159 EPS_Lenkmoment "Steering input by driver, torque";
+CM_ SG_ 159 EPS_VZ_Lenkmoment "Steering input by driver, direction";
+CM_ SG_ 159 EPS_Berechneter_LW "Raw steering angle, degrees";
+CM_ SG_ 159 EPS_VZ_BLW "Raw steering angle, direction";
+CM_ SG_ 173 COUNTERXX "Message not renamed to COUNTER because J533 rate-limiting makes it look like messages are being lost";
+CM_ SG_ 294 HCA_01_Vib_Freq "Frequenz der Lenkradvibration";
+CM_ SG_ 294 HCA_01_LM_Offset "Von HCA angefordertes Lenkmoment (Betrag)";
+CM_ SG_ 294 EA_ACC_Sollstatus "Status-Anforderung ACC von Emergency Alert. Statuswechsel bei Flanke. Solange Wert=1, wird EA_ACC_Wunschgeschwindigkeit übernommen. Wert=2 führt zu Zustand ¿ACC_GRA_passiv¿";
+CM_ SG_ 294 EA_Ruckprofil "Emergency Alert Anforderung an ESP, welcher Ruck verwendet werden soll. Eine Umsetzung der Ruckanforderung im ESP erfolgt nur mit gesetztem Bit 'EA_Ruckfreigabe'.";
+CM_ SG_ 294 HCA_01_Sendestatus "Gibt den Sendestatus der HCA_01 an (notwendig für IL-Unterstützung)";
+CM_ SG_ 294 HCA_01_LM_OffSign "Vorzeichen des HCA-Lenkmoments";
+CM_ SG_ 294 HCA_01_Status_HCA "Statusinformation vom HCA und Manoevrierassistent für Handshakemechanismus mit der Lenkung";
+CM_ SG_ 294 HCA_01_Vib_Amp "Momentenamplitude der Lenkradvibration";
+CM_ SG_ 294 EA_Ruckfreigabe "Emergency Alert Freigabit für die Warnruck-Anforderung an das ESP";
+CM_ SG_ 294 EA_ACC_Wunschgeschwindigkeit "Emergency Alert Anforderung neue Wunschgeschwindigkeit";
+CM_ SG_ 302 ACC_Hold_Request "Active request for ABS brake hold in ACC_Hold_Type";
+CM_ SG_ 302 ACC_Boost_Request "Hybrid engine start related";
+CM_ SG_ 302 ACC_Freewheel_Request "Active request for DSG sailing/coasting in ACC_Freewheel_Type";
+CM_ SG_ 302 ACC_Hold_Release "Request to ABS to release brake hold";
+CM_ SG_ 302 ACC_Accel_Secondary "Target acceleration of the secondary controller";
+CM_ SG_ 302 ACC_Accel_TSK "Mirror of request to TSK to implement a target acceleration";
+CM_ SG_ 870 Hazard_Switch "Four-way flashers active";
+CM_ SG_ 870 Comfort_Signal_Left "Comfort turn signal active, left";
+CM_ SG_ 870 Comfort_Signal_Right "Comfort turn signal active, right";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Fast_Send_Rate_Active "CAN message send rate";
+CM_ SG_ 919 LDW_DLC "Probable DLC (distance to line crossing)";
+CM_ SG_ 919 LDW_TLC "Probable TLC (time to line crossing)";
+CM_ SG_ 919 LDW_Unknown "Might be a steering pressed / driver active flag";
+CM_ SG_ 919 Alert_Message "Static table of alert messages to be invoked in the instrument cluster, some with or without beeps, 0 = no current message";
+CM_ SG_ 919 LDW_Direction "Left/right indicator for DLC and TLC";
+CM_ SG_ 919 Right_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Left_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Kombi_Lamp_Orange "Enables orange LDW light in instrument cluster";
+CM_ SG_ 919 Kombi_Lamp_Green "Enables green LDW light in instrument cluster";
+CM_ SG_ 780 Folgefahrt "Following another vehicle";
+CM_ SG_ 780 SetAbstand "Set following distance";
+CM_ SG_ 780 Abstand "Following distance";
+CM_ SG_ 780 SetSpeed "ACC set speed";
+CM_ SG_ 391 GearPosition "Traditional PRND plus B-mode aggressive regen, B-mode mapped to Drive";
+CM_ SG_ 960 ZAS_Kl_15 "Indicates ignition on";
+CM_ SG_ 1720 KBI_BCmE_aktiv "Anzeige BCmE aktiv (BCmE-Screen oder Einsparhinweis in der Anzeige)";
+CM_ SG_ 1720 KBI_Max_Tankinhalt "Mitteilung des maximalen Tankinhalts an das Reichweitenmodul";
+CM_ SG_ 1720 KBI_Nachtanken_erkannt "Statusinformation Nachtankmodus";
+CM_ SG_ 1720 KBI_Reifenumfang "Mittlerer Radumfang aus der K-Zahl gerechnet in Millimeter.  Byte 2 Bit 5,4 reserviert, Byte 2 Bit 3..0 und Byte 1 Bit 7..0; Wertebereich 0..4096 mm
+";
+CM_ SG_ 1720 KBI_Reifenumfang_Sekundaer "Fahrzeuge mit unterschiedlichen Reifenumfängen Vorderachse / Hinterachse:
+
+Primärachse: KBI_Reifenumfang
+Sekundärachse: KBI_Reifenumfang_Sekundaer
+";
+CM_ SG_ 1720 KBI_Sparhinweis_quittiert "angezeigter Sparhinweis ist quittiert. Signal wird nach zwei Sendebotschaften wieder auf '0' gesetzt.";
+CM_ SG_ 1720 KBI_Tankfuellstand_Prozent "Tankfüllstand in %";
+CM_ SG_ 1720 KBI_Tankinhalt_hochaufl "angezeigter Tankinhalt hochauflösend zur Restreichweitenberechnung";
+CM_ SG_ 1720 KBI_Variante "Zeigt an ob es sich um ein konventionelles Zeiger-Kombiinstrument handelt oder um eine Volldisplay-Kombiinstrument";
+CM_ SG_ 1720 KBI_Variante_USA "In diesem Signal wird die HW-Variante des Kombis ausgegeben, ACC plausibilisiert auf dieses Signal hin seine US-Codierung";
+
+
+VAL_ 147 Gear_State 4 "D" 2 "N" 1 "R" 0 "P" ;
+

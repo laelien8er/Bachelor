@@ -1,0 +1,410 @@
+VERSION ""
+
+
+BO_ 1280 RADAR_TRACK_500: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1281 RADAR_TRACK_501: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1282 RADAR_TRACK_502: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1283 RADAR_TRACK_503: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1284 RADAR_TRACK_504: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1285 RADAR_TRACK_505: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1286 RADAR_TRACK_506: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1287 RADAR_TRACK_507: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1288 RADAR_TRACK_508: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1289 RADAR_TRACK_509: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1290 RADAR_TRACK_50a: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1291 RADAR_TRACK_50b: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1292 RADAR_TRACK_50c: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1293 RADAR_TRACK_50d: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1294 RADAR_TRACK_50e: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1295 RADAR_TRACK_50f: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1296 RADAR_TRACK_510: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1297 RADAR_TRACK_511: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1298 RADAR_TRACK_512: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1299 RADAR_TRACK_513: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1300 RADAR_TRACK_514: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1301 RADAR_TRACK_515: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1302 RADAR_TRACK_516: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1303 RADAR_TRACK_517: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1304 RADAR_TRACK_518: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1305 RADAR_TRACK_519: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1306 RADAR_TRACK_51a: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1307 RADAR_TRACK_51b: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1308 RADAR_TRACK_51c: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1309 RADAR_TRACK_51d: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BO_ 1310 RADAR_TRACK_51e: 8 RADAR
+ SG_ UNKNOWN_1 : 7|8@0- (1,0) [-128|127] "" XXX
+ SG_ AZIMUTH : 12|10@0- (0.2,0) [-102.4|102.2] "" XXX
+ SG_ STATE : 15|3@0+ (1,0) [0|7] "" XXX
+ SG_ LONG_DIST : 18|11@0+ (0.1,0) [0|204.7] "" XXX
+ SG_ REL_ACCEL : 33|10@0- (0.02,0) [-10.24|10.22] "" XXX
+ SG_ ZEROS : 37|4@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ STATE_3 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 53|14@0- (0.01,0) [-81.92|81.92] "" XXX
+ SG_ STATE_2 : 55|2@0+ (1,0) [0|3] "" XXX
+    
+BU_: ADAS RADAR NEO XXX
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _subaru_global.dbc starts here";
+CM_ SG_ 64 Throttle_Combo "Throttle Cruise + Pedal";
+CM_ SG_ 313 Brake_Lights "Driver or Cruise Brake on";
+CM_ SG_ 544 Cruise_Brake_Lights "1 = switch on brake lights";
+CM_ SG_ 544 Brake_Pressure "Winds down after cruise disabled. Also can be non-zero when likely preparing for AEB";
+CM_ SG_ 544 Signal3 "Usually goes to 2 if AEB_Status is 4";
+CM_ SG_ 544 AEB_Status "Occasionally is 4 instead of 8 while Brake_Pressure is non-zero, unsure why";
+CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
+CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
+CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
+CM_ SG_ 801 Far_Distance "1=0-5m, 2=5-10m, 3=10-15m, 4=15-20m, 5=20-25m, 6=25-30m, 7=30-35m, 8=35-40m, 9=40-45m, 10=45-50m, 11=50-55m, 12=55-60m, 13=60-65m, 14=65-70m, 15=75m+";
+CM_ SG_ 801 LKAS_State_Msg "1 = LKAS_Off_Sharp_Curve, 2 = Keep_Hands_On_Steering_wheel_disabled, 3 = LKAS_Off, 4 = LKAS_Off_Too_Slow, 5 = LKAS_Off_Too_Fast";
+CM_ SG_ 801 Cruise_State_Msg "1 = Cruise_Off_Steep_Slope, 2 = Cruise_lvl1_eco, 3 = Cruise_lvl2_comfort, 4 = Cruise_off_empty_reason, 5 = Cruise_off, 6 = Cruise_Unable_to_set, 7 = Cruise_Unable_to_set_brakes_applied, 8 = Eyesight_not_ready, 9 = Cruise_lvl3_standard, 10 = Cruise_lvl4_dynamic, 11 = Cruise_Unable_to_set_steep_slope";
+CM_ SG_ 801 Cruise_Soft_Disable "Eyesight soft disable (eg direct sunlight)";
+CM_ SG_ 801 Cruise_Status_Msg "1 = Disabled_Bad_Visibility, 2 = Disabled_Check_Manual";
+CM_ SG_ 802 LKAS_ACTIVE "Turns on the full LKAS dash display";
+CM_ SG_ 802 LKAS_Alert_Msg "1 = Keep_Hands_On_Wheel, 6 = Pre_Collision_Braking, 7 = Keep_Hands_On_Wheel_Off";
+CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Warning, 4 = Throttle_Management_Activated_Alert, 5 = Pre_Collision_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert, 18 = Keep_Hands_On_Steering_Alert, 24 = Audio_Beep, 25 = Audio_Lead_Car_Change, 26 = Audio_ACC_Disengaged, 27 = Audio_LKAS_disabled, 28 = Audio_Ding_Ding, 30 = Audio_Repeated_Beep";
+CM_ SG_ 802 LKAS_Left_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 802 LKAS_Dash_State "0 = Off, 1 = Ready, 2 = Active";
+CM_ SG_ 802 LKAS_Right_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 912 UNITS "0 = Metric, 1 = Imperial";
+CM_ SG_ 912 ICY_ROAD "1 = DASHLIGHT ON, 2 = WARNING, 3 = OFF";
+CM_ "subaru_global_2020_hybrid.dbc starts here";
+
+VAL_ 552 GEAR 1 "P" 2 "R" 3 "N" 4 "D" ;
+VAL_ 540 RADAR_HAS_LEAD 0 "NO LEAD" 1 "HAS LEAD" ;
+VAL_ 540 RADAR_LEAD_RELATIVE_DISTANCE 0 "NO LEAD" 1 "FARTHEST" 2 "4" 3 "3" 4 "2" 5 "NEAREST" ;
+VAL_ 1143 LEFT_BS_STATUS 0 "No object detected" 1 "Object detected in left blindspot" 2 "Object detected in left blindspot with blinker - warning"

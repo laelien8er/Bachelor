@@ -1,0 +1,35 @@
+VERSION ""
+
+
+BO_ 129 steering: 8 ElectricPowerSteering
+ SG_ SteeringAngle : 23|16@0- (1,0) [0|0] "deg" Vector__XXX
+
+BO_ 513 speed: 8 PowertrainControlModule
+ SG_ EngineRPM : 7|16@0+ (0.25,0) [0|0] "rpm" Vector__XXX
+ SG_ VehicleSpeed : 39|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ AcceleratorPos : 55|8@0+ (0.5,0) [0|0] "%" Vector__XXX
+
+BO_ 592 throttle_body: 8 PowertrainControlModule
+ SG_ IntakeAirTemperature : 31|8@0+ (1,-40) [0|0] "Cel" Vector__XXX
+ SG_ AcceleratorPedalSensorRaw : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcceleratorPedalSensorFiltered : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 658 brake_controls: 8 PowertrainControlModule
+ SG_ BrakePedalSwitch : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ParkingBrakeSwitch : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1056 coolant: 8 PowertrainControlModule
+ SG_ CoolantTemperature : 7|8@0+ (1,-40) [0|0] "Cel" Vector__XXX
+
+BO_ 1072 instrument_cluster: 8 InstrumentCluster
+ SG_ FuelLevel : 7|8@0+ (0.392156,0) [0|0] "%" Vector__XXX
+ SG_ FuelTankSensorLeft : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FuelTankSensorRight : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1200 wheel_speed: 8 AntilockBrakeSystem
+ SG_ WheelSpeedFL : 7|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedFR : 23|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedRL : 39|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeedRR : 55|16@0+ (0.01,-100) [0|0] "kph" Vector__XXX
+
+VAL_ 776 NearRangeMode 1 "Active" 0 "Inactive";

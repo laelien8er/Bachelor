@@ -1,0 +1,452 @@
+VERSION ""
+
+
+NS_ : 
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 258 STEERING: 8 XXX
+ SG_ STEERING_ANGLE : 5|14@0+ (0.5,-2048) [-2048|2047] "deg" XXX
+ SG_ STEERING_RATE : 21|14@0+ (0.5,-2048) [-2048|2047] "deg/s" XXX
+ SG_ STEERING_ANGLE_HP : 48|4@1+ (0.1,-0.4) [-0.4|0.4] "deg" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 264 ECM_1: 8 XXX
+ SG_ ENGINE_RPM : 7|16@0+ (1,0) [0|65535] "" XXX
+ SG_ ENGINE_TORQUE : 20|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ EXPECTED_ENGINE_TORQUE : 36|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 280 ECM_TRQ: 8 XXX
+ SG_ ENGINE_TORQ_MAX : 4|13@0+ (.25,-500) [-500|1547.5] "NM" XXX
+ SG_ ENGINE_TORQ_MIN : 20|13@0+ (.25,-500) [-500|1547.5] "NM" XXX
+
+BO_ 284 ESP_8: 8 XXX
+ SG_ BRK_PRESSURE : 3|12@0+ (1,0) [0|1] "" XXX
+ SG_ BRAKE_PEDAL : 19|12@0+ (1,0) [0|1] "" XXX
+ SG_ Vehicle_Speed : 39|16@0+ (0.0078125,0) [0|511.984375] "km/h" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 320 ESP_1: 8 XXX
+ SG_ Brake_Pedal_State : 2|2@1+ (1,0) [0|0] "" XXX
+ SG_ Vehicle_Speed : 33|10@0+ (0.5,0) [0|511] "km/h" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PRESSED_ACC : 6|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 344 ESP_6: 8 XXX
+ SG_ WHEEL_SPEED_FL : 5|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_FR : 21|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_RL : 37|14@0+ (0.5,0) [0|8191] "rpm" XXX
+ SG_ WHEEL_SPEED_RR : 53|14@0+ (0.5,0) [0|8191] "rpm" XXX
+
+BO_ 368 Transmission_Status: 8 XXX
+ SG_ Gear_State : 2|3@1+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 464 ORC_1: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 500 DAS_3: 8 XXX
+ SG_ ENGINE_TORQUE_REQUEST : 4|13@0+ (0.25,-500) [-500|1547.5] "Nm" XXX
+ SG_ ENGINE_TORQUE_REQUEST_MAX : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_STANDSTILL : 5|1@0+ (1,0) [0|1] ""  XXX
+ SG_ ACC_GO : 6|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_DECEL : 19|12@0+ (0.004885,-16) [-16|4] "m/s2" XXX
+ SG_ ACC_AVAILABLE : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_ACTIVE : 21|1@0+ (1,0) [0|1] "" XXX
+ SG_ DISABLE_FUEL_SHUTOFF : 23|1@1+ (1,0) [0|0] "" XXX
+ SG_ GR_MAX_REQ : 32|4@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_DECEL_REQ : 36|3@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_FAULTED : 46|2@1+ (1,0) [0|0] "" XXX
+ SG_ COLLISION_BRK_PREP : 48|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_BRK_PREP : 49|1@1+ (1,0) [0|0] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 501 DAS_4: 8 XXX
+ SG_ ACC_SET_SPEED_KPH : 15|8@0+ (1,0) [0|3] "km/h" XXX
+ SG_ ACC_SET_SPEED_MPH : 23|8@0+ (1,0) [0|3] "mph" XXX
+ SG_ ACC_DISTANCE_CONFIG_1 : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ ACC_DISTANCE_CONFIG_2 : 41|2@0+ (1,0) [0|3] "" XXX
+ SG_ SPEED_DIGITAL : 63|8@0+ (1,0) [0|255] "mph" XXX
+ SG_ ACC_STATE : 38|3@0+ (1,0) [0|7] "" XXX
+ SG_ FCW_BRAKE_ENABLED : 29|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 544 EPS_2: 8 XXX
+ SG_ LKAS_STATE : 23|4@0+ (1,0) [0|15] "" XXX
+ SG_ COLUMN_TORQUE : 2|11@0+ (1,-1024) [-1024|1023] "" XXX
+ SG_ TORQUE_OVERLAY_STATUS : 6|4@0+ (1,0) [0|15] "" XXX
+ SG_ EPS_TORQUE_MOTOR_RAW : 19|12@0+ (1,-2048) [-2048|2047] "" XXX
+ SG_ EPS_TORQUE_MOTOR : 34|11@0+ (1,-1024) [-1024|1023] "" XXX
+ SG_ LKAS_TEMPORARY_FAULT : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ AUTO_PARK_HAS_CONTROL_2 : 51|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 559 ECM_5: 8 XXX
+ SG_ Accelerator_Position : 0|8@1+ (0.4,0) [0|100] "%" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 571 CRUISE_BUTTONS: 3 XXX
+ SG_ ACC_Cancel : 0|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Distance_Dec : 1|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Accel : 2|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Decel : 3|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Resume : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ Cruise_OnOff : 6|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_OnOff : 7|1@1+ (1,0) [0|0] "" XXX
+ SG_ ACC_Distance_Inc : 8|1@1+ (1,0) [0|0] "" XXX
+ SG_ COUNTER : 15|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 625 DAS_5: 8 XXX
+ SG_ FCW_STATE : 2|1@1+ (1,0) [0|0] ""  XXX
+ SG_ FCW_DISTANCE : 3|2@1+ (1,0) [0|0] ""  XXX
+ SG_ ACCFCW_MESSAGE : 12|4@1+ (1,0) [0|0] ""  XXX
+ SG_ SET_SPEED_KPH : 24|8@1+ (1,0) [0|250] "km/h"  XXX
+ SG_ WHEEL_TORQUE_REQUEST : 38|15@0+ (1,-7767) [-7767|24999] "Nm"  XXX
+ SG_ WHEEL_TORQUE_REQUEST_ACTIVE : 39|1@1+ (1,0) [0|0] ""  XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 678 DAS_6: 8 XXX
+ SG_ LKAS_ICON_COLOR : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ LKAS_LANE_LINES : 19|4@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_ALERTS : 27|4@0+ (1,0) [0|1] "" XXX
+ SG_ CAR_MODEL : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ AUTO_HIGH_BEAM_ON : 47|1@1+ (1,0) [0|0] "" XXX
+ SG_ LKAS_DISABLED : 56|1@1+ (1,0) [0|0] "" XXX
+
+BO_ 720 BSM_1: 6 XXX
+ SG_ RIGHT_STATUS : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_STATUS : 2|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 792 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ HIGH_BEAM_PRESSED : 2|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 820 BCM_1: 8 XXX
+ SG_ DOOR_OPEN_FL : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_TRUNK : 22|1@0+ (1,0) [0|1] "" XXX
+ SG_ TURN_LIGHT_LEFT : 31|1@0+ (1,0) [0|1] "" XXX
+ SG_ TURN_LIGHT_RIGHT : 30|1@0+ (1,0) [0|1] "" XXX
+ SG_ HIGH_BEAM_DISPLAY : 58|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 514 SPEED_1: 8 XXX
+ SG_ SPEED_LEFT : 7|12@0+ (0.071028,0) [0|65535] "m/s" XXX
+ SG_ SPEED_RIGHT : 23|12@0+ (0.071028,0) [0|1023] "m/s" XXX
+
+BO_ 653 BRAKE_MODULE: 2 XXX
+ SG_ BRAKE_PRESSURE : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PRESSED : 4|1@0+ (1,0) [0|4] "" XXX
+
+BO_ 746 GEAR: 5 XXX
+ SG_ PRNDL : 2|3@0+ (1,0) [0|7] "" XXX
+ SG_ GEAR_CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 31|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 736 TRIP: 8 XXX
+ SG_ COUNTER : 7|16@0+ (1,0) [0|65535] "Meters" XXX
+ SG_ COUNTER_2 : 23|16@0+ (1,0) [0|65535] "Meters" XXX
+
+BO_ 658 LKAS_COMMAND: 6 XXX
+ SG_ COUNTER : 39|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEERING_TORQUE : 2|11@0+ (1,-1024) [0|1] "" XXX
+ SG_ LKAS_CONTROL_BIT : 4|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 705 AUTO_PARK_BUTTON: 8 XXX
+ SG_ AUTO_PARK_TOGGLE_2 : 8|1@0+ (1,0) [0|1] "" XXX
+ SG_ AUTO_PARK_TOGGLE_1 : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ INCREASING_UNKNOWN : 38|7@0+ (1,0) [0|15] "" XXX
+
+BO_ 719 AUTO_PARK_SIGNALS_1: 8 XXX
+ SG_ AUTO_PARK_UNKNOWN_1 : 7|16@0+ (1,0) [0|31] "" XXX
+
+BO_ 671 AUTO_PARK_REQUEST: 8 XXX
+ SG_ AUTO_PARK_CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ AUTO_PARK_STATUS : 7|5@0+ (1,0) [0|15] "" XXX
+ SG_ AUTO_PARK_COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ AUTO_PARK_MODE : 22|2@0+ (1,0) [0|3] "" XXX
+ SG_ AUTO_PARK_CMD : 2|11@0+ (1,-1024) [0|1] "NM" XXX
+
+BO_ 784 AUTO_PARK_LESS_INTERESTING: 8 XXX
+ SG_ INCREASING_UNKNOWN : 55|8@0+ (1,0) [0|7] "" XXX
+ SG_ AUTO_PARK_PERPENDICULAR_2 : 61|1@0+ (1,0) [0|255] "" XXX
+
+BO_ 826 AUTO_PARK_SIGNALS_3: 8 XXX
+ SG_ AUTO_PARK_HAS_CONTROL_3 : 1|1@0+ (1,0) [0|1] "" XXX
+ SG_ HUMAN_HAS_CONTROL : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ AUTO_PARK_GEAR_1 : 27|4@0+ (1,0) [0|255] "" XXX
+ SG_ AUTO_PARK_GEAR_2 : 35|4@0+ (1,0) [0|15] "" XXX
+ SG_ AUTO_PARK_GEAR_3 : 51|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 332 STEERING_2: 8 XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ ENERGY_RELATED : 39|16@0+ (1,0) [0|65535] "" XXX
+ SG_ STEER_ANGLE_2 : 7|13@0+ (0.3187251,-1307.888) [-360|360] "deg" XXX
+
+BO_ 331 BRAKE_3: 8 XXX
+ SG_ BRAKE_RELATED_3 : 7|16@0+ (1,0) [0|65535] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 608 PARKSENSE_SIGNAL: 8 XXX
+ SG_ PARKSENSE_DISABLED : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ IN_REVERSE : 10|1@0+ (1,0) [0|255] "" XXX
+ SG_ AUTO_PARK_HAS_CONTROL_1 : 16|1@0+ (1,0) [0|255] "" XXX
+ SG_ HUMAN_HAS_CONTROL : 17|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 729 LKAS_HEARTBIT: 5 XXX
+ SG_ LKAS_STATUS_OK : 31|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 288 ACCEL_RELATED_120: 7 XXX
+ SG_ COUNTER : 47|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ ACCEL : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ GAS_ENGINE_RPM_MAYBE : 31|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 257 ACCEL_RELATED_101: 5 XXX
+ SG_ ENERGY_OR_RPM : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 825 AUDIBLE_BEEP_339: 2 XXX
+ SG_ BEEP_339 : 7|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 168 ACCEL_RELATED_a8: 8 XXX
+ SG_ ACCEL_RELATED : 23|16@0+ (1,0) [0|65535] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 270 ACCEL_RELATED_10e: 8 XXX
+ SG_ ACCEL_OR_RPM : 7|16@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ ELECTRIC_MOTOR : 23|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 291 ENERGY_RELATED_123: 8 XXX
+ SG_ ENERGY_GAIN_LOSS : 18|11@0- (1,0) [0|255] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ ENERGY_SMOOTHER_CURVE : 35|12@0+ (1,0) [0|2047] "" XXX
+
+BO_ 294 ENERGY_RELATED_126: 8 XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ UNKNOWN_126_1 : 3|12@0+ (1,0) [0|4095] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ UNKNOWN_126_2 : 35|12@0+ (1,0) [0|4095] "" XXX
+ SG_ ENERGY_GAIN_LOSS_NOISY : 19|12@0+ (1,0) [0|2047] "" XXX
+
+BO_ 308 ACCEL_GAS_134: 8 XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ ACCEL_134 : 46|7@0+ (1,0) [0|127] "" XXX
+
+BO_ 532 ENERGY_RELATED_214: 8 XXX
+ SG_ NOISY_SLOWLY_DECREASING : 16|9@0+ (1,0) [0|255] "" XXX
+ SG_ ENERGY_RELATED : 0|9@0+ (1,0) [0|255] "" XXX
+
+BO_ 655 CHARGING_MAYBE_28F: 8 XXX
+ SG_ CHARGING : 1|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 660 BRAKE_RELATED_294: 8 XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PERHAPS_294 : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 764 ACCEL_RELATED_2FC: 8 XXX
+ SG_ ACCEL_2FC : 13|6@0+ (1,0) [0|255] "" XXX
+
+BO_ 816 TRACTION_BUTTON: 8 XXX
+ SG_ TRACTION_OFF : 19|1@0+ (1,0) [0|3] "" XXX
+ SG_ TOGGLE_PARKSENSE : 52|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 878 ACCEL_RELATED_36E: 8 XXX
+ SG_ ACCEL_OR_RPM_2 : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ ACCEL_OR_RPM_1 : 7|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 324 SPEED_2: 8 XXX
+ SG_ SPEED_2 : 31|16@0+ (0.01,0) [0|255] "m/s" XXX
+
+BO_ 832 UNKNOWN_340: 8 XXX
+ SG_ SPEED_DIGITAL : 63|8@0+ (1,0) [0|255] "mph" XXX
+
+BO_ 268 ACC_10c: 8 XXX
+ SG_ BRAKE_PERHAPS : 48|1@0+ (1,0) [0|3] "" XXX
+ SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BU_: RRSRR_FO LRSRR_FO CIPM_FO _DOFIMU2_FO _DOFIMU1_FO DMS_FO AMM_FO EOCM2B_IMX6_FO EOCM2B_K2_FO EOCM2B_K1_FO EOCM2A_IMX6_FO EOCM2A_K2_FO EOCM2A_K1_FO NVS_FO Dummy_FO TestTool_FO LRR_FO RFSRR_FO LFSRR_FO RSRR_FO VIS_FO EOCM_F_FO VIS2_FO
+VAL_TABLE_ vt_BooleanValues 1 "true" 0 "false" ;
+VAL_TABLE_ FrntVsnInPthVehBrkNwSt 10 "Active" 5 "Inactive" ;
+VAL_TABLE_ FrntVsnClostPedBrkNwSt 10 "Active" 5 "Inactive" ;
+VAL_TABLE_ DrvrMonSysEngSt 7 "Unused and Reserved 1" 6 "Recovering" 5 "Tracking" 4 "Searching" 3 "Video test port only" 2 "Idle" 1 "Invalid state" 0 "Does not exist or DME" ;
+VAL_TABLE_ DrvrMonEngUnrecvrFltCod 7 "Unused and Reserved 3" 6 "Unused and Reserved 2" 5 "Unused and Reserved 1" 4 "Vehicle power supply Errors" 3 "Problem with LED illuminators" 2 "Vehicle input signals Errors" 1 "Problem with imager" 0 "Ok" ;
+VAL_TABLE_ DrvrMonEngRecvrFltCod 3 "Engine is unable to find a face" 2 "Input Images too dark" 1 "Input images too bright" 0 "Ok" ;
+VAL_TABLE_ DrvrMntrSysVTP 1 "Video test port active" 0 "Video test port inactive" ;
+VAL_TABLE_ DrvrAttnStatCnfdc 3 "High" 2 "Medium" 1 "Low" 0 "Lowest" ;
+VAL_TABLE_ DrvrAttnStat 7 "Invalid" 6 "Driver is exhibiting sleep" 5 "Driver is exhibiting microsleep" 4 "Attention is Center Console" 3 "Attention is Drivers Lap" 2 "Attention is Off Road" 1 "Attention is On Road" 0 "Unknown" ;
+VAL_TABLE_ PPSMd 7 "GNSS and RTX and DR and MM" 6 "DR ONLY" 5 "GNSS and RTX and DR" 4 "GNSS and SBAS and DR" 3 "GNSS and DR" 2 "GNSS and  RTX" 1 "GNSS and SBAS" 0 "GNSS Standalone" ;
+VAL_TABLE_ AdvDrvAstMpPrfShrtAcur 3 "Accuracy Is Unknown" 2 "Lowest Accuracy" 1 "Medium Accuracy" 0 "Highest Accuracy" ;
+VAL_TABLE_ AdvDrAstMpStbRtOfWay 3 "Not Applicable" 2 "Unknown" 1 "Sub Path Has Right Of Way Over Path" 0 "Path Has Right Of Way Over Sub Path" ;
+VAL_TABLE_ AdvDrAstMpStbPrtCalRut 3 "Not Applicable" 2 "Unknown" 1 "Path From This Point On Is Part Of Calculated Route" 0 "Path From This Point On Is Not Part Of Calculated Route" ;
+VAL_TABLE_ AdvDrAstMpStbMsgTyp 7 "Unused and Reserved 2" 6 "Metadata" 5 "Profile Long" 4 "Profile Short" 3 "Stub" 2 "Segment" 1 "Position" 0 "Unused and Reserved 1" ;
+VAL_TABLE_ AdvDrAstMpStbFmOfWay 15 "Not Applicable" 14 "Pedestrian Zone" 13 "Entrance To Or Exit To Service" 12 "Entrance To Or Exit Of A Car Park" 11 "Service Road Or Frontage Road" 10 "Slip Road per Ramp" 9 "Slip Road per Ramp On A Freeway Or Controlled Access Road" 8 "Parallel Road" 7 "Unused and Reserved 2" 6 "Unused and Reserved 1" 5 "Traffic Square per Special Traffic Figure" 4 "Roundabout Circle" 3 "Single Carriageway" 2 "Multiple Carriageway Or Multiply Digitized Road" 1 "Freeway Or Controlled Access Road That Is Not A Slip Road Or Ramp" 0 "Unknown" ;
+VAL_TABLE_ AdvDrAstMpStbCmplxInsct 3 "Not Applicable" 2 "Unknown" 1 "Stub Is Part Of Complex Intersection" 0 "Stub Is Not Part Of Complex Intersection" ;
+VAL_TABLE_ AdvDrAstMpSegTunl 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Tunnel" 0 "Segment Is Not A Part Of Tunnel" ;
+VAL_TABLE_ AdvDrAstMpSegPrtCalRut 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Calculated Route" 0 "Segment Is Not Part Of Calculated Route" ;
+VAL_TABLE_ AdvDrAstMpSegMsgTyp 7 "Unused and Reserved 2" 6 "Metadata" 5 "Profile Long" 4 "Profile Short" 3 "Stub" 2 "Segment" 1 "Position" 0 "Unused and Reserved 1" ;
+VAL_TABLE_ AdvDrAstMpSegFrmOfWay 15 "Not Applicable" 14 "Pedestrian Zone" 13 "Entrance To Or Exit To Service" 12 "Entrance To Or Exit Of A Car Park" 11 "Service Road Or Frontage Road" 10 "Slip Road per Ramp" 9 "Slip Road per Ramp On A Freeway Or Controlled Access Road" 8 "Parallel Road" 7 "Unused and Reserved 2" 6 "Unused and Reserved 1" 5 "Traffic Square per Special Traffic Figure" 4 "Roundabout Circle" 3 "Single Carriageway" 2 "Multiple Carriageway Or Multiply Digitized Road" 1 "Freeway Or Controlled Access Road That Is Not A Slip Road or Ramp" 0 "Unknown" ;
+VAL_TABLE_ AdvDrAstMpSegEffSdLmtTp 7 "Not Applicable" 6 "Explicit Snow" 5 "Explicit Rain" 4 "Explicit Time Of Day" 3 "Explicit By Day" 2 "Explicit By Night" 1 "Explicit On Traffic Sign" 0 "Implicit" ;
+VAL_TABLE_ AdvDrAstMpSegDivdRd 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Divided Road" 0 "Segment Is Not Part Of Divided Road" ;
+VAL_TABLE_ AdvDrAstMpSegCmplxInsct 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Complex Intersection" 0 "Segment Is Not Part Of Complex Intersection" ;
+VAL_TABLE_ AdvDrAstMpSegBrdg 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Bridge" 0 "Segment Not Part Of Bridge" ;
+VAL_TABLE_ AdvDrAstMpSegBldUpAra 3 "Not Applicable" 2 "Unknown" 1 "Segment Is Part Of Built Up Area" 0 "Segment Is Not Part Of Built Up Area" ;
+VAL_TABLE_ AdvDrAstMpMtdtSpdUnt 1 "Miles Per Hour" 0 "Kilometers Per Hour" ;
+VAL_TABLE_ AdvDrAstMpMtdtDrvSd 1 "Driving Side Right" 0 "Driving Side Left" ;
+VAL_TABLE_ WSMR_WiFiAssnReq 3 "Unexpected Undefined Connection Behavior" 2 "Wi Fi association failed with available credentials" 1 "Failed to receive Wi Fi credentials after 255 attempts" 0 "SSID and Passphrase Request" ;
+VAL_TABLE_ StrgColCommsFlt 2 "Disabled Communications DTC" 1 "No Communications Fault" 0 "Communications Fault" ;
+VAL_TABLE_ CPMAPINFO4 1 "Hardware Or Software Error" 0 "No Hardware Or Software Error" ;
+VAL_TABLE_ AdvDrvAstMpPrfShrt2Acur 3 "Accuracy Is Unknown" 2 "Lowest Accuracy" 1 "Medium Accuracy" 0 "Highest Accuracy" ;
+VAL_TABLE_ InterLghtStat 1 "Interior Lights On" 0 "Interior Light Off" ;
+VAL_TABLE_ VehLnStatConf 2 "High Confidence" 1 "Low Confidence" 0 "No Confidence" 3 "Very High Confidence" ;
+VAL_TABLE_ VehLnStat 3 "Lane Change To Right" 2 "Lane Change To Left" 1 "Staying in Lane" 0 "Unknown" ;
+VAL_TABLE_ HrznPrvdRstRq 1 "Reset Not Required" 0 "Reset Required" ;
+VAL_TABLE_ ExptNxtTrnstnDirConf 3 "Very High Confidence" 2 "High Confidence" 1 "Low Confidence" 0 "No Confidence" ;
+VAL_TABLE_ ExptNxtTrnstnDir 7 "Reserved4" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "Traversing Middle Transition" 2 "Traversing Next Transition Right" 1 "Traversing Next Transition Left" 0 "Unknown" ;
+VAL_TABLE_ ADASISMsgTypRetrans 7 "GM System Specific" 6 "Meta Data" 5 "Profile Long" 4 "Profile Short" 3 "Stub" 2 "Segment" 1 "Position" 0 "Checksum" ;
+VAL_TABLE_ NVSysStat 7 "Needs Headlights" 6 "Temporarily Unavailable" 5 "Not Dark" 4 "Needs Service" 3 "Active" 2 "Inactive" 1 "Initializing" 0 "Unknown" ;
+VAL_TABLE_ NVSysPedWrnIndReq 3 "Unused & Reserved" 2 "Pedestrian Alert" 1 "Pedestrian Detected" 0 "None" ;
+VAL_TABLE_ NVSysPedDetCstReq 2 "On" 1 "Off" 0 "No Value" ;
+VAL_TABLE_ NVSysPedDetCsCrStVal 2 "On" 1 "Off" 0 "No Value" ;
+VAL_TABLE_ FwVsnCinCoutPotT9Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT8Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT7Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT6Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT5Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT4Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT3Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT2Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT1Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT12Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT11Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ FwVsnCinCoutPotT10Rev 2 "Right" 1 "Left" 0 "None" ;
+VAL_TABLE_ GFHBObjDirTrk8 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk7 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk6 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk5 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk4 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk3 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk2 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBObjDirTrk1 1 "Ahead Traffic" 0 "Incoming Traffic" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk8 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk7 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk6 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk5 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk4 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk3 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk2 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnRelLaneTrk1 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk8 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk7 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk6 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk5 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk4 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk3 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk2 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnMesStatTrk1 3 "Measured this cycle" 2 "Latent track not detected this cycle" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk8 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk7 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk6 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk5 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk4 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk3 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk2 3 "Confident" 2 "Speculative" 1 "Highly Speculative" 0 "Invalid" ;
+VAL_TABLE_ GFHBFwVsnCnfdncTrk1 0 "Invalid" 3 "Confident" 2 "Speculative" 1 "Highly Speculative" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev8 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev7 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev6 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev5 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev4 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev3 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev2 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car)" 0 "Unknown" ;
+VAL_TABLE_ GFHBFVsnObjTypTrkRev1 12 "Cluster Object" 11 "Child Close to Danger Zone" 10 "Pedestrian Moving Out of Danger Zone" 9 "Pedestrian Moving Into Danger Zone" 8 "Pedestrian Standing Outside Danger Zone" 7 "No Object Present" 6 "Fixed Roadside Object" 5 "Fixed Overhead Object" 4 "Pedestrian" 3 "Motorcycle/ Bicycle" 2 "Large Vehicle (Semi)" 1 "4 Wheel Vehicle (Car" 0 "Unknown" ;
+VAL_TABLE_ CRL_Cnfdnc 7 "Reserved4" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "Best" 2 "Marking Present" 1 "Weak Marking" 0 "No Lane" ;
+VAL_TABLE_ CLL_Cnfdnc 7 "Reserved4" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "Best" 2 "Marking Present" 1 "Weak Marking" 0 "No Lane" ;
+VAL_TABLE_ VBBrkCtrlSt 4 "Release Control" 3 "Hold Vehicle" 2 "Apply Brake" 1 "Decrease Torque" 0 "No Action" ;
+VAL_TABLE_ ObstacleType 6 "NO_OBJECT" 5 "OBJ_GUARDRAIL" 4 "OBJ_TUNNEL " 3 "OBJ_TRAFFIC_SIGN" 2 "OBJ_VEHICLE" 1 "OBJ_BRIDGE " 0 "OBJ_UNKNOWN" ;
+VAL_TABLE_ VpathMode 2 "Mid Hi Speed" 1 "Low Speed" 0 "Disabled" ;
+VAL_TABLE_ LaneChngStatus 2 "Lane Change Right" 1 "Lane Change Left" 0 "Idle" ;
+VAL_TABLE_ TravelDirection 3 "Other (excessive side slip)" 2 "reverse / stopped in rvrs gear" 1 "Forward / stopped in frwd gear" 0 "Unknown" ;
+VAL_TABLE_ TrueOrFalse 1 "true" 0 "false" ;
+VAL_TABLE_ ModeCommand 5 "Sensing with Reduced Power" 4 "Undefined" 3 "Radio Silent" 2 "Sensing" 1 "Not Sensing" 0 "Undefined" ;
+VAL_TABLE_ LaneSnsLLnPosValid 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ LnSnsRLnPosValid 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ Elevation 3 "Low " 2 "mid (reserved)" 1 "high " 0 "Unknown" ;
+VAL_TABLE_ ModeCommandFdbk 5 "Sensing with reduced power" 4 "Undefined" 3 "Radio Silent" 2 "Sensing" 1 "Not Sensing" 0 "Undefined" ;
+VAL_TABLE_ relativeLane 3 "Left Lane" 2 "Right Lane" 1 "Host Lane" 0 "Unknown" ;
+VAL_TABLE_ RoadTypeInfo 5 "Constiction Zone Exit" 4 "Construction Zone Entry" 3 "Highway" 2 "Secondary Road" 1 "City" 0 "Unknown" ;
+VAL_TABLE_ ObjectLossInfo 2 "elevation conditions" 1 "tight curve" 0 "not lost" ;
+VAL_TABLE_ MeasurementStatus 3 "Measured this cycle" 2 "Latent track not detctd this cyc" 1 "New Object" 0 "No Object" ;
+VAL_TABLE_ ObjectType 7 "no object present" 6 "fixed roadside object" 5 "fixed overhead object" 4 "pedestrian" 3 "motocycle  / bicycle" 2 "Large vehicle (semi)" 1 "4 Wheel Vehicle (car, small trk)" 0 "Unknown" ;
+VAL_TABLE_ Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_TABLE_ DynamicProp 4 "Moving in opposite direction" 3 "Moving in same direction as host" 2 "Has moved but currently stopped" 1 "Has never moved" 0 "Unknown" ;
+VAL_TABLE_ DrvWndPosSt 6 "Fully Opened" 5 "Open More Than C" 4 "Position C" 3 "Position B" 2 "Position A" 1 "Open Less Than A" 0 "Fully Closed" ;
+VAL_TABLE_ VehMovSta 4 "Invalid" 3 "Reverse" 2 "Forward" 1 "Neutral" 0 "Parked" ;
+VAL_TABLE_ OtsdAmbtLtLvlStat 2 "Day" 1 "Night" 0 "Unknown" ;
+VAL_TABLE_ RtTrnLmpAtv 2 "On with telltale" 1 "On without telltale" 0 "Off" ;
+VAL_TABLE_ LftTrnLmpAtv 2 "On with telltale" 1 "On without telltale" 0 "Off" ;
+VAL_TABLE_ HdlmpBmSelectStat 2 "High Beams" 1 "Low Beams" 0 "Unknown" ;
+VAL_TABLE_ DTCI_DTCFaultType 3 "Type C" 2 "Type B" 1 "Type A" 0 "Not Supported" ;
+VAL_TABLE_ TrnsShftLvrPos 13 "Forward Range J" 12 "Forward Range I" 15 "Lever Position Unknown" 11 "Forward Range H" 10 "Forward Range G" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges" ;
+VAL_TABLE_ SysPwrMd 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off" ;
+VAL_TABLE_ ValidityStates 1 "Invalid" 0 "Valid" ;
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _nissan_common.dbc starts here";
+CM_ "nissan_x_trail_2017.dbc starts here";
+
+VAL_ 357 Cruise_State 4 "active" 3 "standby" 0 "off" ;
+VAL_ 970 Lkas_Action 15 "off" 9 "abrupt" 8 "abrupt2" 5 "smooth" 4 "smooth2" ;
+VAL_ 970 Lkas_Alert 15 "no_alert" 3 "high_intensity" 2 "mid_intensity" 1 "low_intensity" ;
+VAL_ 972 LaActAvail_D_Actl 3 "available" 2 "tbd" 1 "not_available" 0 "fault" ;
