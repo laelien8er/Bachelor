@@ -2,17 +2,6 @@ FROM ubuntu:12.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-# install java version
-RUN apt update
-RUN apt install -y testdisk wget gnupg
-
-RUN wget -q -O - https://download.bell-sw.com/pki/GPG-KEY-bellsoft | apt-key add -
-RUN echo "deb [arch=amd64] https://apt.bell-sw.com/ stable main" > /etc/apt/sources.list.d/bellsoft.list
-RUN apt update
-RUN apt install -y bellsoft-java8
-
-ENV JAVA_HOME=/usr/lib/jvm/bellsoft-java8-amd64
-
 RUN apt-get update && apt-get install -y \
         apt-utils \
         curl \
