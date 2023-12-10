@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:12.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -13,7 +13,7 @@ RUN apt install -y bellsoft-java8
 
 ENV JAVA_HOME=/usr/lib/jvm/bellsoft-java8-amd64
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
         apt-utils \
         curl \
 		dnsutils \
@@ -49,7 +49,9 @@ RUN apt update && apt install -y \
 	gcc \
 	libbz2-dev \
 	libclang-dev \
-	liblinear \
+	liblinear-tools \
+	# libsvm-official \
+ 	python3 python3-dev python3-pip python3-setuptools \
 	&& rm -rf /var/lib/apt/lists/*
 
 # install sceadan
@@ -61,7 +63,6 @@ RUN mkdir -p /opt \
 	&& rm v1.2.1.tar.gz \
 	&& cd /opt/sceadan-1.2.1/src \
 	&& chmod 744 configure \ 
-	&& ./configure && make && make install 
+	# && ./configure && make && make install 
 
-# install liblinear
 
