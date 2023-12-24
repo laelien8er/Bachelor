@@ -1,0 +1,204 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 768 VEHICLE_STATE: 8 ADAS
+ SG_ SET_ME_XF9 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VEHICLE_SPEED : 15|8@0+ (1,0) [0|255] "kph" Vector__XXX
+
+BO_ 769 VEHICLE_STATE2: 8 ADAS
+ SG_ SET_ME_0F18510 : 7|28@0+ (1,0) [0|268435455] "" Vector__XXX
+ SG_ SET_ME_25A0000 : 27|28@0+ (1,0) [0|268435455] "" Vector__XXX
+
+BO_ 1024 RADAR_DIAGNOSTIC: 8 RADAR
+ SG_ RADAR_STATE : 7|8@0+ (1,0) [0|255] "" NEO
+
+BO_ 1040 XXX_101: 8 RADAR
+
+BO_ 1041 XXX_102: 8 RADAR
+
+BO_ 1042 XXX_103: 8 RADAR
+
+BO_ 1043 XXX_104: 8 RADAR
+
+BO_ 1044 XXX_105: 8 RADAR
+
+BO_ 1045 XXX_106: 8 RADAR
+
+BO_ 1046 XXX_107: 8 RADAR
+
+BO_ 1047 XXX_108: 8 RADAR
+
+BO_ 1056 XXX_109: 8 RADAR
+
+BO_ 1057 XXX_110: 8 RADAR
+
+BO_ 1058 XXX_111: 8 RADAR
+
+BO_ 1059 XXX_112: 8 RADAR
+
+BO_ 1060 XXX_113: 8 RADAR
+
+BO_ 1072 TRACK_0: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1073 TRACK_1: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1074 TRACK_2: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1075 TRACK_3: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1076 TRACK_4: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1077 TRACK_5: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1078 TRACK_6: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1079 TRACK_7: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1080 TRACK_8: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1081 TRACK_9: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1088 TRACK_10: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1089 TRACK_11: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1090 TRACK_12: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1091 TRACK_13: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1092 TRACK_14: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1093 TRACK_15: 8 RADAR
+ SG_ LONG_DIST : 7|12@0+ (0.0625,0) [0|255.5] "m"  NEO
+ SG_ NEW_TRACK : 11|1@0+ (1,0) [0|1] ""  NEO
+ SG_ LAT_DIST : 9|10@0- (0.0625,0) [0|63.5] "m"  NEO
+ SG_ REL_SPEED : 31|12@0- (0.03125,0) [0|127.5] "m/s"  NEO
+
+BO_ 1279 XXX_114: 8 RADAR
+
+BO_ 1280 XXX_115: 8 RADAR
+
+BO_ 1296 XXX_116: 8 RADAR
+
+BO_ 1297 XXX_117: 8 RADAR
+
+BO_TX_BU_ 768 : NEO,ADAS;
+BO_TX_BU_ 769 : NEO,ADAS;
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+CM_ "hyundai_kia_mando_front_radar.dbc starts here";
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+
+VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+VAL_ 891 WIPERS 4 "High" 2 "Low" 0 "Off";
+
+
+VAL_ 506 FCW 3 "fcw" 2 "fcw" 1 "fcw" 0 "no_fcw";
+VAL_ 506 CHIME 4 "double_chime" 3 "single_chime" 2 "continuous_chime" 1 "repeating_chime" 0 "no_chime";
+VAL_ 506 AEB_STATUS 3 "aeb_prepare" 2 "aeb_ready" 1 "aeb_braking" 0 "no_aeb";
+VAL_ 829 BEEP 3 "single_beep" 2 "triple_beep" 1 "repeated_beep" 0 "no_beep";
+
+
+VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal" ;
+VAL_ 401 GEAR_SHIFTER 32 "L" 16 "S" 8 "D" 4 "N" 2 "R" 1 "P" ;
+VAL_ 401 GEAR 7 "L" 10 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+VAL_ 422 CRUISE_BUTTONS 7 "tbd" 6 "tbd" 5 "tbd" 4 "accel_res" 3 "decel_set" 2 "cancel" 1 "main" 0 "none" ;
+VAL_ 422 LIGHTS_SETTING 3 "high_beam" 2 "low_beam" 1 "position" 0 "no_lights" ;

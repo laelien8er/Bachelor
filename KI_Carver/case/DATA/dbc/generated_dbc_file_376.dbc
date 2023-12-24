@@ -1,0 +1,89 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BO_ 823 PACMParkAssitCmd: 7 NEO
+ SG_ RollingCounter : 35|2@0+ (1,0) [0|0] ""  NEO
+ SG_ SteeringWheelChecksum : 47|16@0+ (1,0) [0|0] ""  NEO
+ SG_ SteeringWheelCmd : 23|16@0+ (1,0) [0|0] ""  NEO
+
+BO_ 560 EBCMRegen: 6 K17_EBCM
+ SG_ Regen : 1|10@0+ (1,0) [0|0] ""  NEO
+
+BO_ 338 ASCMLKASteeringCmd: 6 NEO
+ SG_ LKASteeringCmdActive : 7|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmd : 5|14@0- (1,0) [0|0] ""  NEO
+ SG_ RollingCounter : 23|2@0+ (1,0) [0|0] ""  NEO
+ SG_ SetMe1 : 21|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASVehicleSpeed : 20|13@0+ (0.22,0) [0|0] "kph" NEO
+ SG_ LKASMode : 36|2@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmdChecksum : 33|10@0+ (1,0) [0|0] ""  NEO
+
+BO_ 340 ASCMBLKASteeringCmd: 6 NEO
+ SG_ LKASteeringCmdActive : 7|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmd : 5|14@0- (1,0) [0|0] ""  NEO
+ SG_ RollingCounter : 23|2@0+ (1,0) [0|0] ""  NEO
+ SG_ SetMe1 : 21|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASVehicleSpeed : 20|13@0+ (0.22,0) [0|0] "kph" NEO
+ SG_ LKASteeringCmdActive2 : 35|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmdChecksum : 33|10@0+ (1,0) [0|0] ""  NEO
+
+BO_ 368 EBCMFrictionBrakeStatus: 8 K17_EBCM
+ SG_ FrictionBrakePressure : 23|16@0+ (1,0) [0|0] ""  NEO
+
+BO_ 789 EBCMFrictionBrakeCmd: 5 K17_EBCM
+ SG_ RollingCounter : 37|6@0+ (1,0) [0|0] ""  NEO
+ SG_ FrictionBrakeMode : 7|4@0+ (1,0) [0|0] ""  NEO
+ SG_ FrictionBrakeChecksum : 23|16@0+ (1,0) [0|0] ""  NEO
+ SG_ FrictionBrakeCmd : 3|12@0- (1,0) [0|0] ""  NEO
+
+BO_TX_BU_ 823 : K43_PSCM,NEO;
+BO_TX_BU_ 789 : NEO,K17_EBCM;
+
+
+CM_ SG_ 31 GEAR "13-P, 12-R, 11-N, 1-6-D";
+CM_ SG_ 96 SPEED "";
+VAL_ 274 CUR_GR 1 "D" 2 "D" 3 "D" 4 "D" 5 "D" 6 "D" 7 "D" 8 "D" 14 "R" 0 "P";
+VAL_ 871 CF_Lvr_IsgState 0 "enabled" 1 "activated" 2 "unknown" 3 "disabled";
+VAL_ 871 CF_Lvr_Gear 12 "T" 5 "D" 8 "S" 6 "N" 7 "R" 0 "P";
+VAL_ 882 Elect_Gear_Shifter 5 "D" 8 "S" 6 "N" 7 "R" 0 "P";
+VAL_ 905 ACCMode 0 "off" 1 "enabled" 2 "driver_override" 3 "off_maybe_fault" 4 "cancelled";
+VAL_ 909 CF_VSM_Warn 2 "FCW" 3 "AEB";
+VAL_ 916 ACCEnable 0 "SCC ready" 1 "SCC temp fault" 2 "SCC permanent fault" 3 "SCC permanent fault, communication issue";
+VAL_ 1056 SCCInfoDisplay 0 "No Message" 2 "Cruise Control" 3 "Lost Lead" 4 "Standstill";
+VAL_ 1057 ACCMode 0 "off" 1 "enabled" 2 "driver_override" 3 "off_maybe_fault";
+VAL_ 1157 HDA_Icon_State 0 "no_hda" 1 "white_hda" 2 "green_hda";
+VAL_ 1157 LFA_SysWarning 0 "no_message" 1 "switching_to_hda" 2 "switching_to_scc" 3 "lfa_error" 4 "check_hda" 5 "keep_hands_on_wheel_orange" 6 "keep_hands_on_wheel_red";
+VAL_ 1157 LFA_Icon_State 0 "no_wheel" 1 "white_wheel" 2 "green_wheel" 3 "green_wheel_blink";
+VAL_ 1157 HDA_SysWarning 0 "no_message" 1 "driving_convenience_systems_cancelled" 2 "highway_drive_assist_system_cancelled";

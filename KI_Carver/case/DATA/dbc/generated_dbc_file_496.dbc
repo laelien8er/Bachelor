@@ -1,0 +1,151 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BO_ 262 DI_torque1: 8 DI
+ SG_ DI_torqueDriver : 0|13@1- (0.25,0) [-750|750] "Nm"  NEO
+ SG_ DI_torque1Counter : 13|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_torqueMotor : 16|13@1- (0.25,0) [-750|750] "Nm"  NEO
+ SG_ DI_soptState : 29|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_motorRPM : 32|16@1- (1,0) [-17000|17000] "RPM"  NEO
+ SG_ DI_pedalPos : 48|8@1+ (0.4,0) [0|100] "%"  NEO
+ SG_ DI_torque1Checksum : 56|8@1+ (1,0) [0|0] ""  NEO
+
+BO_ 278 DI_torque2: 6 DI
+ SG_ DI_torqueEstimate : 0|12@1- (0.5,0) [-750|750] "Nm" NEO
+ SG_ DI_gear : 12|3@1+ (1,0) [0|0] "" NEO
+ SG_ DI_brakePedal : 15|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_vehicleSpeed : 16|12@1+ (0.05,-25) [-25|179.75] "MPH" NEO
+ SG_ DI_gearRequest : 28|3@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torqueInterfaceFailure : 31|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torque2Counter : 32|4@1+ (1,0) [0|0] "" NEO
+ SG_ DI_brakePedalState : 36|2@1+ (1,0) [0|0] "" NEO
+ SG_ DI_epbParkRequest : 38|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_epbInterfaceReady : 39|1@1+ (1,0) [0|0] "" NEO
+ SG_ DI_torque2Checksum : 40|8@1+ (1,0) [0|0] "" NEO
+
+BO_ 504 BrakeMessage: 8 XXX
+ SG_ driverBrakeStatus : 2|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 568 STW_ACTN_RQ: 8 STW
+ SG_ SpdCtrlLvr_Stat : 0|6@1+ (1,0) [0|0] "" NEO
+ SG_ VSL_Enbl_Rq : 6|1@1+ (1,0) [0|0] "" NEO
+ SG_ SpdCtrlLvrStat_Inv : 7|1@1+ (1,0) [0|0] "" NEO
+ SG_ DTR_Dist_Rq : 8|8@1+ (1,0) [0|200] "" NEO
+ SG_ TurnIndLvr_Stat : 16|2@1+ (1,0) [0|0] "" NEO
+ SG_ HiBmLvr_Stat : 18|2@1+ (1,0) [0|0] "" NEO
+ SG_ WprWashSw_Psd : 20|2@1+ (1,0) [0|0] "" NEO
+ SG_ WprWash_R_Sw_Posn_V2 : 22|2@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Lvr_Stat : 24|3@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Cond_Flt : 27|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Cond_Psd : 28|2@1+ (1,0) [0|0] "" NEO
+ SG_ HrnSw_Psd : 30|2@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw00_Psd : 32|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw01_Psd : 33|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw02_Psd : 34|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw03_Psd : 35|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw04_Psd : 36|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw05_Psd : 37|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw06_Psd : 38|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw07_Psd : 39|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw08_Psd : 40|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw09_Psd : 41|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw10_Psd : 42|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw11_Psd : 43|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw12_Psd : 44|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw13_Psd : 45|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw14_Psd : 46|1@1+ (1,0) [0|0] "" NEO
+ SG_ StW_Sw15_Psd : 47|1@1+ (1,0) [0|0] "" NEO
+ SG_ WprSw6Posn : 48|3@1+ (1,0) [0|0] "" NEO
+ SG_ MC_STW_ACTN_RQ : 52|4@1+ (1,0) [0|15] "" NEO
+ SG_ CRC_STW_ACTN_RQ : 56|8@1+ (1,0) [0|0] "" NEO
+
+BO_ 598 DI_state: 8 DI
+ SG_ DI_systemState : 0|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_vehicleHoldState : 3|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_proximity : 6|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_driveReady : 7|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_regenLight : 8|1@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_state : 9|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_cruiseState : 12|4@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_analogSpeed : 16|12@1+ (0.1,0) [0|150] "speed"  NEO
+ SG_ DI_immobilizerState : 28|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_speedUnits : 31|1@1+ (1,0) [0|1] ""  NEO
+ SG_ DI_cruiseSet : 32|9@1+ (0.5,0) [0|255.5] "speed"  NEO
+ SG_ DI_aebState : 41|3@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_stateCounter : 44|4@1+ (1,0) [0|0] ""  NEO
+ SG_ DI_digitalSpeed : 48|8@1+ (1,0) [0|250] ""  NEO
+ SG_ DI_stateChecksum : 56|8@1+ (1,0) [0|0] ""  NEO
+
+BO_ 703 DAS_control: 8 GTW
+ SG_ DAS_setSpeed : 0|12@1+ (0.1,0) [0|409.4] "kph" DI,PM,APS
+ SG_ DAS_accState : 12|4@1+ (1,0) [0|0] "" DI,PM,APS
+ SG_ DAS_aebEvent : 16|2@1+ (1,0) [0|3] "" DI,PM,APS
+ SG_ DAS_jerkMin : 18|9@1+ (0.03,-15.232) [-15.232|0.098] "m/s^3" DI,PM,APS
+ SG_ DAS_jerkMax : 27|8@1+ (0.059,0) [0|15.045] "m/s^3" DI,PM,APS
+ SG_ DAS_accelMin : 35|9@1+ (0.04,-15) [-15|5.44] "m/s^2" DI,PM,APS
+ SG_ DAS_accelMax : 44|9@1+ (0.04,-15) [-15|5.44] "m/s^2" DI,PM,APS
+ SG_ DAS_controlCounter : 53|3@1+ (1,0) [0|0] "" DI,PM,APS
+ SG_ DAS_controlChecksum : 56|8@1+ (1,0) [0|0] "" DI,PM,APS
+
+BU_: XXX
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+VAL_ 497 SystemPowerMode 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off";
+VAL_ 497 SystemBackUpPowerMode 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off";
+VAL_ 481 DistanceButton 1 "Active" 0 "Inactive" ;
+VAL_ 481 LKAButton 1 "Active" 0 "Inactive" ;
+VAL_ 481 ACCButtons 6 "Cancel" 5 "Main" 3 "Set" 2 "Resume" 1 "None" ;
+VAL_ 481 DriveModeButton 1 "Active" 0 "Inactive" ;
+VAL_ 452 CruiseState 4 "Standstill" 3 "Faulted" 1 "Active" 0 "Off" ;
+VAL_ 309 PRNDL 3 "R" 2 "D" 1 "N" 0 "P" ;
+VAL_ 309 ESPButton 1 "Active" 0 "Inactive" ;
+VAL_ 384 LKASteeringCmdActive 1 "Active" 0 "Inactive" ;
+VAL_ 880 ACCCruiseState 2 "Adaptive" 3 "Adaptive" 4 "Non-adaptive" 5 "Non-adaptive" ;
+VAL_ 880 ACCLeadCar 1 "Present" 0 "Not Present" ;
+VAL_ 880 ACCGapLevel 3 "Far" 2 "Med" 1 "Near" 0 "Inactive" ;
+VAL_ 880 ACCResumeButton 1 "Pressed" 0 "Depressed" ;
+VAL_ 880 ACCCmdActive 1 "Active" 0 "Inactive" ;
+VAL_ 388 HandsOffSWDetectionMode 2 "Failed" 1 "Enabled" 0 "Disabled" ;
+VAL_ 388 HandsOffSWlDetectionStatus 1 "Hands On" 0 "Hands Off" ;
+VAL_ 388 LKATorqueDeliveredStatus 3 "Failed" 2 "Temp. Limited" 1 "Active" 0 "Inactive" ;
+VAL_ 489 BrakePedalPressed 1 "Pressed" 0 "Depressed" ;
+VAL_ 715 GasRegenCmdActiveInv 1 "Inactive" 0 "Active" ;
+VAL_ 715 GasRegenCmdActive 1 "Active" 0 "Inactive" ;
+VAL_ 320 Intellibeam 1 "Active" 0 "Inactive" ;
+VAL_ 320 HighBeamsActive 1 "Active" 0 "Inactive" ;
+VAL_ 320 HighBeamsTemporary 1 "Active" 0 "Inactive" ;
+VAL_ 501 PRNDL2 6 "L" 4 "D" 3 "N" 2 "R" 1 "P" 0 "Shifting";
+VAL_ 501 TransmissionState 11 "Shifting" 10 "Reverse" 9 "Forward" 8 "Disengaged";

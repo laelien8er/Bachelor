@@ -1,4 +1,14 @@
-FROM ubuntu:12.04
+# run container:
+# docker run -d -it -v /c/Bachelorarbeit/KI_Carver/case:/case <containername>
+# docker exec -it <containerid> /bin/bash		
+
+# validate data
+# cd tools && python3 sceadan_train.py --validate --data=/case/DATA --exp=<outputfolder>
+
+# train data 
+# cd tools && python3 sceadan_train.py --data=/case/DATA --exp=<outputfolder>
+
+FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -38,20 +48,21 @@ RUN apt-get update && apt-get install -y \
 	gcc \
 	libbz2-dev \
 	libclang-dev \
-	liblinear-tools \
-	# libsvm-official \
- 	python3 python3-dev python3-pip python3-setuptools \
+	python3 python3-dev python3-pip python3-setuptools \
+	liblinear-tools liblinear-dev python3-liblinear \
+	libtool libtool-bin libtool-doc\
 	&& rm -rf /var/lib/apt/lists/*
 
-# install sceadan
+# create directory for Dataset
+RUN mkdir -p /case
 
+# install sceadan
 RUN mkdir -p /opt \
     && cd /opt \
-	&& curl -L https://github.com/UTSA-cyber/sceadan/archive/refs/tags/v1.2.1.tar.gz > v1.2.1.tar.gz \
-	&& tar -xf v1.2.1.tar.gz \
-	&& rm v1.2.1.tar.gz \
-	&& cd /opt/sceadan-1.2.1/src \
-	&& chmod 744 configure \ 
-	# && ./configure && make && make install 
+	&& git clone --recursive https://github.com/UTSA-cyber/sceadan.git \
+	&& cd sceadan \
+	&& autoreconf --force --install \
+	&& sh bootstrap.sh && ./configure && make
+	
 
 

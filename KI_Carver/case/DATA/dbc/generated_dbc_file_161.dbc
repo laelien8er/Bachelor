@@ -1,0 +1,156 @@
+VERSION ""
+
+
+BO_ 130 EPAS_INFO: 8 XXX
+ SG_ SteMdule_U_Meas : 39|8@0+ (0.05,6.0) [0|0] "Volts" XXX
+ SG_ SteMdule_I_Est : 21|12@0+ (0.05,-64.0) [0|0] "Amps" XXX
+ SG_ EPAS_FAILURE : 9|2@0+ (1,0) [0|0] "" XXX
+ SG_ SteeringColumnTorque : 7|8@0+ (0.0625,-8.0) [0|0] "Nm" XXX
+ SG_ SAPPAngleControlStat6 : 15|1@0+ (1,0) [0|0] "" XXX
+ SG_ SAPPAngleControlStat5 : 14|1@0+ (1,0) [0|0] "" XXX
+ SG_ SAPPAngleControlStat4 : 13|1@0+ (1,0) [0|0] "" XXX
+ SG_ SAPPAngleControlStat3 : 12|1@0+ (1,0) [0|0] "" XXX
+ SG_ SAPPAngleControlStat2 : 11|1@0+ (1,0) [0|0] "" XXX
+ SG_ SAPPAngleControlStat1 : 23|2@0+ (1,0) [0|0] "" XXX
+
+BO_ 118 Steering_Wheel_Data_CG1: 8 XXX
+ SG_ SteWhlRelInit_An_Sns : 6|15@0+ (0.1,-1600.0) [0|0] "deg" XXX
+ SG_ SteWhlRelCalib_An_Sns : 23|15@0+ (0.1,-1600.0) [0|0] "deg" XXX
+ SG_ SteWhlRelInit2_An_Sns : 55|16@0+ (0.1,-3200.0) [0|0] "deg" XXX
+ SG_ SteWhlAn_No_Cs : 39|8@0+ (1,0) [0|0] "" XXX
+ SG_ SteWhlAn_No_Cnt : 47|4@0+ (1,0) [0|0] "Counts" XXX
+
+BO_ 131 Steering_Buttons: 8 XXX
+ SG_ Right_Turn_Light : 5|1@0+ (1,0) [0|0] "" XXX
+ SG_ Left_Turn_Light : 4|1@0+ (1,0) [0|0] "" XXX
+ SG_ Dist_Decr : 12|1@0+ (1,0) [0|0] "" XXX
+ SG_ Dist_Incr : 11|1@0+ (1,0) [0|0] "" XXX
+ SG_ Cancel : 8|1@0+ (1,0) [0|0] "" XXX
+ SG_ Resume : 29|1@0+ (1,0) [0|0] "" XXX
+ SG_ Set : 28|1@0+ (1,0) [0|0] "" XXX
+ SG_ Main : 38|1@0+ (1,0) [0|0] "" XXX
+
+BO_ 145 Yaw_Data: 8 XXX
+ SG_ VehYaw_W_Actl : 39|16@0+ (0.0002,-6.5) [0|0] "rad/s" XXX
+ SG_ VehRol_W_Actl : 23|16@0+ (0.0002,-6.5) [0|0] "rad/s" XXX
+ SG_ VehPtch_W_Actl : 7|16@0+ (0.0002,-6.5) [0|0] "rad/s" XXX
+
+BO_ 146 Accel_Data: 8 XXX
+ SG_ VehVertAActl_D_Qf : 38|2@0+ (1,0) [0|0] "" XXX
+ SG_ VehLongAActl_D_Qf : 22|2@0+ (1,0) [0|0] "" XXX
+ SG_ VehLatAActl_D_Qf : 6|2@0+ (1,0) [0|0] "" XXX
+ SG_ VehVert_A_Actl : 36|13@0+ (0.01,-40.0) [0|0] "m/s^2" XXX
+ SG_ VehLong_A_Actl : 20|13@0+ (0.01,-40.0) [0|0] "m/s^2" XXX
+ SG_ VehLat_A_Actl : 4|13@0+ (0.01,-40.0) [0|0] "m/s^2" XXX
+
+BO_ 357 Cruise_Status: 8 XXX
+ SG_ Brake_Drv_Appl : 5|1@0+ (1,0) [0|0] "" XXX
+ SG_ Cruise_State : 11|4@0+ (1,0) [0|0] "" XXX
+ SG_ Set_Speed : 23|8@0+ (1,0) [0|0] "" XXX
+
+BO_ 516 EngineData_14: 8 XXX
+ SG_ ApedPosScal_Pc_Actl : 1|10@0+ (0.1,0) [0|0] "%" XXX
+
+BO_ 535 WheelSpeed_CG1: 8 XXX
+ SG_ WhlRr_W_Meas : 55|14@0+ (0.04,0) [0|0] "rad/s" XXX
+ SG_ WhlRl_W_Meas : 39|14@0+ (0.04,0) [0|0] "rad/s" XXX
+ SG_ WhlFr_W_Meas : 23|14@0+ (0.04,0) [0|0] "rad/s" XXX
+ SG_ WhlFl_W_Meas : 7|14@0+ (0.04,0) [0|0] "rad/s" XXX
+
+BO_ 534 WheelData: 8 XXX
+ SG_ WhlRotatRr_No_Cnt : 23|8@0+ (1,0) [0|0] "" XXX
+ SG_ WhlDirRr_D_Actl : 33|2@0+ (1,0) [0|0] "" XXX
+ SG_ WhlDirRl_D_Actl : 39|2@0+ (1,0) [0|0] "" XXX
+ SG_ WhlDirFr_D_Actl : 37|2@0+ (1,0) [0|0] "" XXX
+ SG_ WhlDirFl_D_Actl : 35|2@0+ (1,0) [0|0] "" XXX
+ SG_ WhlRotatRl_No_Cnt : 31|8@0+ (1,0) [0|0] "" XXX
+ SG_ WhlRotatFr_No_Cnt : 7|8@0+ (1,0) [0|0] "" XXX
+ SG_ WhlRotatFl_No_Cnt : 15|8@0+ (1,0) [0|0] "" XXX
+ SG_ WHEEL_ROLLING_TIMESTAMP : 47|8@0+ (1,0) [0|0] "" XXX
+
+BO_ 947 Doors: 8 XXX
+ SG_ Door_FL_Open : 61|1@0+ (1,0) [0|0] "" XXX
+ SG_ Door_FR_Open : 60|1@0+ (1,0) [0|0] "" XXX
+ SG_ Door_RL_Open : 48|1@0+ (1,0) [0|0] "" XXX
+ SG_ Door_RR_Open : 49|1@0+ (1,0) [0|0] "" XXX
+
+BO_ 963 BCM_to_HS_Body: 8 XXX
+ SG_ Brake_Lights : 8|1@0+ (1,0) [0|0] "" XXX
+
+BO_ 970 Lane_Keep_Assist_Control: 8 XXX
+ SG_ Lkas_Action : 7|4@0+ (1,0) [0|15] "" XXX
+ SG_ Lkas_Alert : 3|4@0+ (1,0) [0|15] "" XXX
+ SG_ Lane_Curvature : 15|12@0+ (5e-06,-0.01) [0|0] "1/m" XXX
+ SG_ Steer_Angle_Req : 19|12@0+ (0.04297,-88.00445) [0|0] "deg" XXX
+
+BO_ 972 Lane_Keep_Assist_Status: 8 XXX
+ SG_ LaHandsOff_B_Actl : 7|1@0+ (1,0) [0|0] "" XXX
+ SG_ LaActDeny_B_Actl : 6|1@0+ (1,0) [0|0] "" XXX
+ SG_ LaActAvail_D_Actl : 5|2@0+ (1,0) [0|0] "" XXX
+
+BO_ 984 Lane_Keep_Assist_Ui: 8 XXX
+ SG_ Set_Me_X80 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ Set_Me_X45 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ Lines_Hud : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Hands_Warning_W_Chime : 50|1@0+ (1,0) [0|1] "" XXX
+ SG_ Hands_Warning : 49|1@0+ (1,0) [0|1] "" XXX
+ SG_ Set_Me_X30 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BU_: XXX
+
+
+CM_ SG_ 85 BrakePedalActive2 "Active during braking";
+CM_ SG_ 85 NEW_SIGNAL_1 "Not yet figured out.";
+CM_ SG_ 85 BrakePedalActive "Brake pedal pushed";
+CM_ SG_ 8 SteeringDirection "1=Right turn, 0=Left turn. Steering wheel pointing left or right from center (0 deg).";
+CM_ SG_ 8 RelativeTurnDirection "1=Right turn, 0=Left turn. Steering wheel currently turning the way.";
+CM_ SG_ 101 NEW_SIGNAL_1 "Rate of something?";
+CM_ SG_ 192 TransmissionGear "0 = 1st gear, 1= 2nd gear...";
+CM_ SG_ 681 TurnSignal "0 = Nothing, 1= Left, 3=Right";
+CM_ SG_ 681 HighBeamOn "1=HighBeam On, 0=HighBeam Off";
+CM_ SG_ 48 ACCStatusTracking "ACC Tracking vehicle, distance control.";
+CM_ SG_ 48 ACCStatusOnOff "Turns one after pressing on/off button on steering wheeel";
+CM_ SG_ 48 ACCStatusActive "ACC Active";
+CM_ SG_ 48 FCWSomething "All bit set during fcw";
+CM_ SG_ 48 StatusSomething "Some status changes when zeroing DTCs";
+CM_ SG_ 208 TrqLim "Used in checksum calculation, Limit directional torque based on the number.";
+CM_ SG_ 208 Checksum "Checksum calculated as a one-complement addition of LKAAngleRequest+LKADirection+Unkown, Zeros used to pad missing bits.";
+CM_ SG_ 208 SET_X_02 "Bit 0 = Vibrate steering wheel., Bit 1 = Heartbeat";
+CM_ SG_ 352 LkaDimLine "Not true, but follows lka steer direction.";
+CM_ SG_ 352 NEW_SIGNAL_1 "Turned one. Got LKA service needed can this be the one?";
+CM_ SG_ 640 SpeedTarget "SpeedTarget ACC (noisy bf starting acc Jumps from 0->252->0)";
+CM_ SG_ 853 TargetSpeedOdo "Probably target speed odo";
+CM_ SG_ 853 LaneMarkingsOdo "Bit 3=Left lane, Bit 2=Right lane, Bit 1=LKA on?, Bit 0=?";
+CM_ SG_ 709 SpeedTargetACC "SpeedTargetACC";
+CM_ SG_ 224 rate_of_something "Seems to be some kind of torque rather than rate.";
+CM_ SG_ 224 OneDuringDriving "Set to 1 when vehicle is rolling.";
+CM_ SG_ 293 byte7 "Bit0=0 when gearshift in park, else 1";
+CM_ SG_ 293 LKAActive "Bit0=0 when gear in park otherwise =1, Bit1=1 when LKA Active, 0 when not active. Bit2=? Bit3=?";
+CM_ SG_ 16 ACCOnOffBtn "Cruise control on/off button pressed";
+CM_ SG_ 16 ACCSetBtn "Acc Set button (+) pressed";
+CM_ SG_ 16 ACCStopBtn "ACC Stop button pressed";
+CM_ SG_ 16 ACCResumeBtn "ACC Resume button pressed";
+CM_ SG_ 16 ACCMinusBtn "ACC Minus (-) button pressed";
+CM_ SG_ 16 TimeGapIncreaseBtn "Increase the time gap on ACC";
+CM_ SG_ 16 TimeGapDecreaseBtn "Decrease the time gap on ACC";
+CM_ SG_ 245 counter0 "Speed based counter";
+CM_ SG_ 245 WhlSpdLF "Wheel speed left front";
+CM_ SG_ 245 WhlSpdRF "Wheel speed right front";
+CM_ SG_ 288 WhlSpdLR "Wheel speed left rear";
+CM_ SG_ 288 WhlSpdRR "Wheel speed right rear";
+CM_ SG_ 64 RPMSomething "TransmissionOutput?";
+CM_ SG_ 64 GearShifter "P=0, R=1, N=2, D=3";
+CM_ SG_ 272 VehicleSpeedSignal "km/h";
+CM_ SG_ 432 BrakePress0 "Brake being pressed";
+CM_ SG_ 432 BrakePress1 "Brake being pressed";
+CM_ SG_ 432 BrakeStatus "ACC brake?";
+CM_ SG_ 437 Counter0 "Related to braking? Maybe one per wheel?";
+CM_ SG_ 437 Counter1 "Related to braking? Maybe one per wheel?";
+CM_ SG_ 437 Counter2 "Related to braking? Maybe one per wheel?";
+CM_ SG_ 437 Counter3 "Related to braking? Maybe one per wheel?";
+CM_ SG_ 114 NEW_SIGNAL_1 "Jumped from 0 -> 120 during start. Makes triangle from time to time";
+CM_ SG_ 608 NEW_SIGNAL_1 "Status?";
+CM_ SG_ 608 NEW_SIGNAL_2 "Classification of object?";
+CM_ SG_ 608 Distance "Distance to object in front.";
+CM_ SG_ 968 PassengerSeatBelt "1 = Seatbalt latched";
+CM_ SG_ 968 DriverSeatBelt "1=Seatbelt latched";

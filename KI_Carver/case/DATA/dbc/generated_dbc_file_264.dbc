@@ -1,0 +1,210 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 717 ASCM_2CD: 5 K124_ASCM
+
+BO_ 869 ASCM_365: 4 K124_ASCM
+
+BO_ 1034 ASCM_40A: 7 K124_ASCM
+
+BO_ 1296 ASCM_510: 4 K124_ASCM
+
+BO_ 1930 ASCM_78A: 7 K124_ASCM
+
+BO_ 190 ECMAcceleratorPos: 6 K20_ECM
+ SG_ BrakePedalPos : 15|8@0+ (1,0) [0|0] "sticky"  NEO
+ SG_ GasPedalAndAcc : 23|8@0+ (1,0) [0|0] ""  NEO
+
+BO_ 201 ECMEngineStatus: 8 K20_ECM
+ SG_ EngineTPS : 39|8@0+ (0.392156863,0) [0|100.000000065] "%"  NEO
+ SG_ EngineRPM : 15|16@0+ (0.25,0) [0|0] "RPM"  NEO
+
+BO_ 209 EBCMBrakePedalSensors: 7 K17_EBCM
+ SG_ Counter1 : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ Counter2 : 23|2@0+ (1,0) [0|3] "" XXX
+ SG_ BrakePedalPosition1 : 5|14@0+ (1,0) [0|16383] "" XXX
+ SG_ BrakePedalPosition2 : 21|14@0- (-1,0) [0|16383] "" XXX
+ SG_ BrakeNormalized1 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ BrakeNormalized2 : 47|8@0- (-1,0) [0|255] "" XXX
+
+BO_ 241 EBCMBrakePedalPosition: 6 K17_EBCM
+ SG_ BrakePedalPosition : 15|8@0+ (1,0) [0|255] ""  NEO
+
+BO_ 298 BCMDoorBeltStatus: 8 K9_BCM
+ SG_ RearLeftDoor : 8|1@0+ (1,0) [0|0] ""  NEO
+ SG_ FrontLeftDoor : 9|1@0+ (1,0) [0|0] ""  NEO
+ SG_ FrontRightDoor : 10|1@0+ (1,0) [0|0] ""  NEO
+ SG_ RearRightDoor : 23|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LeftSeatBelt : 12|1@0+ (1,0) [0|0] ""  NEO
+ SG_ RightSeatBelt : 53|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 309 ECMPRDNL: 8 K20_ECM
+ SG_ PRNDL : 2|3@0+ (1,0) [0|0] ""  NEO
+
+BO_ 320 BCMTurnSignals: 3 K9_BCM
+ SG_ TurnSignals : 19|2@0+ (1,0) [0|0] ""  NEO
+
+BO_ 336 ASCMLKASStatus: 1 NEO
+ SG_ Available : 7|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 338 ASCMLKASteeringCmd: 6 NEO
+ SG_ LKASteeringCmdActive : 7|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmd : 5|14@0- (1,0) [0|0] ""  NEO
+ SG_ RollingCounter : 23|2@0+ (1,0) [0|0] ""  NEO
+ SG_ SetMe1 : 21|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASVehicleSpeed : 20|13@0+ (0.22,0) [0|0] "kph" NEO
+ SG_ LKASMode : 36|2@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmdChecksum : 33|10@0+ (1,0) [0|0] ""  NEO
+
+BO_ 340 ASCMBLKASteeringCmd: 6 NEO
+ SG_ LKASteeringCmdActive : 7|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmd : 5|14@0- (1,0) [0|0] ""  NEO
+ SG_ RollingCounter : 23|2@0+ (1,0) [0|0] ""  NEO
+ SG_ SetMe1 : 21|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASVehicleSpeed : 20|13@0+ (0.22,0) [0|0] "kph" NEO
+ SG_ LKASMode : 36|2@0+ (1,0) [0|0] ""  NEO
+ SG_ LKASteeringCmdChecksum : 33|10@0+ (1,0) [0|0] ""  NEO
+
+BO_ 381 MSG_17D: 8 K20_ECM
+ SG_ MSG17D_AccPower : 35|12@0- (1,0) [0|0] ""  NEO
+
+BO_ 356 PSCMStatus: 8 K43_PSCM
+ SG_ LKATorqueDeliveredStatus : 7|3@0+ (1,0) [0|7] ""  NEO
+ SG_ LKADriverAppldTrq : 2|11@0- (0.01,0) [-10.24|10.23] "Nm"  NEO
+ SG_ LKATBDTorque : 21|14@0- (-0.005,0) [-10.24|10.23] "Nm"  NEO
+ SG_ RollingCounter : 39|2@0+ (1,0) [0|0] ""  NEO
+ SG_ LKATotalTorqueDelivered : 37|14@0- (0.01,0) [-10.24|10.23] "Nm"  NEO
+
+BO_ 417 AcceleratorPedal: 7 XXX
+ SG_ AcceleratorPedal : 55|8@0+ (1,0) [0|0] ""  NEO
+
+BO_ 451 GasAndAcc: 8 XXX
+ SG_ GasPedalAndAcc2 : 55|8@0+ (1,0) [0|0] ""  NEO
+
+BO_ 452 AcceleratorPedal2: 8 XXX
+ SG_ AcceleratorPedal2 : 47|8@0+ (1,0) [0|0] ""  NEO
+
+BO_ 481 ASCMSteeringButton: 7 K124_ASCM
+ SG_ DistanceButton : 22|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LKAButton : 23|1@0+ (1,0) [0|0] ""  NEO
+ SG_ ACCButtons : 46|3@0+ (1,0) [0|0] ""  NEO
+
+BO_ 485 PSCMSteeringAngle: 8 K43_PSCM
+ SG_ SteeringWheelAngle : 15|16@0- (0.0625,0) [-2047|2047] "deg"  NEO
+ SG_ SteeringWheelRate : 27|12@0- (1,0) [-2047|2047] "deg/s"  NEO
+
+BO_ 489 EBCMVehicleDynamic: 8 K17_EBCM
+ SG_ YawRate : 51|12@0- (0.0625,0) [-2047|2047] "grad/s"  NEO
+ SG_ LateralAcceleration : 3|12@0- (0.0161,0) [-2047|2047] "m/s2"  NEO
+ SG_ BrakePedalPressed : 6|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 711 BECMBatteryVoltageCurrent: 6 K17_EBCM
+ SG_ HVBatteryVoltage : 31|12@0+ (0.125,0) [0|511.875] "V"  NEO
+ SG_ HVBatteryCurrent : 12|13@0- (0.15,0) [-614.4|614.25] "A"  NEO
+
+BO_ 715 ASCMGasRegenCmd: 8 K124_ASCM
+ SG_ GasRegenAlwaysOne : 9|1@0+ (1,1) [1|1] ""  NEO
+ SG_ GasRegenAlwaysThree : 15|2@0+ (1,1) [1|1] ""  NEO
+ SG_ GasRegenChecksum : 47|24@0+ (1,0) [0|0] ""  NEO
+ SG_ GasRegenCmdActiveInv : 32|1@0+ (1,0) [0|0] ""  NEO
+ SG_ GasRegenFullStopActive : 13|1@0+ (1,0) [0|0] ""  NEO
+ SG_ GasRegenCmdActive : 0|1@0+ (1,0) [0|0] ""  NEO
+ SG_ RollingCounter : 7|2@0+ (1,0) [0|0] ""  NEO
+ SG_ RollingCounter2 : 36|4@0+ (1,0) [0|0] ""  NEO
+ SG_ GasRegenAlwaysOne2 : 23|1@0+ (1,0) [0|1] ""  NEO
+ SG_ GasRegenCmd : 22|15@0+ (1,0) [0|0] ""  NEO
+
+BO_ 810 TCICOnStarGPSPosition: 8 K73_TCIC
+ SG_ GPSLongitude : 39|32@0+ (1,-2147483648) [0|0] "milliarcsecond"  NEO
+ SG_ GPSLatitude : 7|32@0+ (1,0) [0|0] "milliarcsecond"  NEO
+
+BO_ 840 EBCMWheelSpdFront: 4 K17_EBCM
+ SG_ FLWheelSpd : 7|16@0+ (0.0311,0) [0|255] "km/h"  NEO
+ SG_ FRWheelSpd : 23|16@0+ (0.0311,0) [0|255] "km/h"  NEO
+
+BO_ 842 EBCMWheelSpdRear: 4 K17_EBCM
+ SG_ RLWheelSpd : 7|16@0+ (0.0311,0) [0|255] "km/h"  NEO
+ SG_ RRWheelSpd : 23|16@0+ (0.0311,0) [0|255] "km/h"  NEO
+
+BO_ 880 ASCMActiveCruiseControlStatus: 6 K124_ASCM
+ SG_ ACCLeadCar : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACCAlwaysOne2 : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACCAlwaysOne : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACCSpeedSetpoint : 19|12@0+ (0.0625,0) [0|255.9375] "km/h"  NEO
+ SG_ ACCGapLevel : 21|2@0+ (1,0) [0|0] ""  NEO
+ SG_ ACCResumeButton : 1|1@0+ (1,0) [0|0] ""  NEO
+ SG_ ACCCmdActive : 23|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 1001 ECMVehicleSpeed: 8 K20_ECM
+ SG_ VehicleSpeed : 7|16@0+ (0.01,0) [0|0] "mph"  NEO
+
+BO_ 1033 ASCMKeepAlive: 7 NEO
+ SG_ ASCMKeepAliveAllZero : 7|56@0+ (1,0) [0|0] ""  NEO
+
+BO_ 1217 ECMEngineCoolantTemp: 8 K20_ECM
+ SG_ EngineCoolantTemp : 23|8@0+ (1,-40) [0|0] "C"  NEO
+
+BO_ 1249 VIN_Part2: 8 K20_ECM
+ SG_ VINPart2 : 7|64@0+ (1,0) [0|0] ""  NEO
+
+BO_ 1300 VIN_Part1: 8 K20_ECM
+ SG_ VINPart1 : 7|64@0+ (1,0) [0|0] ""  NEO
+
+BO_ 1912 PSCM_778: 8 K43_PSCM
+
+BO_TX_BU_ 338 : K124_ASCM,NEO;
+BO_TX_BU_ 880 : NEO,K124_ASCM;
+BO_TX_BU_ 1033 : K124_ASCM,NEO;
+BO_TX_BU_ 715 : NEO,K124_ASCM;
+
+
+BU_: XXX CAMERA FRONT_RADAR ADRV APRK
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _stellantis_common_ram_hd_generated.dbc starts here";
+CM_ "Generated from _stellantis_common.dbc"
+
+CM_ SG_ 258 STEERING_ANGLE_HP "Steering angle high precision";
+CM_ SG_ 264 ENGINE_TORQUE "Effective engine torque";
+CM_ SG_ 264 EXPECTED_ENGINE_TORQUE "Expected Engine Torque based on target engine speed";
+CM_ SG_ 678 LKAS_ICON_COLOR "3 is yellow, 2 is green, 1 is white, 0 is null";
+CM_ SG_ 678 LKAS_LANE_LINES "0x01 transparent lines, 0x02 left white, 0x03 right white, 0x04 left yellow with car on top, 0x05 left yellow with car on top, 0x06 both white, 0x07 left yellow, 0x08 left yellow right white, 0x09 right yellow, 0x0a right yellow left white, 0x0b left yellow with car on top right white, 0x0c right yellow with car on top left white, (0x00, 0x0d, 0x0e, 0x0f) null";
+CM_ SG_ 678 LKAS_ALERTS "(0x01, 0x02) lane sense off, (0x03, 0x04, 0x06) place hands on steering wheel, 0x07 lane departure detected + place hands on steering wheel, (0x08, 0x09) lane sense unavailable + clean front windshield, 0x0b lane sense and auto high beam unavailable + clean front windshield, 0x0c lane sense unavailable + service required, (0x00, 0x05, 0x0a, 0x0d, 0x0e, 0x0f) null";
+
+CM_ "chrysler_ram_hd.dbc starts here";
+

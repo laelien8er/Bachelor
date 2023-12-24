@@ -1,0 +1,249 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BO_ 2 STEER_ANGLE_SENSOR: 5 XXX
+ SG_ STEER_ANGLE_RATE : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ SET_ME_X07 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ STEER_ANGLE : 0|16@1- (-0.1,0) [0|65535] "" XXX
+ SG_ COUNTER : 32|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 361 LKAS: 8 XXX
+ SG_ MAX_TORQUE : 39|8@0+ (0.01,0) [0|255] "Nm" XXX
+ SG_ SET_0x80 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ LKA_ACTIVE : 52|1@0+ (1,0) [0|15] "" XXX
+ SG_ SET_0x80_2 : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ DESIRED_ANGLE : 7|18@0+ (-0.01,1310) [-1311.43|1310] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 389 STEER_TORQUE_SENSOR: 8 XXX
+ SG_ LKAS_ACTIVE : 37|1@0+ (1,0) [0|3] "" XXX
+ SG_ STEER_TORQUE_LKAS : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ STEER_ANGLE : 23|18@0+ (-0.01,1310) [0|262143] "" XXX
+ SG_ STEER_TORQUE_DRIVER : 7|12@0+ (-0.01,20.47) [0|4095] "Nm" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|127] "" XXX
+
+BO_ 645 WHEEL_SPEEDS_REAR: 8 XXX
+ SG_ WHEEL_SPEED_RR : 7|16@0+ (0.005,0) [0|65535] "KPH" XXX
+ SG_ WHEEL_SPEED_RL : 23|16@0+ (0.005,0) [0|65535] "KPH" XXX
+
+BO_ 689 PROPILOT_HUD: 8 XXX
+ SG_ LARGE_WARNING_FLASHING : 9|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING1 : 10|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING2 : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_LANE_YELLOW_FLASH : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_YELLOW_FLASH : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEAD_CAR : 14|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEAD_CAR_ERROR : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_ERROR : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_ERROR_FLASHING : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_LANE_GREEN : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_GREEN : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_ERROR_FLASHING3 : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_ERROR_FLASHING : 29|1@0+ (1,0) [0|1] "" XXX
+ SG_ SAFETY_SHIELD_ACTIVE : 44|1@0+ (1,0) [0|1] "" XXX
+ SG_ LARGE_STEERING_WHEEL_ICON : 61|2@0+ (1,0) [0|3] "" XXX
+ SG_ RIGHT_LANE_GREEN_FLASH : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_LANE_GREEN_FLASH : 63|1@0+ (1,0) [0|1] "" XXX
+ SG_ FOLLOW_DISTANCE : 3|2@0+ (1,0) [0|3] "" XXX
+ SG_ AUDIBLE_TONE : 47|3@0+ (1,0) [0|8] "" XXX
+ SG_ SPEED_SET_ICON : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ SMALL_STEERING_WHEEL_ICON : 42|3@0+ (1,0) [0|7] "" XXX
+ SG_ SET_SPEED : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ unknown02 : 1|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown05 : 5|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown08 : 8|7@0+ (1,0) [0|63] "" XXX
+ SG_ unknown26 : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown28 : 28|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown31 : 31|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown43 : 43|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown55 : 55|8@0+ (1,0) [0|63] "" XXX
+ SG_ unknown59 : 59|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 783 CRUISE_STATE: 3 XXX
+ SG_ CRUISE_ENABLED : 3|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1228 PROPILOT_HUD_INFO_MSG: 8 XXX
+ SG_ NA_HIGH_ACCEL_TEMP : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_NA_HIGH_CABIN_TEMP : 8|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_MALFUNCTION : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_MALFUNCTION : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_MALFUNCTION : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_NA_CLEAN_REAR_CAMERA : 14|1@0+ (1,0) [0|1] "" XXX
+ SG_ NA_POOR_ROAD_CONDITIONS : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ CURRENTLY_UNAVAILABLE : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ SAFETY_SHIELD_OFF : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_COLLISION_NA_FRONT_RADAR_OBSTRUCTION : 20|1@0+ (1,0) [0|1] "" XXX
+ SG_ PEDAL_MISSAPPLICATION_SYSTEM_ACTIVATED : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_NA_RADAR_OBSTRUCTION : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_DO_NOT_ENTER : 33|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_SYSTEM_OFF : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_IMPACT_MALFUNCTION : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_COLLISION_MALFUNCTION : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ SIDE_RADAR_MALFUNCTION2 : 37|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_MALFUNCTION2 : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ FRONT_RADAR_MALFUNCTION2 : 39|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_MSGS : 42|3@0+ (1,0) [0|7] "" XXX
+ SG_ BOTTOM_MSG : 45|3@0+ (1,0) [0|7] "" XXX
+ SG_ HANDS_ON_WHEEL_WARNING : 47|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_STEP_ON_BRAKE_NOW : 51|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_FRONT_CAMERA_OBSTRUCTED : 52|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_NA_HIGH_CABIN_TEMP : 53|1@0+ (1,0) [0|1] "" XXX
+ SG_ WARNING_PROPILOT_MALFUNCTION : 54|1@0+ (1,0) [0|3] "" XXX
+ SG_ ACC_UNAVAILABLE_HIGH_CABIN_TEMP : 62|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_NA_FRONT_CAMERA_IMPARED : 63|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown07 : 7|7@0+ (1,0) [0|127] "" XXX
+ SG_ unknown10 : 10|2@0+ (1,0) [0|3] "" XXX
+ SG_ unknown15 : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown23 : 23|3@0+ (1,0) [0|7] "" XXX
+ SG_ unknown19 : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown31 : 31|6@0+ (1,0) [0|63] "" XXX
+ SG_ unknown32 : 32|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown46 : 46|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown50 : 50|3@0+ (1,0) [0|7] "" XXX
+ SG_ unknown55 : 55|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown61 : 61|6@0+ (1,0) [0|63] "" XXX
+
+BO_ 1227 LKAS_SETTINGS: 8 XXX
+ SG_ LKAS_ENABLED : 51|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 42 SEATBELT: 8 XXX
+ SG_ SEATBELT_DRIVER_LATCHED : 27|1@1+ (1,0) [0|3] "" XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ unknown2 : 31|4@0+ (1,0) [0|15] "" XXX
+ SG_ unknown3 : 24|2@1+ (1,0) [0|3] "" XXX
+ SG_ unknown1 : 7|24@0+ (1,0) [0|16777215] "" XXX
+ SG_ unknown4 : 39|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 460 BRAKE_PEDAL: 8 XXX
+ SG_ BRAKE_PEDAL : 7|8@0+ (1,0) [0|256] "" XXX
+
+BO_ 569 CRUISE_THROTTLE: 8 XXX
+ SG_ GAS_PEDAL_INVERTED : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ GAS_PEDAL : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ CRUISE_AVAILABLE : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ unsure1 : 23|6@0+ (1,0) [0|63] "" XXX
+ SG_ unsure2 : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ unsure3 : 31|2@0+ (1,0) [0|3] "" XXX
+ SG_ NO_BUTTON_PRESSED : 29|1@0+ (1,0) [0|1] "" XXX
+ SG_ RES_BUTTON : 28|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_BUTTON : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ FOLLOW_DISTANCE_BUTTON : 26|1@0+ (1,0) [0|1] "" XXX
+ SG_ CANCEL_BUTTON : 25|1@0+ (1,0) [0|1] "" XXX
+ SG_ PROPILOT_BUTTON : 24|1@0+ (1,0) [0|1] "" XXX
+ SG_ USER_BRAKE_PRESSED : 37|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 32|2@1+ (1,0) [0|3] "" XXX
+ SG_ unsure5 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ unsure6 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ unsure7 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 640 CANCEL_MSG: 8 XXX
+  SG_ CANCEL_SEATBELT : 1|1@0+ (1,0) [0|1] "" XXX
+  SG_ NEW_SIGNAL_1 : 7|6@0+ (1,0) [0|63] "" XXX
+  SG_ NEW_SIGNAL_2 : 0|1@0+ (1,0) [0|1] "" XXX
+  SG_ NEW_SIGNAL_3 : 15|56@0+ (1,0) [0|72057594037927940] "" XXX
+
+BO_ 644 WHEEL_SPEEDS_FRONT: 8 XXX
+ SG_ WHEEL_SPEED_FR : 7|16@0+ (0.005,0) [0|65535] "KPH" XXX
+ SG_ WHEEL_SPEED_FL : 23|16@0+ (0.005,0) [0|65535] "KPH" XXX
+
+BO_ 852 ESP: 8 XXX
+ SG_ ESP_DISABLED : 38|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 853 HUD_SETTINGS: 8 XXX
+ SG_ SPEED_MPH : 37|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 856 LIGHTS: 8 XXX
+ SG_ LEFT_BLINKER : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_BLINKER : 18|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1057 GEARBOX: 3 XXX
+ SG_ GEAR_SHIFTER : 5|3@0+ (1,0) [0|255] "" XXX
+
+BO_ 1549 DOORS_LIGHTS: 8 XXX
+ SG_ DOOR_OPEN_FL : 3|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 6|1@0+ (1,0) [0|1] "" XXX
+
+BU_: MRR 
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _stellantis_common.dbc starts here";
+CM_ SG_ 258 STEERING_ANGLE_HP "Steering angle high precision";
+CM_ SG_ 264 ENGINE_TORQUE "Effective engine torque";
+CM_ SG_ 264 EXPECTED_ENGINE_TORQUE "Expected Engine Torque based on target engine speed";
+CM_ SG_ 678 LKAS_ICON_COLOR "3 is yellow, 2 is green, 1 is white, 0 is null";
+CM_ SG_ 678 LKAS_LANE_LINES "0x01 transparent lines, 0x02 left white, 0x03 right white, 0x04 left yellow with car on top, 0x05 left yellow with car on top, 0x06 both white, 0x07 left yellow, 0x08 left yellow right white, 0x09 right yellow, 0x0a right yellow left white, 0x0b left yellow with car on top right white, 0x0c right yellow with car on top left white, (0x00, 0x0d, 0x0e, 0x0f) null";
+CM_ SG_ 678 LKAS_ALERTS "(0x01, 0x02) lane sense off, (0x03, 0x04, 0x06) place hands on steering wheel, 0x07 lane departure detected + place hands on steering wheel, (0x08, 0x09) lane sense unavailable + clean front windshield, 0x0b lane sense and auto high beam unavailable + clean front windshield, 0x0c lane sense unavailable + service required, (0x00, 0x05, 0x0a, 0x0d, 0x0e, 0x0f) null";
+
+CM_ "chrysler_pacifica_2017_hybrid.dbc starts here";
+
+CM_ SG_ 653 BRAKE_PRESSURE "max seems to be 148";
+CM_ SG_ 746 PRNDL "5=L, 4=D, 3=N, 2=R, 1=P";
+CM_ SG_ 320 BRAKE_PRESSED_2 "Value is 5 when brake is pressed by human, 1 when ACC brake";
+CM_ SG_ 320 BRAKE_PRESSED_ACC "set when ACC brakes";
+CM_ SG_ 792 TURN_SIGNALS "1=Left, 2=Right";
+CM_ SG_ 264 ACCEL_PEDAL "not in ACC so seems to be actual pedal. Use for gasPressed";
+CM_ SG_ 544 LKAS_STATE "2 when autopark has control, 8 when is actuatable by lkas, 4 when there is a fault";
+CM_ SG_ 658 LKAS_STEERING_TORQUE "Most sent by stock system is 1024+-230. + is left. typically changes by 2 or 3 each 0.01s";
+CM_ SG_ 678 LKAS_ICON_COLOR "3 is yellow, 2 is green, 1 is white, 0 is null";
+CM_ SG_ 678 LKAS_LANE_LINES "0x01 transparent lines, 0x02 left white, 0x03 right white, 0x04 left yellow with car on top, 0x05 left yellow with car on top, 0x06 both white, 0x07 left yellow, 0x08 left yellow right white, 0x09 right yellow, 0x0a right yellow left white, 0x0b left yellow with car on top right white, 0x0c right yellow with car on top left white, (0x00, 0x0d, 0x0e, 0x0f) null";
+CM_ SG_ 678 LKAS_ALERTS "(0x01, 0x02) lane sense off, (0x03, 0x04, 0x06) place hands on steering wheel, 0x07 lane departure detected + place hands on steering wheel, (0x08, 0x09) lane sense unavailable + clean front windshield, 0x0b lane sense and auto high beam unavailable + clean front windshield, 0x0c lane sense unavailable + service required, (0x00, 0x05, 0x0a, 0x0d, 0x0e, 0x0f) null";
+CM_ SG_ 705 AUTO_PARK_TOGGLE_1 "set briefly when turning on or off self-parking";
+CM_ SG_ 671 AUTO_PARK_CMD "Request Appears to be in NM";
+CM_ SG_ 671 AUTO_PARK_STATUS "1 = IDLE / NO REQUEST 9 = START REQUEST 10 = REQUEST MODE 11 = REQUEST MODE";
+CM_ SG_ 826 AUTO_PARK_GEAR_1 "Reverse=0, Forward=f";
+CM_ SG_ 826 AUTO_PARK_GEAR_2 "Reverse=0, Forward=f";
+CM_ SG_ 826 AUTO_PARK_GEAR_3 "Reverse=0, Forward=f";
+CM_ SG_ 332 STEER_ANGLE_2 "slightly lags the other steer_angle signal. also more noisy.";
+CM_ SG_ 608 PARKSENSE_DISABLED "set if parksense is disabled";
+CM_ SG_ 729 LKAS_STATUS_OK "Set to 0x0820 when LKAS system is plugged in.";
+CM_ SG_ 825 BEEP_339 "sent every 0.5s. 0050 is no beep. To beep send 4355 or 4155. Used by ParkSense warning.";
+CM_ SG_ 270 ELECTRIC_MOTOR "0x7fff indicates electric motor not in use";
+CM_ SG_ 291 ENERGY_GAIN_LOSS "unsure what this actually is";
+CM_ SG_ 291 ENERGY_SMOOTHER_CURVE "unsure what it is, but smoother";
+CM_ SG_ 308 ACCEL_134 "only set when human presses accel pedal";
+CM_ SG_ 532 NOISY_SLOWLY_DECREASING "perhaps battery but do not know";
+CM_ SG_ 816 TRACTION_OFF "set when traction off button is enabled";
+CM_ SG_ 816 TOGGLE_PARKSENSE "sending 3000071ec0ff9000 enables or disables parksense";
+CM_ SG_ 324 SPEED_2 "signal is approx half other speeds";
+CM_ SG_ 501 ACC_SPEED_CONFIG_KPH "speed configured for ACC";
+CM_ SG_ 501 ACC_SPEED_CONFIG_MPH "speed configured for ACC";
+CM_ SG_ 501 CRUISE_STATE "may just be an icon, but seems to indicate different cruise modes: ACC and Non-ACC and engaged state for both.";
+CM_ SG_ 625 SPEED "zero on non-acc drives";
+

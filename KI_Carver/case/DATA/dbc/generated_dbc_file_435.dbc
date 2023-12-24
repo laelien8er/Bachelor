@@ -1,0 +1,131 @@
+VERSION ""
+
+
+BO_ 318291879 BSM_STATUS_RIGHT: 8 XXX
+ SG_ BSM_ALERT : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ BSM_MODE : 6|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 318291615 BSM_STATUS_LEFT: 8 XXX
+ SG_ BSM_ALERT : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ BSM_MODE : 6|2@0+ (1,0) [0|3] "" XXX
+
+BU_: AWD ECU TCU ESP SAS ABS
+
+
+CM_ SG_ 134 LWI_Lenkradwinkel "Steering angle WITH variable ratio effect included";
+CM_ SG_ 159 EPS_HCA_Status "Status of Heading Control Assist feature";
+CM_ SG_ 159 EPS_Lenkmoment "Steering input by driver, torque";
+CM_ SG_ 159 EPS_VZ_Lenkmoment "Steering input by driver, direction";
+CM_ SG_ 159 EPS_Berechneter_LW "Raw steering angle, degrees";
+CM_ SG_ 159 EPS_VZ_BLW "Raw steering angle, direction";
+CM_ SG_ 173 COUNTERXX "Message not renamed to COUNTER because J533 rate-limiting makes it look like messages are being lost";
+CM_ SG_ 294 HCA_01_Vib_Freq "Frequenz der Lenkradvibration";
+CM_ SG_ 294 HCA_01_LM_Offset "Von HCA angefordertes Lenkmoment (Betrag)";
+CM_ SG_ 294 EA_ACC_Sollstatus "Status-Anforderung ACC von Emergency Alert. Statuswechsel bei Flanke. Solange Wert=1, wird EA_ACC_Wunschgeschwindigkeit übernommen. Wert=2 führt zu Zustand ¿ACC_GRA_passiv¿";
+CM_ SG_ 294 EA_Ruckprofil "Emergency Alert Anforderung an ESP, welcher Ruck verwendet werden soll. Eine Umsetzung der Ruckanforderung im ESP erfolgt nur mit gesetztem Bit 'EA_Ruckfreigabe'.";
+CM_ SG_ 294 HCA_01_Sendestatus "Gibt den Sendestatus der HCA_01 an (notwendig für IL-Unterstützung)";
+CM_ SG_ 294 HCA_01_LM_OffSign "Vorzeichen des HCA-Lenkmoments";
+CM_ SG_ 294 HCA_01_Status_HCA "Statusinformation vom HCA und Manoevrierassistent für Handshakemechanismus mit der Lenkung";
+CM_ SG_ 294 HCA_01_Vib_Amp "Momentenamplitude der Lenkradvibration";
+CM_ SG_ 294 EA_Ruckfreigabe "Emergency Alert Freigabit für die Warnruck-Anforderung an das ESP";
+CM_ SG_ 294 EA_ACC_Wunschgeschwindigkeit "Emergency Alert Anforderung neue Wunschgeschwindigkeit";
+CM_ SG_ 302 ACC_Hold_Request "Active request for ABS brake hold in ACC_Hold_Type";
+CM_ SG_ 302 ACC_Boost_Request "Hybrid engine start related";
+CM_ SG_ 302 ACC_Freewheel_Request "Active request for DSG sailing/coasting in ACC_Freewheel_Type";
+CM_ SG_ 302 ACC_Hold_Release "Request to ABS to release brake hold";
+CM_ SG_ 302 ACC_Accel_Secondary "Target acceleration of the secondary controller";
+CM_ SG_ 302 ACC_Accel_TSK "Mirror of request to TSK to implement a target acceleration";
+CM_ SG_ 870 Hazard_Switch "Four-way flashers active";
+CM_ SG_ 870 Comfort_Signal_Left "Comfort turn signal active, left";
+CM_ SG_ 870 Comfort_Signal_Right "Comfort turn signal active, right";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Fast_Send_Rate_Active "CAN message send rate";
+CM_ SG_ 919 LDW_DLC "Probable DLC (distance to line crossing)";
+CM_ SG_ 919 LDW_TLC "Probable TLC (time to line crossing)";
+CM_ SG_ 919 LDW_Unknown "Might be a steering pressed / driver active flag";
+CM_ SG_ 919 Alert_Message "Static table of alert messages to be invoked in the instrument cluster, some with or without beeps, 0 = no current message";
+CM_ SG_ 919 LDW_Direction "Left/right indicator for DLC and TLC";
+CM_ SG_ 919 Right_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Left_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Kombi_Lamp_Orange "Enables orange LDW light in instrument cluster";
+CM_ SG_ 919 Kombi_Lamp_Green "Enables green LDW light in instrument cluster";
+CM_ SG_ 780 Folgefahrt "Following another vehicle";
+CM_ SG_ 780 SetAbstand "Set following distance";
+CM_ SG_ 780 Abstand "Following distance";
+CM_ SG_ 780 SetSpeed "ACC set speed";
+CM_ SG_ 391 GearPosition "Traditional PRND plus B-mode aggressive regen, B-mode mapped to Drive";
+CM_ SG_ 960 ZAS_Kl_15 "Indicates ignition on";
+CM_ SG_ 1720 KBI_BCmE_aktiv "Anzeige BCmE aktiv (BCmE-Screen oder Einsparhinweis in der Anzeige)";
+CM_ SG_ 1720 KBI_Max_Tankinhalt "Mitteilung des maximalen Tankinhalts an das Reichweitenmodul";
+CM_ SG_ 1720 KBI_Nachtanken_erkannt "Statusinformation Nachtankmodus";
+CM_ SG_ 1720 KBI_Reifenumfang "Mittlerer Radumfang aus der K-Zahl gerechnet in Millimeter.  Byte 2 Bit 5,4 reserviert, Byte 2 Bit 3..0 und Byte 1 Bit 7..0; Wertebereich 0..4096 mm
+";
+CM_ SG_ 1720 KBI_Reifenumfang_Sekundaer "Fahrzeuge mit unterschiedlichen Reifenumfängen Vorderachse / Hinterachse:
+
+Primärachse: KBI_Reifenumfang
+Sekundärachse: KBI_Reifenumfang_Sekundaer
+";
+CM_ SG_ 1720 KBI_Sparhinweis_quittiert "angezeigter Sparhinweis ist quittiert. Signal wird nach zwei Sendebotschaften wieder auf '0' gesetzt.";
+CM_ SG_ 1720 KBI_Tankfuellstand_Prozent "Tankfüllstand in %";
+CM_ SG_ 1720 KBI_Tankinhalt_hochaufl "angezeigter Tankinhalt hochauflösend zur Restreichweitenberechnung";
+CM_ SG_ 1720 KBI_Variante "Zeigt an ob es sich um ein konventionelles Zeiger-Kombiinstrument handelt oder um eine Volldisplay-Kombiinstrument";
+CM_ SG_ 1720 KBI_Variante_USA "In diesem Signal wird die HW-Variante des Kombis ausgegeben, ACC plausibilisiert auf dieses Signal hin seine US-Codierung";
+
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+VAL_ 295 GEAR 0 "P" 1 "R" 2 "N" 3 "D" 4 "B";
+VAL_ 466 CRUISE_STATE 11 "timer_3sec" 10 "adaptive click down" 9 "adaptive click up" 8 "adaptive engaged" 7 "standstill" 6 "non-adaptive click up" 5 "non-adaptive click down" 4 "non-adaptive hold down" 3 "non-adaptive hold up" 2 "non-adaptive being engaged" 1 "non-adaptive engaged" 0 "off";
+VAL_ 467 LOW_SPEED_LOCKOUT 2 "low speed locked" 1 "ok";
+VAL_ 467 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 614 STATE 3 "enabled" 1 "disabled";
+VAL_ 614 DIRECTION_CMD 3 "right" 2 "center" 1 "left";
+VAL_ 643 STATE 0 "normal" 1 "adaptive_cruise_control" 3 "emergency_braking";
+VAL_ 835 ACC_TYPE 2 "permanent low speed lockout" 1 "ok";
+VAL_ 835 ACC_MALFUNCTION 1 "faulted" 0 "ok";
+VAL_ 835 ACC_CUT_IN 1 "CUT-IN Detected" 0 "clear";
+VAL_ 835 ALLOW_LONG_PRESS 2 "set speed increase by 5 speed units regardless" 1 "set speed increase by 1 speed unit on short press, 5 speed units on long press";
+VAL_ 865 CLUTCH_RELEASED 0 "clutch pressed any amount" 1 "clutch released"
+VAL_ 921 CRUISE_CONTROL_STATE 2 "disabled" 11 "hold" 10 "hold_waiting_user_cmd" 6 "enabled" 5 "faulted";
+VAL_ 956 SPORT_ON 0 "off" 1 "on";
+VAL_ 956 GEAR 0 "D" 1 "S" 8 "N" 16 "R" 32 "P";
+VAL_ 956 SPORT_GEAR_ON 0 "off" 1 "on";
+VAL_ 956 SPORT_GEAR 1 "S1" 2 "S2" 3 "S3" 4 "S4" 5 "S5" 6 "S6";
+VAL_ 956 ECON_ON 0 "off" 1 "on";
+VAL_ 956 B_GEAR_ENGAGED 0 "off" 1 "on";
+VAL_ 956 DRIVE_ENGAGED 0 "off" 1 "on";
+VAL_ 1005 REVERSE_CAMERA_GUIDELINES 3 "No guidelines" 2 "Static guidelines" 1 "Active guidelines";
+VAL_ 1009 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 1041 PCS_INDICATOR 2 "PCS Faulted" 1 "PCS Turned Off By User" 0 "PCS Enabled";
+VAL_ 1041 PCS_SENSITIVITY 64 "high sensitivity"  128 "mid sensitivity" 192 "low sensitivity" 0 "off";
+VAL_ 1042 LDA_ALERT 3 "hold with continuous beep" 2 "LDA unavailable" 1 "hold" 0 "none";
+VAL_ 1042 BARRIERS 3 "left" 2 "right" 1 "both" 0 "none";
+VAL_ 1042 RIGHT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LKAS_STATUS 1 "on" 0 "off";
+VAL_ 1042 LEFT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LDA_ON_MESSAGE 2 "Lane Departure Alert Turned ON, Steering Assist Inactive" 1 "Lane Departure Alert Turned ON, Steering Assist Active" 0 "clear";
+VAL_ 1042 LDA_SA_TOGGLE  2 "steering assist off" 1 "steering assist on";
+VAL_ 1042 LDA_SENSITIVITY 2 "standard" 1 "high" 0 "undefined";
+VAL_ 1042 LDA_MESSAGES 4 "lda unavailable at this speed" 1 "lda unavailable below approx 50km/h" 0 "ok";
+VAL_ 1042 LDA_FRONT_CAMERA_BLOCKED 1 "lda unavailable" 0 "ok";
+VAL_ 1042 TAKE_CONTROL 1 "take control" 0 "ok";
+VAL_ 1042 LANE_SWAY_WARNING 3 "ok" 2 "orange please take a break" 1 "prompt would you like to take a break" 0 "ok";
+VAL_ 1042 LANE_SWAY_BUZZER 3 "ok" 2 "beep twice" 1 "beep twice" 0 "ok";
+VAL_ 1161 TSGN1 1 "speed sign" 0 "none";
+VAL_ 1161 TSGN2 1 "speed sign" 0 "none";
+VAL_ 1161 SPLSGN2 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1162 TSGN3 0 "none" 1 "speed sign" 2 "0 unlimited" 7 "unlimited" 16 "highway" 17 "no highway" 18 "motorway" 19 "no motorway" 20 "in city" 21 "outside city" 22 "pedestrian area" 23 "no pedestrian area" 65 "no overtaking left" 66 "no overtaking right" 67 "overtaking allowed again" 81 "no right turn" 97 "stop" 105 "yield" 113 "stop" 114 "yield us" 129 "no entry" 138 "no entry tss2" 145 "do not enter";
+VAL_ 1162 SPLSGN3 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1552 METER_SLIDER_LOW_BRIGHTNESS 1 "Low brightness mode, footwell lights off" 0 "Normal mode, footwell lights on";
+VAL_ 1552 METER_SLIDER_DIMMED 1 "Dimmed" 0 "Not Dimmed";
+VAL_ 1552 UNITS 1 "km (km/L)" 2 "km (L/100km)" 3 "miles (MPG US)" 4 "miles (MPG Imperial)";
+VAL_ 1553 UNITS 1 "km" 2 "miles";
+VAL_ 1556 TURN_SIGNALS 3 "none" 2 "right" 1 "left";
+VAL_ 1592 LOCK_STATUS 0 "locked" 1 "unlocked";
+
+VAL_ 401 SETME_X3 3 "TSS 2.0" 1 "TSS 2.5 or 2022 RAV4" 0 "TSS 2.0 on Alphard, Highlander, NX";
+VAL_ 610 IPAS_STATE 5 "override" 3 "enabled" 1 "disabled";
+VAL_ 610 LKA_STATE 25 "temporary_fault" 17 "permanent_fault" 11 "lka_missing_unavailable2" 9 "temporary_fault2" 5 "active" 3 "lka_missing_unavailable" 1 "standby";

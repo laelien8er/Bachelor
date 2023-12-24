@@ -1,0 +1,202 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BO_ 513 MOTORS_DATA: 8 XXX
+  SG_ SPEED_L : 7|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ SPEED_R : 23|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ ELEC_ANGLE_L : 39|8@0+ (1,0) [0|0] "deprecated" XXX
+  SG_ ELEC_ANGLE_R : 47|8@0+ (1,0) [0|0] "deprecated" XXX
+  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 514 VAR_VALUES: 3 XXX
+  SG_ IGNITION : 0|1@0+ (1,0) [0|1] "" XXX
+  SG_ ENABLE_MOTORS : 1|1@0+ (1,0) [0|1] "" XXX
+  SG_ FAULT : 7|6@0+ (1,0) [0|63] "" XXX
+  SG_ MOTOR_ERR_L : 15|8@0+ (1,0) [0|255] "" XXX
+  SG_ MOTOR_ERR_R : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 515 BODY_DATA: 4 XXX
+  SG_ MCU_TEMP : 7|8@0+ (0.1,0) [0|125] "" XXX
+  SG_ BATT_VOLTAGE : 15|16@0+ (0.01,0) [0|60] "" XXX
+  SG_ BATT_PERCENTAGE : 31|7@0+ (1,0) [0|100] "" XXX
+  SG_ CHARGER_CONNECTED : 24|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 516 MOTORS_CURRENT: 8 XXX
+  SG_ LEFT_PHA_AB : 7|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ LEFT_PHA_BC : 23|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ RIGHT_PHA_AB : 39|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ RIGHT_PHA_BC : 55|16@0- (1,0) [-32768|32767] "" XXX
+
+BO_ 517 MOTORS_ANGLE: 8 XXX
+  SG_ LEFT_ANGLE_SENSOR : 7|16@0+ (1,0) [0|16384] "" XXX
+  SG_ RIGHT_ANGLE_SENSOR : 23|16@0+ (1,0) [0|16384] "" XXX
+  SG_ LEFT_HALL_SENSOR : 39|16@0+ (1,0) [0|360] "" XXX
+  SG_ RIGHT_HALL_SENSOR : 55|16@0+ (1,0) [0|360] "" XXX
+
+BO_ 592 TORQUE_CMD: 6 XXX
+  SG_ TORQUE_L : 7|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ TORQUE_R : 23|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ COUNTER : 35|4@0+ (1,0) [0|15] "" XXX
+  SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 593 MAX_MOTOR_RPM_CMD: 5 XXX
+  SG_ MAX_RPM_L : 7|16@0+ (1,0) [0|1000] "" XXX
+  SG_ MAX_RPM_R : 23|16@0+ (1,0) [0|1000] "" XXX
+  SG_ CHECKSUM : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 769 KNEE_MOTORS_DATA: 8 XXX
+  SG_ SPEED_L : 7|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ SPEED_R : 23|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ ELEC_ANGLE_L : 39|8@0+ (1,0) [0|0] "deprecated" XXX
+  SG_ ELEC_ANGLE_R : 47|8@0+ (1,0) [0|0] "deprecated" XXX
+  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
+  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 770 KNEE_VAR_VALUES: 3 XXX
+  SG_ IGNITION : 0|1@0+ (1,0) [0|1] "" XXX
+  SG_ ENABLE_MOTORS : 1|1@0+ (1,0) [0|1] "" XXX
+  SG_ FAULT : 7|6@0+ (1,0) [0|63] "" XXX
+  SG_ MOTOR_ERR_L : 15|8@0+ (1,0) [0|255] "" XXX
+  SG_ MOTOR_ERR_R : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 771 KNEE_DATA: 4 XXX
+  SG_ MCU_TEMP : 7|8@0+ (0.1,0) [0|125] "" XXX
+  SG_ BATT_VOLTAGE : 15|16@0+ (0.01,0) [0|60] "" XXX
+  SG_ BATT_PERCENTAGE : 31|7@0+ (1,0) [0|100] "" XXX
+  SG_ CHARGER_CONNECTED : 24|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 772 KNEE_MOTORS_CURRENT: 8 XXX
+  SG_ LEFT_PHA_AB : 7|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ LEFT_PHA_BC : 23|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ RIGHT_PHA_AB : 39|16@0- (1,0) [-32768|32767] "" XXX
+  SG_ RIGHT_PHA_BC : 55|16@0- (1,0) [-32768|32767] "" XXX
+
+BO_ 773 KNEE_MOTORS_ANGLE: 8 XXX
+  SG_ LEFT_ANGLE_SENSOR : 7|16@0+ (1,0) [0|16384] "" XXX
+  SG_ RIGHT_ANGLE_SENSOR : 23|16@0+ (1,0) [0|16384] "" XXX
+  SG_ LEFT_HALL_SENSOR : 39|16@0+ (1,0) [0|360] "" XXX
+  SG_ RIGHT_HALL_SENSOR : 55|16@0+ (1,0) [0|360] "" XXX
+
+BO_ 848 KNEE_TORQUE_CMD: 6 XXX
+  SG_ TORQUE_L : 7|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ TORQUE_R : 23|16@0- (1,0) [-1000|1000] "" XXX
+  SG_ COUNTER : 35|4@0+ (1,0) [0|15] "" XXX
+  SG_ CHECKSUM : 47|8@0+ (1,0) [0|255] "" XXX
+
+BU_: XXX
+
+
+CM_ SG_ 134 LWI_Lenkradwinkel "Steering angle WITH variable ratio effect included";
+CM_ SG_ 159 EPS_HCA_Status "Status of Heading Control Assist feature";
+CM_ SG_ 159 EPS_Lenkmoment "Steering input by driver, torque";
+CM_ SG_ 159 EPS_VZ_Lenkmoment "Steering input by driver, direction";
+CM_ SG_ 159 EPS_Berechneter_LW "Raw steering angle, degrees";
+CM_ SG_ 159 EPS_VZ_BLW "Raw steering angle, direction";
+CM_ SG_ 173 COUNTERXX "Message not renamed to COUNTER because J533 rate-limiting makes it look like messages are being lost";
+CM_ SG_ 294 HCA_01_Vib_Freq "Frequenz der Lenkradvibration";
+CM_ SG_ 294 HCA_01_LM_Offset "Von HCA angefordertes Lenkmoment (Betrag)";
+CM_ SG_ 294 EA_ACC_Sollstatus "Status-Anforderung ACC von Emergency Alert. Statuswechsel bei Flanke. Solange Wert=1, wird EA_ACC_Wunschgeschwindigkeit übernommen. Wert=2 führt zu Zustand ¿ACC_GRA_passiv¿";
+CM_ SG_ 294 EA_Ruckprofil "Emergency Alert Anforderung an ESP, welcher Ruck verwendet werden soll. Eine Umsetzung der Ruckanforderung im ESP erfolgt nur mit gesetztem Bit 'EA_Ruckfreigabe'.";
+CM_ SG_ 294 HCA_01_Sendestatus "Gibt den Sendestatus der HCA_01 an (notwendig für IL-Unterstützung)";
+CM_ SG_ 294 HCA_01_LM_OffSign "Vorzeichen des HCA-Lenkmoments";
+CM_ SG_ 294 HCA_01_Status_HCA "Statusinformation vom HCA und Manoevrierassistent für Handshakemechanismus mit der Lenkung";
+CM_ SG_ 294 HCA_01_Vib_Amp "Momentenamplitude der Lenkradvibration";
+CM_ SG_ 294 EA_Ruckfreigabe "Emergency Alert Freigabit für die Warnruck-Anforderung an das ESP";
+CM_ SG_ 294 EA_ACC_Wunschgeschwindigkeit "Emergency Alert Anforderung neue Wunschgeschwindigkeit";
+CM_ SG_ 302 ACC_Hold_Request "Active request for ABS brake hold in ACC_Hold_Type";
+CM_ SG_ 302 ACC_Boost_Request "Hybrid engine start related";
+CM_ SG_ 302 ACC_Freewheel_Request "Active request for DSG sailing/coasting in ACC_Freewheel_Type";
+CM_ SG_ 302 ACC_Hold_Release "Request to ABS to release brake hold";
+CM_ SG_ 302 ACC_Accel_Secondary "Target acceleration of the secondary controller";
+CM_ SG_ 302 ACC_Accel_TSK "Mirror of request to TSK to implement a target acceleration";
+CM_ SG_ 870 Hazard_Switch "Four-way flashers active";
+CM_ SG_ 870 Comfort_Signal_Left "Comfort turn signal active, left";
+CM_ SG_ 870 Comfort_Signal_Right "Comfort turn signal active, right";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_1 "Probably front";
+CM_ SG_ 870 Left_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Right_Turn_Exterior_Bulb_2 "Probably rear";
+CM_ SG_ 870 Fast_Send_Rate_Active "CAN message send rate";
+CM_ SG_ 919 LDW_DLC "Probable DLC (distance to line crossing)";
+CM_ SG_ 919 LDW_TLC "Probable TLC (time to line crossing)";
+CM_ SG_ 919 LDW_Unknown "Might be a steering pressed / driver active flag";
+CM_ SG_ 919 Alert_Message "Static table of alert messages to be invoked in the instrument cluster, some with or without beeps, 0 = no current message";
+CM_ SG_ 919 LDW_Direction "Left/right indicator for DLC and TLC";
+CM_ SG_ 919 Right_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Left_Lane_Status "Display brightness range, 0 = no lane, 3 = full brightness";
+CM_ SG_ 919 Kombi_Lamp_Orange "Enables orange LDW light in instrument cluster";
+CM_ SG_ 919 Kombi_Lamp_Green "Enables green LDW light in instrument cluster";
+CM_ SG_ 780 Folgefahrt "Following another vehicle";
+CM_ SG_ 780 SetAbstand "Set following distance";
+CM_ SG_ 780 Abstand "Following distance";
+CM_ SG_ 780 SetSpeed "ACC set speed";
+CM_ SG_ 391 GearPosition "Traditional PRND plus B-mode aggressive regen, B-mode mapped to Drive";
+CM_ SG_ 960 ZAS_Kl_15 "Indicates ignition on";
+CM_ SG_ 1720 KBI_BCmE_aktiv "Anzeige BCmE aktiv (BCmE-Screen oder Einsparhinweis in der Anzeige)";
+CM_ SG_ 1720 KBI_Max_Tankinhalt "Mitteilung des maximalen Tankinhalts an das Reichweitenmodul";
+CM_ SG_ 1720 KBI_Nachtanken_erkannt "Statusinformation Nachtankmodus";
+CM_ SG_ 1720 KBI_Reifenumfang "Mittlerer Radumfang aus der K-Zahl gerechnet in Millimeter.  Byte 2 Bit 5,4 reserviert, Byte 2 Bit 3..0 und Byte 1 Bit 7..0; Wertebereich 0..4096 mm
+";
+CM_ SG_ 1720 KBI_Reifenumfang_Sekundaer "Fahrzeuge mit unterschiedlichen Reifenumfängen Vorderachse / Hinterachse:
+
+Primärachse: KBI_Reifenumfang
+Sekundärachse: KBI_Reifenumfang_Sekundaer
+";
+CM_ SG_ 1720 KBI_Sparhinweis_quittiert "angezeigter Sparhinweis ist quittiert. Signal wird nach zwei Sendebotschaften wieder auf '0' gesetzt.";
+CM_ SG_ 1720 KBI_Tankfuellstand_Prozent "Tankfüllstand in %";
+CM_ SG_ 1720 KBI_Tankinhalt_hochaufl "angezeigter Tankinhalt hochauflösend zur Restreichweitenberechnung";
+CM_ SG_ 1720 KBI_Variante "Zeigt an ob es sich um ein konventionelles Zeiger-Kombiinstrument handelt oder um eine Volldisplay-Kombiinstrument";
+CM_ SG_ 1720 KBI_Variante_USA "In diesem Signal wird die HW-Variante des Kombis ausgegeben, ACC plausibilisiert auf dieses Signal hin seine US-Codierung";
+
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+
+VAL_ 780 CRUISE_SPEED 255 "no_speed" 252 "stopped";
+VAL_ 780 HUD_LEAD 3 "acc_off" 2 "solid_car" 1 "dashed_car" 0 "no_car";
+VAL_ 884 DASHBOARD_ALERT 0 "none" 51 "acc_problem" 55 "cmbs_problem" 75 "key_not_detected" 79 "fasten_seatbelt" 111 "lkas_problem" 131 "brake_system_problem" 132 "brake_hold_problem" 139 "tbd" 161 "door_open";
+VAL_ 891 WIPERS 4 "High" 2 "Low" 0 "Off";
+
+
+VAL_ 506 FCW 3 "fcw" 2 "fcw" 1 "fcw" 0 "no_fcw";
+VAL_ 506 CHIME 4 "double_chime" 3 "single_chime" 2 "continuous_chime" 1 "repeating_chime" 0 "no_chime";
+VAL_ 506 AEB_STATUS 3 "aeb_prepare" 2 "aeb_ready" 1 "aeb_braking" 0 "no_aeb";
+VAL_ 829 BEEP 3 "single_beep" 2 "triple_beep" 1 "repeated_beep" 0 "no_beep";
+
+
+VAL_ 392 GEAR_SHIFTER 0 "S" 1 "P" 2 "R" 4 "N" 8 "D" ;
+VAL_ 392 GEAR 26 "S" 4 "D" 3 "N" 2 "R" 1 "P" ;
+VAL_ 399 STEER_STATUS 6 "tmp_fault" 5 "fault_1" 4 "no_torque_alert_2" 3 "low_speed_lockout" 2 "no_torque_alert_1" 0 "normal" ;

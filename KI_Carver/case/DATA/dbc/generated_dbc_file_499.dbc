@@ -1,0 +1,118 @@
+VERSION ""
+
+
+BO_ 274923520 DriverDoorStatus: 1 GMLAN
+ SG_ DriverDoorOpened : 0|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 272629760 Chime: 5 NEO
+ SG_ ChimeType : 7|8@0+ (1,0) [0|0] ""  GMLAN
+ SG_ ChimeRepeat : 23|8@0+ (1,0) [0|0] ""  GMLAN
+ SG_ ChimeDuration : 15|8@0+ (1,0) [0|0] ""  GMLAN
+ SG_ ChimeByte5 : 39|8@0+ (1,0) [0|0] ""  GMLAN
+ SG_ ChimeByte4 : 31|8@0+ (1,0) [0|0] ""  GMLAN
+
+BO_ 270581760 BlinkerStatus: 5 GMLAN
+ SG_ RightBlinker : 6|1@0+ (1,0) [0|0] ""  NEO
+ SG_ LeftBlinker : 7|1@0+ (1,0) [0|0] ""  NEO
+ SG_ BlinkerLight : 25|1@0+ (1,0) [0|0] ""  NEO
+
+BO_ 270794752 SteeringWheelAngle: 8 GMLAN
+ SG_ SteeringWheelAngle : 39|16@0- (0.0625,0) [-540|540] "deg"  NEO
+
+BO_ 271368192 GearShifter: 8 GMLAN
+ SG_ GearShifter : 17|2@0+ (1,0) [0|3] ""  NEO
+
+BO_ 271360000 GasPedalRegenCruise: 8 GMLAN
+ SG_ CruiseControlActive : 56|1@0+ (1,0) [0|0] ""  GMLAN
+ SG_ MaxRegen : 12|1@0+ (1,0) [0|1] ""  GMLAN,NEO
+ SG_ GasPedal : 47|8@0+ (1,0) [0|254] ""  GMLAN,NEO
+ SG_ GearShifter2NotUsed : 55|8@0+ (1,0) [0|255] ""  GMLAN,NEO
+
+BO_ 270860288 BrakePedal: 2 GMLAN
+ SG_ BrakeLevel : 2|2@0+ (1,0) [0|3] ""  NEO
+ SG_ BrakeSensor : 15|8@0+ (1,0) [0|255] ""  NEO
+
+BO_ 275480576 WheelSpeed: 8 GMLAN
+ SG_ WheelSpeedFL : 7|16@0+ (0.01,0) [0|70] "yd/s"  NEO
+ SG_ WheelSpeedFR : 39|16@0+ (0.01,0) [0|70] "yd/s"  NEO
+ SG_ WheelSpeedRL : 23|16@0+ (0.01,0) [0|70] "yd/s"  NEO
+ SG_ WheelSpeedRR : 55|16@0+ (0.01,0) [0|70] "yd/s"  NEO
+
+BO_ 270598144 VehicleSpeed: 8 GMLAN
+ SG_ VehicleSpeed1 : 7|16@0+ (0.01,0) [0|100] "mph"  NEO
+ SG_ VehicleSpeed2 : 39|16@0+ (0.01,0) [0|100] "mph"  NEO
+
+BO_ 276135936 CruiseButtons: 3 GMLAN
+ SG_ CruiseButtons : 3|3@0+ (1,0) [0|12] ""  NEO
+
+BO_ 276127744 CruiseButtons2: 1 GMLAN
+ SG_ LKAGapButton : 1|2@0+ (1,0) [0|2] ""  NEO
+
+BO_ 275955897 LeftRadar: 2 GMLAN
+ SG_ BSM_Indicator_Light : 4|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 275980379 RightRadar: 2 GMLAN
+ SG_ BSM_Indicator_Light : 0|1@0+ (1,0) [0|1] "" XXX
+
+
+
+BA_DEF_  "UseGMParameterIDs" INT 0 0;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "UseGMParameterIDs" 1;
+BA_DEF_DEF_  "ProtocolType" "GMLAN";
+BA_DEF_DEF_  "BusType" "";
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "GMLAN";
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+VAL_ 295 GEAR 0 "P" 1 "R" 2 "N" 3 "D" 4 "B";
+VAL_ 466 CRUISE_STATE 11 "timer_3sec" 10 "adaptive click down" 9 "adaptive click up" 8 "adaptive engaged" 7 "standstill" 6 "non-adaptive click up" 5 "non-adaptive click down" 4 "non-adaptive hold down" 3 "non-adaptive hold up" 2 "non-adaptive being engaged" 1 "non-adaptive engaged" 0 "off";
+VAL_ 467 LOW_SPEED_LOCKOUT 2 "low speed locked" 1 "ok";
+VAL_ 467 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 614 STATE 3 "enabled" 1 "disabled";
+VAL_ 614 DIRECTION_CMD 3 "right" 2 "center" 1 "left";
+VAL_ 643 STATE 0 "normal" 1 "adaptive_cruise_control" 3 "emergency_braking";
+VAL_ 835 ACC_TYPE 2 "permanent low speed lockout" 1 "ok";
+VAL_ 835 ACC_MALFUNCTION 1 "faulted" 0 "ok";
+VAL_ 835 ACC_CUT_IN 1 "CUT-IN Detected" 0 "clear";
+VAL_ 835 ALLOW_LONG_PRESS 2 "set speed increase by 5 speed units regardless" 1 "set speed increase by 1 speed unit on short press, 5 speed units on long press";
+VAL_ 865 CLUTCH_RELEASED 0 "clutch pressed any amount" 1 "clutch released"
+VAL_ 921 CRUISE_CONTROL_STATE 2 "disabled" 11 "hold" 10 "hold_waiting_user_cmd" 6 "enabled" 5 "faulted";
+VAL_ 956 SPORT_ON 0 "off" 1 "on";
+VAL_ 956 GEAR 0 "D" 1 "S" 8 "N" 16 "R" 32 "P";
+VAL_ 956 SPORT_GEAR_ON 0 "off" 1 "on";
+VAL_ 956 SPORT_GEAR 1 "S1" 2 "S2" 3 "S3" 4 "S4" 5 "S5" 6 "S6";
+VAL_ 956 ECON_ON 0 "off" 1 "on";
+VAL_ 956 B_GEAR_ENGAGED 0 "off" 1 "on";
+VAL_ 956 DRIVE_ENGAGED 0 "off" 1 "on";
+VAL_ 1005 REVERSE_CAMERA_GUIDELINES 3 "No guidelines" 2 "Static guidelines" 1 "Active guidelines";
+VAL_ 1009 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 1041 PCS_INDICATOR 2 "PCS Faulted" 1 "PCS Turned Off By User" 0 "PCS Enabled";
+VAL_ 1041 PCS_SENSITIVITY 64 "high sensitivity"  128 "mid sensitivity" 192 "low sensitivity" 0 "off";
+VAL_ 1042 LDA_ALERT 3 "hold with continuous beep" 2 "LDA unavailable" 1 "hold" 0 "none";
+VAL_ 1042 BARRIERS 3 "left" 2 "right" 1 "both" 0 "none";
+VAL_ 1042 RIGHT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LKAS_STATUS 1 "on" 0 "off";
+VAL_ 1042 LEFT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LDA_ON_MESSAGE 2 "Lane Departure Alert Turned ON, Steering Assist Inactive" 1 "Lane Departure Alert Turned ON, Steering Assist Active" 0 "clear";
+VAL_ 1042 LDA_SA_TOGGLE  2 "steering assist off" 1 "steering assist on";
+VAL_ 1042 LDA_SENSITIVITY 2 "standard" 1 "high" 0 "undefined";
+VAL_ 1042 LDA_MESSAGES 4 "lda unavailable at this speed" 1 "lda unavailable below approx 50km/h" 0 "ok";
+VAL_ 1042 LDA_FRONT_CAMERA_BLOCKED 1 "lda unavailable" 0 "ok";
+VAL_ 1042 TAKE_CONTROL 1 "take control" 0 "ok";
+VAL_ 1042 LANE_SWAY_WARNING 3 "ok" 2 "orange please take a break" 1 "prompt would you like to take a break" 0 "ok";
+VAL_ 1042 LANE_SWAY_BUZZER 3 "ok" 2 "beep twice" 1 "beep twice" 0 "ok";
+VAL_ 1161 TSGN1 1 "speed sign" 0 "none";
+VAL_ 1161 TSGN2 1 "speed sign" 0 "none";
+VAL_ 1161 SPLSGN2 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1162 TSGN3 0 "none" 1 "speed sign" 2 "0 unlimited" 7 "unlimited" 16 "highway" 17 "no highway" 18 "motorway" 19 "no motorway" 20 "in city" 21 "outside city" 22 "pedestrian area" 23 "no pedestrian area" 65 "no overtaking left" 66 "no overtaking right" 67 "overtaking allowed again" 81 "no right turn" 97 "stop" 105 "yield" 113 "stop" 114 "yield us" 129 "no entry" 138 "no entry tss2" 145 "do not enter";
+VAL_ 1162 SPLSGN3 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1552 METER_SLIDER_LOW_BRIGHTNESS 1 "Low brightness mode, footwell lights off" 0 "Normal mode, footwell lights on";
+VAL_ 1552 METER_SLIDER_DIMMED 1 "Dimmed" 0 "Not Dimmed";
+VAL_ 1552 UNITS 1 "km (km/L)" 2 "km (L/100km)" 3 "miles (MPG US)" 4 "miles (MPG Imperial)";
+VAL_ 1553 UNITS 1 "km" 2 "miles";
+VAL_ 1556 TURN_SIGNALS 3 "none" 2 "right" 1 "left";
+VAL_ 1592 LOCK_STATUS 0 "locked" 1 "unlocked";
+
+VAL_ 610 IPAS_STATE 5 "override" 3 "enabled" 1 "disabled";

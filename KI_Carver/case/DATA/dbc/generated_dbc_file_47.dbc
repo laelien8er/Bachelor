@@ -1,0 +1,428 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BO_ 512 GAS_COMMAND: 6 EON
+ SG_ GAS_COMMAND : 7|16@0+ (0.253984064,-83.3) [0|1] "" INTERCEPTOR
+ SG_ GAS_COMMAND2 : 23|16@0+ (0.126992032,-83.3) [0|1] "" INTERCEPTOR
+ SG_ ENABLE : 39|1@0+ (1,0) [0|1] "" INTERCEPTOR
+ SG_ COUNTER_PEDAL : 35|4@0+ (1,0) [0|15] "" INTERCEPTOR
+ SG_ CHECKSUM_PEDAL : 47|8@0+ (1,0) [0|255] "" INTERCEPTOR
+
+BO_ 513 GAS_SENSOR: 6 INTERCEPTOR
+ SG_ INTERCEPTOR_GAS : 7|16@0+ (1,0) [0|1] "" EON
+ SG_ INTERCEPTOR_GAS2 : 23|16@0+ (1,0) [0|1] "" EON
+ SG_ STATE : 39|4@0+ (1,0) [0|15] "" EON
+ SG_ COUNTER_PEDAL : 35|4@0+ (1,0) [0|15] "" EON
+ SG_ CHECKSUM_PEDAL : 47|8@0+ (1,0) [0|255] "" EON
+
+BO_ 304 GAS_PEDAL_2: 8 PCM
+ SG_ ENGINE_TORQUE_ESTIMATE : 7|16@0- (1,0) [-1000|1000] "Nm" EON
+ SG_ ENGINE_TORQUE_REQUEST : 23|16@0- (1,0) [-1000|1000] "Nm" EON
+ SG_ CAR_GAS : 39|8@0+ (1,0) [0|255] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 316 GAS_PEDAL: 8 PCM
+ SG_ CAR_GAS : 39|8@0+ (1,0) [0|255] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 344 ENGINE_DATA: 8 PCM
+ SG_ XMISSION_SPEED : 7|16@0+ (0.01,0) [0|250] "kph" EON
+ SG_ ENGINE_RPM : 23|16@0+ (1,0) [0|15000] "rpm" EON
+ SG_ XMISSION_SPEED2 : 39|16@0+ (0.01,0) [0|250] "kph" EON
+ SG_ ODOMETER : 55|8@0+ (10,0) [0|2550] "m" XXX
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 380 POWERTRAIN_DATA: 8 PCM
+ SG_ PEDAL_GAS : 7|8@0+ (1,0) [0|255] "" EON
+ SG_ ENGINE_RPM : 23|16@0+ (1,0) [0|15000] "rpm" EON
+ SG_ GAS_PRESSED : 39|1@0+ (1,0) [0|1] "" EON
+ SG_ ACC_STATUS : 38|1@0+ (1,0) [0|1] "" EON
+ SG_ BOH_17C : 37|5@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_SWITCH : 32|1@0+ (1,0) [0|1] "" EON
+ SG_ BOH2_17C : 47|10@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_PRESSED : 53|1@0+ (1,0) [0|1] "" EON
+ SG_ BOH3_17C : 52|5@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 420 VSA_STATUS: 8 VSA
+ SG_ USER_BRAKE : 7|16@0+ (0.015625,-1.609375) [0|1000] "" EON
+ SG_ COMPUTER_BRAKING : 23|1@0+ (1,0) [0|1] "" EON
+ SG_ ESP_DISABLED : 28|1@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_HOLD_RELATED : 52|1@0+ (1,0) [0|1] "" XXX
+ SG_ BRAKE_HOLD_ACTIVE : 46|1@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_HOLD_ENABLED : 45|1@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 427 STEER_MOTOR_TORQUE: 3 EPS
+ SG_ CONFIG_VALID : 7|1@0+ (1,0) [0|1] "" EON
+ SG_ MOTOR_TORQUE : 1|10@0+ (1,0) [0|256] "" EON
+ SG_ OUTPUT_DISABLED : 22|1@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 21|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 19|4@0+ (1,0) [0|15] "" EON
+
+BO_ 464 WHEEL_SPEEDS: 8 VSA
+ SG_ WHEEL_SPEED_FL : 7|15@0+ (0.01,0) [0|250] "kph" EON
+ SG_ WHEEL_SPEED_FR : 8|15@0+ (0.01,0) [0|250] "kph" EON
+ SG_ WHEEL_SPEED_RL : 25|15@0+ (0.01,0) [0|250] "kph" EON
+ SG_ WHEEL_SPEED_RR : 42|15@0+ (0.01,0) [0|250] "kph" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+
+BO_ 490 VEHICLE_DYNAMICS: 8 VSA
+ SG_ LAT_ACCEL : 7|16@0- (0.0015,0) [-20|20] "m/s2" EON
+ SG_ LONG_ACCEL : 23|16@0- (0.0015,0) [-20|20] "m/s2" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+
+BO_ 773 SEATBELT_STATUS: 7 BDY
+ SG_ SEATBELT_DRIVER_LAMP : 7|1@0+ (1,0) [0|1] "" EON
+ SG_ SEATBELT_PASS_UNLATCHED : 10|1@0+ (1,0) [0|1] "" EON
+ SG_ SEATBELT_PASS_LATCHED : 11|1@0+ (1,0) [0|1] "" EON
+ SG_ SEATBELT_DRIVER_UNLATCHED : 12|1@0+ (1,0) [0|1] "" EON
+ SG_ SEATBELT_DRIVER_LATCHED : 13|1@0+ (1,0) [0|1] "" EON
+ SG_ PASS_AIRBAG_OFF : 14|1@0+ (1,0) [0|1] "" EON
+ SG_ PASS_AIRBAG_ON : 15|1@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 53|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 51|4@0+ (1,0) [0|3] "" EON
+
+BO_ 777 CAR_SPEED: 8 PCM
+ SG_ ROUGH_CAR_SPEED : 23|8@0+ (1,0) [0|255] "mph" XXX
+ SG_ CAR_SPEED : 7|16@0+ (0.01,0) [0|65535] "kph" XXX
+ SG_ ROUGH_CAR_SPEED_3 : 39|16@0+ (0.01,0) [0|65535] "kph" XXX
+ SG_ ROUGH_CAR_SPEED_2 : 31|8@0+ (1,0) [0|255] "mph" XXX
+ SG_ LOCK_STATUS : 55|2@0+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+ SG_ IMPERIAL_UNIT : 63|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 780 ACC_HUD: 8 ADAS
+ SG_ PCM_SPEED : 7|16@0+ (0.01,0) [0|250] "kph" BDY
+ SG_ PCM_GAS : 23|8@0+ (1,0) [0|127] "" BDY
+ SG_ CRUISE_SPEED : 31|8@0+ (1,0) [0|255] "kph" BDY
+ SG_ DTC_MODE : 39|1@0+ (1,0) [0|1] "" BDY
+ SG_ BOH : 38|1@0+ (1,0) [0|1] "" BDY
+ SG_ ACC_PROBLEM : 37|1@0+ (1,0) [0|1] "" BDY
+ SG_ FCM_OFF : 35|1@0+ (1,0) [0|1] "" BDY
+ SG_ FCM_OFF_2 : 36|1@0+ (1,0) [0|1] "" BDY
+ SG_ FCM_PROBLEM : 34|1@0+ (1,0) [0|1] "" BDY
+ SG_ RADAR_OBSTRUCTED : 33|1@0+ (1,0) [0|1] "" BDY
+ SG_ ENABLE_MINI_CAR : 32|1@0+ (1,0) [0|1] "" BDY
+ SG_ HUD_DISTANCE : 47|2@0+ (1,0) [0|3] "" BDY
+ SG_ HUD_LEAD : 45|2@0+ (1,0) [0|3] "" BDY
+ SG_ BOH_3 : 43|1@0+ (1,0) [0|3] "" BDY
+ SG_ BOH_4 : 42|1@0+ (1,0) [0|3] "" BDY
+ SG_ BOH_5 : 41|1@0+ (1,0) [0|3] "" BDY
+ SG_ CRUISE_CONTROL_LABEL : 40|1@0+ (1,0) [0|3] "" BDY
+ SG_ SET_ME_X01_2 : 55|1@0+ (1,0) [0|1] "" BDY
+ SG_ IMPERIAL_UNIT : 54|1@0+ (1,0) [0|1] "" BDY
+ SG_ ACC_ON : 52|1@0+ (1,0) [0|1] "" BDY
+ SG_ CHIME : 51|3@0+ (1,0) [0|1] "" BDY
+ SG_ SET_ME_X01 : 48|1@0+ (1,0) [0|1] "" BDY
+ SG_ ICONS : 63|2@0+ (1,0) [0|1] "" BDY
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" BDY
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" BDY
+
+BO_ 804 CRUISE: 8 PCM
+ SG_ HUD_SPEED_KPH : 7|8@0+ (1,0) [0|255] "kph" EON
+ SG_ HUD_SPEED_MPH : 15|8@0+ (1,0) [0|255] "mph" EON
+ SG_ TRIP_FUEL_CONSUMED : 23|16@0+ (1,0) [0|255] "" EON
+ SG_ CRUISE_SPEED_PCM : 39|8@0+ (1,0) [0|255] "" EON
+ SG_ BOH2 : 47|8@0- (1,0) [0|255] "" EON
+ SG_ BOH3 : 55|8@0+ (1,0) [0|255] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 884 STALK_STATUS: 8 XXX
+ SG_ DASHBOARD_ALERT : 39|8@0+ (1,0) [0|255] "" EON
+ SG_ AUTO_HEADLIGHTS : 46|1@0+ (1,0) [0|1] "" EON
+ SG_ HIGH_BEAM_HOLD : 47|1@0+ (1,0) [0|1] "" EON
+ SG_ HIGH_BEAM_FLASH : 45|1@0+ (1,0) [0|1] "" EON
+ SG_ HEADLIGHTS_ON : 54|1@0+ (1,0) [0|1] "" EON
+ SG_ WIPER_SWITCH : 53|2@0+ (1,0) [0|3] "" XXX
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 891 STALK_STATUS_2: 8 XXX
+ SG_ WIPERS : 17|2@0+ (1,0) [0|3] "" EON
+ SG_ LOW_BEAMS : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ HIGH_BEAMS : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ PARK_LIGHTS : 36|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 1029 DOORS_STATUS: 8 BDY
+ SG_ DOOR_OPEN_FL : 37|1@0+ (1,0) [0|1] "" EON
+ SG_ DOOR_OPEN_FR : 38|1@0+ (1,0) [0|1] "" EON
+ SG_ DOOR_OPEN_RL : 39|1@0+ (1,0) [0|1] "" EON
+ SG_ DOOR_OPEN_RR : 40|1@0+ (1,0) [0|1] "" EON
+ SG_ TRUNK_OPEN : 41|1@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 145 KINEMATICS: 8 XXX
+ SG_ LAT_ACCEL : 7|10@0+ (0.02,-512) [-20|20] "m/s2" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+
+BO_ 148 KINEMATICS_ALT: 8 XXX
+ SG_ LAT_ACCEL : 7|10@0+ (0.02,-512) [-20|20] "m/s2" EON
+ SG_ LONG_ACCEL : 24|9@0- (-0.02,0) [-20|20] "m/s2" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+
+BO_ 432 STANDSTILL: 7 VSA
+ SG_ CONTROLLED_STANDSTILL : 0|1@0+ (1,0) [0|1] "" EON
+ SG_ WHEELS_MOVING : 12|1@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_ERROR_1 : 11|1@0+ (1,0) [0|1] "" EON
+ SG_ BRAKE_ERROR_2 : 9|1@0+ (1,0) [0|1] "" EON
+ SG_ COUNTER : 53|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 51|4@0+ (1,0) [0|3] "" EON
+
+BO_ 487 BRAKE_PRESSURE: 4 VSA
+ SG_ BRAKE_PRESSURE1 : 7|10@0+ (0.015625,-103) [0|1000] "" EON
+ SG_ BRAKE_PRESSURE2 : 9|10@0+ (0.015625,-103) [0|1000] "" EON
+ SG_ CHECKSUM : 27|4@0+ (1,0) [0|15] "" EON
+ SG_ COUNTER : 29|2@0+ (1,0) [0|3] "" EON
+
+BO_ 506 BRAKE_COMMAND: 8 ADAS
+ SG_ COMPUTER_BRAKE : 7|10@0+ (1,0) [0|1] "" EBCM
+ SG_ BRAKE_PUMP_REQUEST : 8|1@0+ (1,0) [0|1] "" EBCM
+ SG_ BRAKE_PUMP_REQUEST_ALT : 11|1@0+ (1,0) [0|1] "" EBCM
+ SG_ SET_ME_X00 : 23|3@0+ (1,0) [0|1] "" EBCM
+ SG_ CRUISE_OVERRIDE : 20|1@0+ (1,0) [0|1] "" EBCM
+ SG_ SET_ME_X00_2 : 19|1@0+ (1,0) [0|1] "" EBCM
+ SG_ CRUISE_FAULT_CMD : 18|1@0+ (1,0) [0|1] "" EBCM
+ SG_ CRUISE_CANCEL_CMD : 17|1@0+ (1,0) [0|1] "" EBCM
+ SG_ COMPUTER_BRAKE_REQUEST : 16|1@0+ (1,0) [0|1] "" EBCM
+ SG_ SET_ME_1 : 31|1@0+ (1,0) [0|1] "" EBCM
+ SG_ AEB_REQ_1 : 29|1@0+ (1,0) [0|1] "" XXX
+ SG_ AEB_REQ_2 : 26|3@0+ (1,0) [0|7] "" XXX
+ SG_ BRAKE_LIGHTS : 39|1@0+ (1,0) [0|1] "" EBCM
+ SG_ CRUISE_STATES : 38|7@0+ (1,0) [0|1] "" EBCM
+ SG_ CHIME : 47|3@0+ (1,0) [0|7] "" EBCM
+ SG_ SET_ME_X00_3 : 44|1@0+ (1,0) [0|1] "" EBCM
+ SG_ FCW : 43|2@0+ (1,0) [0|3] "" EBCM
+ SG_ AEB_STATUS : 41|2@0+ (1,0) [0|3] "" XXX
+ SG_ COMPUTER_BRAKE_ALT : 55|10@0+ (1,0) [0|0] "" EBCM
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EBCM
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EBCM
+
+BO_ 597 ROUGH_WHEEL_SPEED: 8 VSA
+ SG_ WHEEL_SPEED_FL : 7|8@0+ (1,0) [0|255] "mph" EON
+ SG_ WHEEL_SPEED_FR : 15|8@0+ (1,0) [0|255] "mph" EON
+ SG_ WHEEL_SPEED_RL : 23|8@0+ (1,0) [0|255] "mph" EON
+ SG_ WHEEL_SPEED_RR : 31|8@0+ (1,0) [0|255] "mph" EON
+ SG_ SET_TO_X55 : 39|8@0+ (1,0) [0|255] "" EON
+ SG_ SET_TO_X55_2 : 47|8@0+ (1,0) [0|255] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 829 LKAS_HUD: 5 ADAS
+ SG_ CAM_TEMP_HIGH : 7|1@0+ (1,0) [0|255] "" BDY
+ SG_ SET_ME_X41 : 6|7@0+ (1,0) [0|127] "" BDY
+ SG_ BOH : 6|7@0+ (1,0) [0|127] "" BDY
+ SG_ DASHED_LANES : 14|1@0+ (1,0) [0|1] "" BDY
+ SG_ DTC : 13|1@0+ (1,0) [0|1] "" BDY
+ SG_ LKAS_PROBLEM : 12|1@0+ (1,0) [0|1] "" BDY
+ SG_ LKAS_OFF : 11|1@0+ (1,0) [0|1] "" BDY
+ SG_ SOLID_LANES : 10|1@0+ (1,0) [0|1] "" BDY
+ SG_ LDW_RIGHT : 9|1@0+ (1,0) [0|1] "" BDY
+ SG_ STEERING_REQUIRED : 8|1@0+ (1,0) [0|1] "" BDY
+ SG_ BOH_2 : 23|2@0+ (1,0) [0|4] "" BDY
+ SG_ LDW_PROBLEM : 21|1@0+ (1,0) [0|1] "" BDY
+ SG_ BEEP : 17|2@0+ (1,0) [0|1] "" BDY
+ SG_ LDW_ON : 28|1@0+ (1,0) [0|1] "" BDY
+ SG_ LDW_OFF : 27|1@0+ (1,0) [0|1] "" BDY
+ SG_ CLEAN_WINDSHIELD : 26|1@0+ (1,0) [0|1] "" BDY
+ SG_ SET_ME_X48 : 31|8@0+ (1,0) [0|255] "" BDY
+ SG_ COUNTER : 37|2@0+ (1,0) [0|3] "" BDY
+ SG_ CHECKSUM : 35|4@0+ (1,0) [0|15] "" BDY
+
+BO_ 892 CRUISE_PARAMS: 8 PCM
+ SG_ CRUISE_SPEED_OFFSET : 31|8@0- (0.1,0) [-128|127] "kph" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+
+BO_ 228 STEERING_CONTROL: 5 ADAS
+ SG_ STEER_TORQUE : 7|16@0- (1,0) [-3840|3840] "" EPS
+ SG_ STEER_TORQUE_REQUEST : 23|1@0+ (1,0) [0|1] "" EPS
+ SG_ SET_ME_X00 : 22|7@0+ (1,0) [0|127] "" EPS
+ SG_ SET_ME_X00_2 : 31|8@0+ (1,0) [0|0] "" EPS
+ SG_ COUNTER : 37|2@0+ (1,0) [0|3] "" EPS
+ SG_ CHECKSUM : 35|4@0+ (1,0) [0|15] "" EPS
+
+BO_ 342 STEERING_SENSORS: 6 EPS
+ SG_ STEER_ANGLE : 7|16@0- (-0.1,0) [-500|500] "deg" EON
+ SG_ STEER_ANGLE_RATE : 23|16@0- (1,0) [-3000|3000] "deg/s" EON
+ SG_ COUNTER : 45|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 43|4@0+ (1,0) [0|3] "" EON
+
+BO_ 399 STEER_STATUS: 7 EPS
+ SG_ STEER_TORQUE_SENSOR : 7|16@0- (-1,0) [-31000|31000] "tbd" EON
+ SG_ STEER_ANGLE_RATE : 23|16@0- (-0.1,0) [-31000|31000] "deg/s" EON
+ SG_ STEER_STATUS : 39|4@0+ (1,0) [0|15] "" EON
+ SG_ STEER_CONTROL_ACTIVE : 35|1@0+ (1,0) [0|1] "" EON
+ SG_ STEER_CONFIG_INDEX : 43|4@0+ (1,0) [0|15] "" EON
+ SG_ COUNTER : 53|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 51|4@0+ (1,0) [0|3] "" EON
+
+BO_ 419 GEARBOX: 8 PCM
+ SG_ GEAR : 7|8@0+ (1,0) [0|256] "" EON
+ SG_ GEAR_SHIFTER : 35|4@0+ (1,0) [0|15] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+
+BO_ 422 SCM_BUTTONS: 8 SCM
+ SG_ CRUISE_BUTTONS : 7|3@0+ (1,0) [0|7] "" EON
+ SG_ LIGHTS_SETTING : 1|2@0+ (1,0) [0|3] "" EON
+ SG_ MAIN_ON : 47|1@0+ (1,0) [0|1] "" EON
+ SG_ CRUISE_SETTING : 43|2@0+ (1,0) [0|3] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|3] "" EON
+
+BO_ 545 ECON_STATUS: 5 XXX
+ SG_ ECON_ON : 23|1@0+ (1,0) [0|1] "" EON
+ SG_ CHECKSUM : 35|4@0+ (1,0) [0|3] "" EON
+ SG_ COUNTER : 37|2@0+ (1,0) [0|3] "" EON
+
+BO_ 660 SCM_FEEDBACK: 8 SCM
+ SG_ RIGHT_BLINKER : 6|1@0+ (1,0) [0|1] "" EON
+ SG_ LEFT_BLINKER : 5|1@0+ (1,0) [0|1] "" EON
+ SG_ WIPERS_SPEED : 4|2@0+ (1,0) [0|3] "" EON
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" EON
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" EON
+
+BO_ 862 HIGHBEAM_CONTROL: 8 ADAS
+ SG_ ZEROS_BOH : 7|50@0+ (1,0) [0|127] "" BDY
+ SG_ ZEROS_BOH_2 : 48|4@1+ (1,0) [0|15] "" XXX
+ SG_ HIGHBEAMS_ON : 52|1@0+ (1,0) [0|1] "" XXX
+ SG_ AUTO_HIGHBEAMS_ACTIVE : 53|1@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" XXX
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 927 RADAR_HUD: 8 ADAS
+ SG_ ZEROS_BOH : 7|17@0+ (1,0) [0|127] "" BDY
+ SG_ APPLY_BRAKES_FOR_CANC : 23|1@0+ (1,0) [0|15] "" BDY
+ SG_ ZEROS_BOH2 : 31|8@0+ (1,0) [0|127] "" BDY
+ SG_ RESUME_INSTRUCTION : 21|1@0+ (1,0) [0|15] "" BDY
+ SG_ ACC_ALERTS : 20|5@0+ (1,0) [0|15] "" BDY
+ SG_ LEAD_SPEED : 39|9@0+ (1,0) [0|127] "" BDY
+ SG_ LEAD_STATE : 46|3@0+ (1,0) [0|127] "" BDY
+ SG_ LEAD_DISTANCE : 43|5@0+ (1,0) [0|31] "" BDY
+ SG_ ZEROS_BOH3 : 54|7@0+ (1,0) [0|127] "" BDY
+ SG_ COUNTER : 61|2@0+ (1,0) [0|3] "" BDY
+ SG_ CHECKSUM : 59|4@0+ (1,0) [0|15] "" BDY
+
+BU_: XXX
+
+
+CM_ "AUTOGENERATED FILE, DO NOT EDIT";
+
+
+CM_ "Imported file _subaru_global.dbc starts here";
+CM_ SG_ 64 Throttle_Combo "Throttle Cruise + Pedal";
+CM_ SG_ 313 Brake_Lights "Driver or Cruise Brake on";
+CM_ SG_ 544 Cruise_Brake_Lights "1 = switch on brake lights";
+CM_ SG_ 544 Brake_Pressure "Winds down after cruise disabled. Also can be non-zero when likely preparing for AEB";
+CM_ SG_ 544 Signal3 "Usually goes to 2 if AEB_Status is 4";
+CM_ SG_ 544 AEB_Status "Occasionally is 4 instead of 8 while Brake_Pressure is non-zero, unsure why";
+CM_ SG_ 801 PCB_Off "Pre-Collision Braking off";
+CM_ SG_ 801 Brake_Lights "Driver or Cruise brake on";
+CM_ SG_ 801 Cruise_State "0 = Normal, 1 = Hold+User Brake, 2 = Ready, 3 = Hold";
+CM_ SG_ 801 Far_Distance "1=0-5m, 2=5-10m, 3=10-15m, 4=15-20m, 5=20-25m, 6=25-30m, 7=30-35m, 8=35-40m, 9=40-45m, 10=45-50m, 11=50-55m, 12=55-60m, 13=60-65m, 14=65-70m, 15=75m+";
+CM_ SG_ 801 LKAS_State_Msg "1 = LKAS_Off_Sharp_Curve, 2 = Keep_Hands_On_Steering_wheel_disabled, 3 = LKAS_Off, 4 = LKAS_Off_Too_Slow, 5 = LKAS_Off_Too_Fast";
+CM_ SG_ 801 Cruise_State_Msg "1 = Cruise_Off_Steep_Slope, 2 = Cruise_lvl1_eco, 3 = Cruise_lvl2_comfort, 4 = Cruise_off_empty_reason, 5 = Cruise_off, 6 = Cruise_Unable_to_set, 7 = Cruise_Unable_to_set_brakes_applied, 8 = Eyesight_not_ready, 9 = Cruise_lvl3_standard, 10 = Cruise_lvl4_dynamic, 11 = Cruise_Unable_to_set_steep_slope";
+CM_ SG_ 801 Cruise_Soft_Disable "Eyesight soft disable (eg direct sunlight)";
+CM_ SG_ 801 Cruise_Status_Msg "1 = Disabled_Bad_Visibility, 2 = Disabled_Check_Manual";
+CM_ SG_ 802 LKAS_ACTIVE "Turns on the full LKAS dash display";
+CM_ SG_ 802 LKAS_Alert_Msg "1 = Keep_Hands_On_Wheel, 6 = Pre_Collision_Braking, 7 = Keep_Hands_On_Wheel_Off";
+CM_ SG_ 802 LKAS_Alert "1 = FCW_Cont_Beep, 2 = FCW_Repeated_Beep, 3 = Throttle_Management_Activated_Warning, 4 = Throttle_Management_Activated_Alert, 5 = Pre_Collision_Activated_Alert, 8 = Traffic_Light_Ahead, 9 = Apply_Brake_to_Hold Position, 11 = LDW_Right, 12 = LDW_Left, 13 = Stay_Alert, 14 = Lead_Vehicle_Start_Alert, 18 = Keep_Hands_On_Steering_Alert, 24 = Audio_Beep, 25 = Audio_Lead_Car_Change, 26 = Audio_ACC_Disengaged, 27 = Audio_LKAS_disabled, 28 = Audio_Ding_Ding, 30 = Audio_Repeated_Beep";
+CM_ SG_ 802 LKAS_Left_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 802 LKAS_Dash_State "0 = Off, 1 = Ready, 2 = Active";
+CM_ SG_ 802 LKAS_Right_Line_Visible "0 = Off, 1 = White, 2 = Green, 3 = Orange";
+CM_ SG_ 912 UNITS "0 = Metric, 1 = Imperial";
+CM_ SG_ 912 ICY_ROAD "1 = DASHLIGHT ON, 2 = WARNING, 3 = OFF";
+CM_ "subaru_global_2020_hybrid.dbc starts here";
+
+VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
+
+VAL_ 295 GEAR 0 "P" 1 "R" 2 "N" 3 "D" 4 "B";
+VAL_ 466 CRUISE_STATE 11 "timer_3sec" 10 "adaptive click down" 9 "adaptive click up" 8 "adaptive engaged" 7 "standstill" 6 "non-adaptive click up" 5 "non-adaptive click down" 4 "non-adaptive hold down" 3 "non-adaptive hold up" 2 "non-adaptive being engaged" 1 "non-adaptive engaged" 0 "off";
+VAL_ 467 LOW_SPEED_LOCKOUT 2 "low speed locked" 1 "ok";
+VAL_ 467 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 614 STATE 3 "enabled" 1 "disabled";
+VAL_ 614 DIRECTION_CMD 3 "right" 2 "center" 1 "left";
+VAL_ 643 STATE 0 "normal" 1 "adaptive_cruise_control" 3 "emergency_braking";
+VAL_ 835 ACC_TYPE 2 "permanent low speed lockout" 1 "ok";
+VAL_ 835 ACC_MALFUNCTION 1 "faulted" 0 "ok";
+VAL_ 835 ACC_CUT_IN 1 "CUT-IN Detected" 0 "clear";
+VAL_ 835 ALLOW_LONG_PRESS 2 "set speed increase by 5 speed units regardless" 1 "set speed increase by 1 speed unit on short press, 5 speed units on long press";
+VAL_ 865 CLUTCH_RELEASED 0 "clutch pressed any amount" 1 "clutch released"
+VAL_ 921 CRUISE_CONTROL_STATE 2 "disabled" 11 "hold" 10 "hold_waiting_user_cmd" 6 "enabled" 5 "faulted";
+VAL_ 956 SPORT_ON 0 "off" 1 "on";
+VAL_ 956 GEAR 0 "D" 1 "S" 8 "N" 16 "R" 32 "P";
+VAL_ 956 SPORT_GEAR_ON 0 "off" 1 "on";
+VAL_ 956 SPORT_GEAR 1 "S1" 2 "S2" 3 "S3" 4 "S4" 5 "S5" 6 "S6";
+VAL_ 956 ECON_ON 0 "off" 1 "on";
+VAL_ 956 B_GEAR_ENGAGED 0 "off" 1 "on";
+VAL_ 956 DRIVE_ENGAGED 0 "off" 1 "on";
+VAL_ 1005 REVERSE_CAMERA_GUIDELINES 3 "No guidelines" 2 "Static guidelines" 1 "Active guidelines";
+VAL_ 1009 PCM_FOLLOW_DISTANCE 1 "far" 2 "medium" 3 "close";
+VAL_ 1041 PCS_INDICATOR 2 "PCS Faulted" 1 "PCS Turned Off By User" 0 "PCS Enabled";
+VAL_ 1041 PCS_SENSITIVITY 64 "high sensitivity"  128 "mid sensitivity" 192 "low sensitivity" 0 "off";
+VAL_ 1042 LDA_ALERT 3 "hold with continuous beep" 2 "LDA unavailable" 1 "hold" 0 "none";
+VAL_ 1042 BARRIERS 3 "left" 2 "right" 1 "both" 0 "none";
+VAL_ 1042 RIGHT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LKAS_STATUS 1 "on" 0 "off";
+VAL_ 1042 LEFT_LINE 3 "orange" 2 "faded" 1 "solid" 0 "none";
+VAL_ 1042 LDA_ON_MESSAGE 2 "Lane Departure Alert Turned ON, Steering Assist Inactive" 1 "Lane Departure Alert Turned ON, Steering Assist Active" 0 "clear";
+VAL_ 1042 LDA_SA_TOGGLE  2 "steering assist off" 1 "steering assist on";
+VAL_ 1042 LDA_SENSITIVITY 2 "standard" 1 "high" 0 "undefined";
+VAL_ 1042 LDA_MESSAGES 4 "lda unavailable at this speed" 1 "lda unavailable below approx 50km/h" 0 "ok";
+VAL_ 1042 LDA_FRONT_CAMERA_BLOCKED 1 "lda unavailable" 0 "ok";
+VAL_ 1042 TAKE_CONTROL 1 "take control" 0 "ok";
+VAL_ 1042 LANE_SWAY_WARNING 3 "ok" 2 "orange please take a break" 1 "prompt would you like to take a break" 0 "ok";
+VAL_ 1042 LANE_SWAY_BUZZER 3 "ok" 2 "beep twice" 1 "beep twice" 0 "ok";
+VAL_ 1161 TSGN1 1 "speed sign" 0 "none";
+VAL_ 1161 TSGN2 1 "speed sign" 0 "none";
+VAL_ 1161 SPLSGN2 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1162 TSGN3 0 "none" 1 "speed sign" 2 "0 unlimited" 7 "unlimited" 16 "highway" 17 "no highway" 18 "motorway" 19 "no motorway" 20 "in city" 21 "outside city" 22 "pedestrian area" 23 "no pedestrian area" 65 "no overtaking left" 66 "no overtaking right" 67 "overtaking allowed again" 81 "no right turn" 97 "stop" 105 "yield" 113 "stop" 114 "yield us" 129 "no entry" 138 "no entry tss2" 145 "do not enter";
+VAL_ 1162 SPLSGN3 15 "conditional blank" 4 "wet road" 5 "rain" 0 "none";
+VAL_ 1552 METER_SLIDER_LOW_BRIGHTNESS 1 "Low brightness mode, footwell lights off" 0 "Normal mode, footwell lights on";
+VAL_ 1552 METER_SLIDER_DIMMED 1 "Dimmed" 0 "Not Dimmed";
+VAL_ 1552 UNITS 1 "km (km/L)" 2 "km (L/100km)" 3 "miles (MPG US)" 4 "miles (MPG Imperial)";
+VAL_ 1553 UNITS 1 "km" 2 "miles";
+VAL_ 1556 TURN_SIGNALS 3 "none" 2 "right" 1 "left";
+VAL_ 1592 LOCK_STATUS 0 "locked" 1 "unlocked";
+
+VAL_ 401 SETME_X3 3 "TSS 2.0" 1 "TSS 2.5 or 2022 RAV4" 0 "TSS 2.0 on Alphard, Highlander, NX";
+VAL_ 610 IPAS_STATE 5 "override" 3 "enabled" 1 "disabled";
+VAL_ 610 LKA_STATE 25 "temporary_fault" 17 "permanent_fault" 11 "lka_missing_unavailable2" 9 "temporary_fault2" 5 "active" 3 "lka_missing_unavailable" 1 "standby";
