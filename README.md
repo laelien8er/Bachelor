@@ -1,4 +1,4 @@
-# Bachelorarbeit: ML-Based File Carving for Vehicle Forensics
+# Bachelorarbeit: KI-basiert versus klassisch --- File Carving in der digitalen Fahrzeugforensik [AI-based versus Classical File Carving in Digital Vehicle Forensics]
 
 This repository holds the dataset, tooling and Docker environments used for a bachelor
 thesis comparing machine-learning-based file carving against traditional file-carving
