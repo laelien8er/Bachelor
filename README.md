@@ -26,7 +26,7 @@ Dataset/            Raw and generated test data
 
 KI_Carver/          Docker environment for the ML-based carver (sceadan)
   Dockerfile
-  case/DATA/           Dataset mirrored into the layout sceadan expects for training
+
 
 FileCarver/          Docker environment for traditional carving tools
   Dockerfile           Autopsy, Sleuthkit, foremost, scalpel, bulk_extractor
